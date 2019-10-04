@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?><board-game xmlns:prefix="https://hocvienboardgame.vn/" xmlns:exsl="http://exslt.org/common">
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-board-game-mascarade/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/mascarade-oczrql1e914aaizrm2eefxr4p93y4bsx1ose2dnwb0.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/08/shop_mascarade_1024x1024.jpg</image>
+        </images>
+        <title>Mascarade</title>
+        <category>Card/ Thẻ bài</category>
+        <description>Mascarade là một bộ board game mà bạn có thể chơi với số lượng từ 2 &amp;#8211; 13 người. Trong Mascarad, những người chơi sẽ buộc lòng lừa gạt lẫn nhau tuỳ thuộc vào chức năng của các nhân vật trong game. Mascarad còn được đánh giá là một bộ board game &amp;#8220;lừa gạt&amp;#8221; đấu [&amp;hellip;]</description>
+        <numPlayer>2 - 13 người</numPlayer>
+        <time>30 - 45 phút</time>
+        <age>+</age>
+        <weight>/ 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/cach-choi-board-game-dong-hanh/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-dong-hanh-chi-tiet-1-ocjfhjkgyxch8ptrno9u5e1k3y1qrnf352ge8n2n2k.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/08/huong-dan-cach-choi-board-game-dong-hanh-chi-tiet-1.jpg</image>
+        </images>
+        <title>Đồng hành</title>
+        <category>Dân gian</category>
+        <description>Bạn có đủ dẻo dai để đi vòng quanh đất nước Việt Nam? Bạn có đủ tài trí để chiến thắng bao nhiêu trộm cướp dọc đường? Và quan trọng hơn cả, bạn có đủ những người bạn tốt để cùng nhau vượt qua thử thách?</description>
+        <numPlayer>2 - 4 người</numPlayer>
+        <time>20 - 45 phút</time>
+        <age>8 +</age>
+        <weight>1.65 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/cach-choi-lop-hoc-mat-ngu/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-Lop-Hoc-Mat-Ngu-Cuoc-Dua-Sao-Choi-oc0cik7fhchv7iyi82k5eo0utzwu9g4ta2ju5ty3po.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/08/huong-dan-cach-choi-board-game-Lop-Hoc-Mat-Ngu-Cuoc-Dua-Sao-Choi.jpg</image>
+        </images>
+        <title>Lớp Học Mật Ngữ</title>
+        <category>Card/ Thẻ bài</category>
+        <description>Hãy tưởng tượng &amp;#8211; bạn &amp;#8211; một trong 12 chòm sao sắp bước vào một cuộc đua kỳ thú để tranh giành các món đồ, chỉ người nào có nhiều chiến lợi phẩm nhất khi tất cả mảnh thiên thạch đã rớt xuống báo hiệu trò chơi kết thúc, thì sẽ giành chiến thắng vinh quang!</description>
+        <numPlayer>2 - 6 người</numPlayer>
+        <time>20 - 40 phút</time>
+        <age>8 +</age>
+        <weight>1.91 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-luat-choi-marvel-champions-the-card-game/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-marvel-champions-the-card-game-obx0iv4nkr5nwdk47uwlnq748v5act8k1k2z5msymk.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/08/huong-dan-cach-choi-marvel-champions-the-card-game.jpg</image>
+        </images>
+        <title>Marvel Champions The Card Game</title>
+        <category>Card/ Thẻ bài</category>
+        <description>Là một LCG mới toanh sẽ được FFG ra mắt vào quý 4 năm 2019, Marvel Champions The Card Game sẽ là 1 game phối hợp đồng đội.</description>
+        <numPlayer>1 - 4 người</numPlayer>
+        <time>20 - 40 phút</time>
+        <age>10 +</age>
+        <weight>2.65 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-cach-choi-board-game-dixit/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-dixit-obx1fuatciat7vnonm2emwmaiilvej5jks18a3wqbw.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/08/IMG_5148.jpg</image>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/08/Dixit-image.jpg</image>
+        </images>
+        <title>Dixit</title>
+        <category>Abstract/ Chiến thuật trừu tượng</category>
+        <description>Một board game dành cho những &amp;#8220;kẻ mộng mơ&amp;#8221; với số lượng người chơi đến 12 người. Mỗi người chơi sẽ là người kể chuyện, và rồi bắt đầu trò chơi. Nếu bạn là một người có trí tưởng tượng, thường hay thả tâm hồn mình đi đâu loanh quanh với những câu chuyện cổ [&amp;hellip;]</description>
+        <numPlayer>3 - 6 người</numPlayer>
+        <time>20 - 30 phút</time>
+        <age>6 +</age>
+        <weight>/ 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-board-game-lost-cities/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/Lost-Cities-The-Board-Game.w610.h610.fill_-obkgs3j9ainm5y4ucorwc2vxn293w86jsc4ut5rqks.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/07/696175_LC_BoardGame_Contents.jpg</image>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/07/img_01851.jpg</image>
+        </images>
+        <title>Lost Cities</title>
+        <category>Card/ Thẻ bài</category>
+        <description>Lost Cities là một bộ board game dành cho 2 người, với cơ chế đơn giản mà bất cứ ai cũng có thể &amp;#8220;thử sức&amp;#8221; mình. Mục tiêu của những người chơi là giành được điểm bằng cách thực hiện các cuộc thám hiểm khảo cổ khác nhau. Cùng Học Viện Board Game khám phá [&amp;hellip;]</description>
+        <numPlayer>2 người</numPlayer>
+        <time>20 - 45 phút</time>
+        <age>10 +</age>
+        <weight>/ 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/cach-choi-haikyu-volleyball-card-game/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-boardgame-haikyu-volleyball-card-game-oa9stnn12a88m0g0z1rn83r48isk6hylrudsavrb64.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/07/huong-dan-cach-choi-boardgame-haikyu-volleyball-card-game.jpg</image>
+        </images>
+        <title>HAIKYU!! VOLLEYBALL CARD GAME</title>
+        <category>Card/ Thẻ bài</category>
+        <description>“Bộ cờ bóng chuyền Haikyu!!” (tên tiếng Anh: “Haikyu!! Volleyball Card Game”) là sản phẩm card game chiến thuật (TCG) lấy ý tưởng từ bộ truyện tranh nổi tiếng “Haikyu!!” của tác giả Haruichi Furudate không còn xa lạ với các bạn trẻ yêu thích truyện tranh Nhật Bản.</description>
+        <numPlayer>2 người</numPlayer>
+        <time>20 - 30 phút</time>
+        <age>8 +</age>
+        <weight>2.29 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-cach-choi-board-game-love-letter-chi-tiet/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/BackSilhouette-o9scik3uscdzspy3mbi2mgdj0bg5umpjlpap4vbjv0.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/06/BackSilhouette.jpg</image>
+        </images>
+        <title>Love Letter</title>
+        <category>Boardgame</category>
+        <description>Một bộ board game mang chủ đề khá lãng mạn, lại được đặt trong bối cảnh châu Âu cổ kính trữ tình, bạn có thể chơi Love Letter với số lượng từ 2 &amp;#8211; 8 người chơi.</description>
+        <numPlayer>người</numPlayer>
+        <time>phút</time>
+        <age>+</age>
+        <weight>/ 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/cach-choi-board-game-mr-jack/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/pic3066125-o9l5sroxjciha8qulvs5o99agrxif6m0qq4mkiyvyk.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/06/P1313071.png</image>
+        </images>
+        <title>Mr Jack</title>
+        <category>Boardgame</category>
+        <description>Mr Jack là một board game thể loại đối kháng, suy luận dành cho 2 người chơi. Nó đòi hỏi người tham gia phải hoá thân vào bối cảnh và suy luận thật nhanh.</description>
+        <numPlayer>1 - 2 người</numPlayer>
+        <time>20 - 30 phút</time>
+        <age>10 +</age>
+        <weight>/ 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-cach-choi-board-game-hoi-pho/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/main-o8v7xwkbiatldu0t5xyxruzakj1a8a1rwsmc6xztcc.png</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/05/feature-1.png</image>
+        </images>
+        <title>Hội Phố</title>
+        <category>Card/ Thẻ bài</category>
+        <description>Hội Phố là một board game chiến thuật thuần Việt được sản xuất và phát triển bởi Ngũ Hành Games &amp;#8211; studio sản xuất và sáng tạo board game của Việt Nam.</description>
+        <numPlayer>2 - 5 người</numPlayer>
+        <time>15 - 30 phút</time>
+        <age>10 +</age>
+        <weight>1.8 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-cach-choi-pyramid-poker/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-boardgame-pyramid-poker-o7ez7yx772i2hgo49oihz7tmikyvq26kjj6tpy9bgs.jpeg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/05/huong-dan-cach-choi-boardgame-pyramid-poker-1.jpg</image>
+        </images>
+        <title>Pyramid Poker</title>
+        <category>Card/ Thẻ bài</category>
+        <description>Bạn đang tìm một boardgame dành cho hai người chơi. Vậy bạn đã biết cách chơi boardgame Pyramid Poker chưa? Khám phá cùng Học viện Board game nhé!</description>
+        <numPlayer>2 người</numPlayer>
+        <time>10 - 30 phút</time>
+        <age>12 +</age>
+        <weight>1.33 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-luat-choi-cheating-moth/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/feature-01-2-o7dl7scmbm6rafja2jilohja2pu82dkz1gfvyfeo24.png</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/05/CheatingMoth.jpg</image>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/05/mogelmotte2.jpg</image>
+        </images>
+        <title>Cheating Moth</title>
+        <category>Party Game</category>
+        <description>Cheating is forbiden?! Not in this game &amp;#8211; Cheating Moth</description>
+        <numPlayer>3 - 5 người</numPlayer>
+        <time>15 - 30 phút</time>
+        <age>7 +</age>
+        <weight>1.16 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-board-game-shadow-hunter/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/feature-01-o79u1mtn7esgcdw7zmc5uxzewcho8gagc8dvy4i2bw.png</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/05/hinh_slide-1.png</image>
+        </images>
+        <title>Shadow Hunter</title>
+        <category>Murder/Mystery</category>
+        <description>Một board game nhập vai, chiến thuật đình đám, từng được đông đảo người chơi tham giai trải nghiệm. Sau khi đã trải qua thời gian được cải tiến, những mở rộng về tuyến nhân vật mới mẻ, Shadow Hunter dường như vẫn luôn giữ được sức hút rất đặc biệt đối với người chơi.</description>
+        <numPlayer>4 - 8 người</numPlayer>
+        <time>30 - 50 phút</time>
+        <age>13 +</age>
+        <weight>1.83 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-choi-boardgame-thanos-rising-de-hieu-don-gian/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/0001-o6xn9qodhrej9eb6wrbhhzde9cfpzpoultkxud89qk.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/04/000.png</image>
+        </images>
+        <title>Thanos Rising: Avengers Infinity War</title>
+        <category>Card/ Thẻ bài</category>
+        <description>Tại Thanos Rising, nhiệm vụ của bạn chính là triệu tập những siêu anh hùng thành một đội mạnh mẽ để đối phó với Thanos và lực lượng tà ác của hắn nhằm mục đích ngăn chặn kế hoạch “làm bay màu” một nửa các hành tinh của hắn.</description>
+        <numPlayer>2 - 4 người</numPlayer>
+        <time>60 - 90 phút</time>
+        <age>10 +</age>
+        <weight>2.00 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/tim-hieu-luat-choi-spyfall/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-spyfall-o6l0m54yzpe8ol5s6rvolaeili8u2dgjlqcbnxmpn0.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/04/huong-dan-cach-choi-board-game-spyfall.jpg</image>
+        </images>
+        <title>Spyfall</title>
+        <category>Card/ Thẻ bài</category>
+        <description>Nếu bạn đã từng yêu thích trò chơi Ma Sói nhưng muốn có 1 tiết tấu nhanh và mọi người đều bắt buộc phải nói, không ai bị loại khỏi game, thời gian chơi ngắn và tràn ngập tiếng cười từ những câu nói đầu tiên, thì Spyfall sẽ là sự lựa chọn rất phù hợp cho bạn.</description>
+        <numPlayer>3 - 8 người</numPlayer>
+        <time>15 - 20 phút</time>
+        <age>12 +</age>
+        <weight>1.25 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-board-game-santorini-chi-tiet-nhat/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/pic3283110_0e4b365d0da14dfcb29bfd468b79a57a_grande-o6g3d4xplka2u7xds1sdd0hilzer54b5aopibwt7po.png</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/04/pic3347886.jpg</image>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/04/pic3412329.jpg</image>
+        </images>
+        <title>Santorini</title>
+        <category>Tiểu thuyết</category>
+        <description>Là một bộ board game lấy cảm hứng từ phong cách xây dựng kiến trúc của hòn đảo Santorini &amp;#8211; Hy Lạp, được liên tục phát triển, hoàn thiện và nâng cấp bởi nhà thiết kế game nổi tiếng Gorden Hamilton.</description>
+        <numPlayer>2 - 4 người</numPlayer>
+        <time>20 - 30 phút</time>
+        <age>8 +</age>
+        <weight>1.75 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-cach-choi-boardgame-len-mam/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-Len-Mam-2-o672o56kkqxgoeubaf1t9ouj5syw7ttevji5z874uk.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/04/huong-dan-cach-choi-board-game-Len-Mam-2.jpg</image>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/04/huong-dan-cach-choi-board-game-Len-Mam-1.jpg</image>
+        </images>
+        <title>Lên Mâm</title>
+        <category>Card/ Thẻ bài</category>
+        <description>NGÀY TẾT LẾT VÀO BẾP.</description>
+        <numPlayer>2 - 4 người</numPlayer>
+        <time>10 - 15 phút</time>
+        <age>13 +</age>
+        <weight>1.7 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/cach-choi-tam-quoc-sat-quoc-chien/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/tam-quốc-sát-feature-o67d0ag8eedbaka17s3cya3dyopgps7n1htr42evd8.png</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/04/slide1-01.png</image>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/04/bao-gồm.png</image>
+        </images>
+        <title>Tam Quốc Sát &amp;#8211; Quốc Chiến</title>
+        <category>Party Game</category>
+        <description>Tam Quốc Sát &amp;#8211; Quốc Chiến, một board game lấy bối cảnh vào thời kỳ diễn ra Tam Quốc Diễn Nghĩa, khắp nơi loạn lạc, sinh linh đồ thán. Và người chơi sẽ hoá thân là những vị mãnh tướng kiêu hùng mang trên mình trách nhiệm chấn hưng lại thời cuộc nhiễu nhương đó.</description>
+        <numPlayer>4 - 12 người</numPlayer>
+        <time>30 - 60 phút</time>
+        <age>10 +</age>
+        <weight>2.10 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-board-game-soi-ultimate-chi-tiet-nhat/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/Werewolfcover-o60i01pm5lk5kgr9o254q7g451fubmmhsz9xo312z0.png</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/04/Untitled-1-01.png</image>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/04/Untitled-2-01.png</image>
+        </images>
+        <title>Sói Ultimate &amp;#8211; Ultimate Werewolf</title>
+        <category>Murder/Mystery</category>
+        <description>Một board game sở hữu khá nhiều các phiên bản được cái tiến, bổ sung các tuyến nhân vật giúp cho trò chơi không bao giờ đánh mất sự hấp dẫn qua từng giai đoạn. Và có lẽ, với Sói Ultimate &amp;#8211; Ultimate Werewolf cùng những chi tiết mới mẻ, sẽ không làm các tín đồ board game Ma Sói thất vọng.</description>
+        <numPlayer>5 - 75 người</numPlayer>
+        <time>30 - 90 phút</time>
+        <age>8 +</age>
+        <weight>1.50 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-soi-one-night-one-night-ultimate-werewolf/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/soi1dem-01-o5kt7m3xw9zossr1sr4awix7fvezfz9uos0lx44qq4.png</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/masoislide_vv-2.png</image>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/img_0761_grande.jpg</image>
+        </images>
+        <title>Sói One night &amp;#8211; One Night Ultimate Werewolf</title>
+        <category>Card/ Thẻ bài</category>
+        <description>Vẫn giữ những tính chất của một bộ board game xã hội, biện luận và ẩn vai trò. Nhưng Ma Sói One Night lại có nhịp độ nhanh hơn cùng những tuyến nhân vật mới mẻ, mang lại những cú &amp;#8220;twist&amp;#8221; bất ngờ trong suốt quá trình chơi.</description>
+        <numPlayer>5 - 12 người</numPlayer>
+        <time>10 - 15 phút</time>
+        <age>10 +</age>
+        <weight>1.40 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-soi-millers-the-werewolves-of-millers-hollow/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/masoi-o5hfgd5zwxnkirnww2itkmfiyvw1422xdpnwtf7ubw.png</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/71RR34M02L._SL1251_.jpg</image>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/3558380001027.jpg</image>
+        </images>
+        <title>Sói Millers &amp;#8211; The Werewolves of Millers Hollow</title>
+        <category>Card/ Thẻ bài</category>
+        <description>Bộ board game mang yếu tố xã hội và biện luận, phù hợp với nhóm người chơi từ 8-18. Hãy bộc lộ khả năng hùng biện, lý luận của bạn với Sói Millers &amp;#8211; The Werewolves of Millers Hollow nhé!</description>
+        <numPlayer>6 - 14 người</numPlayer>
+        <time>30 - 45 phút</time>
+        <age>10 +</age>
+        <weight>1.32 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-cach-choi-poker/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-choi-poker-chi-tiet-o5j524jexrlnhg8rq7j42h8ru2txb1fpalvar8x7ik.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/huong-dan-choi-poker-chi-tiet.jpg</image>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/huong-dan-choi-poker-chi-tiet-8.jpg</image>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/huong-dan-choi-poker-chi-tiet-9.jpg</image>
+        </images>
+        <title>Poker</title>
+        <category>Card/ Thẻ bài</category>
+        <description>POKER &amp;#8211; ÔNG HOÀNG CASINO</description>
+        <numPlayer>2 - 10 người</numPlayer>
+        <time>60 - 80 phút</time>
+        <age>12 +</age>
+        <weight>2.46 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-cach-choi-secret-hitler-2016/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/secret-hitler-3-hocvienboardgame.vn_-o5j948k9anm87c0ajd7dnlw82anxt9hmpskgboa4b0.png</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/secret-hitler-6-hocvienboardgame.vn_-1.jpg</image>
+        </images>
+        <title>Secret Hitler (2016)</title>
+        <category>Card/ Thẻ bài</category>
+        <description>Trong Secret Hitler, người chơi đảm nhận vai trò của những người tự do và phát xít trong Cộng hòa Weimar, với một người chơi trở thành Adolf Hitler. Để giành chiến thắng trong trò chơi, cả hai bên được thiết lập để cạnh tranh ban hành các chính sách tự do và phát xít, hoặc hoàn thành một mục tiêu thứ yếu liên quan trực tiếp đến Hitler.</description>
+        <numPlayer>5 - 10 người</numPlayer>
+        <time>45 - 60 phút</time>
+        <age>13 +</age>
+        <weight>1.68 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-board-game-camel-up/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/4250231705588-o5gyu3u020ol1io3ayw433avt6msza17glrfoc9glo.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/91xUMhZqGqL._SL1500_.jpg</image>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/camelupcomponents.jpg</image>
+        </images>
+        <title>Camel Up</title>
+        <category>Card/ Thẻ bài</category>
+        <description>Một bộ board game có tính chất đặt cược vô cùng vui nhộn với những pha &amp;#8220;lội ngược dòng&amp;#8221; ngoạn mục khiến người chơi không ngừng đi từ bất ngờ này đến ngạc nhiên khác.</description>
+        <numPlayer>2 - 8 người</numPlayer>
+        <time>20 - 30 phút</time>
+        <age>8 +</age>
+        <weight>1.48 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-board-game-witch-hunt/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/witchhunt-01-o5a3v39sqfjwh3d5la1cm7i9wnbfmwbg25vfsd2630.png</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/5148_582ee9bb02e405.92421269_WitchHunt_20box_20and_20card_large_30da14e6-d81f-44af-b103-f5c5389afa1a_1024x1024.png</image>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/pic3226092.png</image>
+        </images>
+        <title>Witch Hunt</title>
+        <category>Abstract/ Chiến thuật trừu tượng</category>
+        <description>Lấy bối cảnh những thôn làng Châu Âu trung cổ, đang rúng động vì những tên Phù Thủy đang tung hoành làm hại người vô tội. Witch Hunt, một bộ board game nhập vai, suy luận hứa hẹn mang lại những giây phút giải trí tuyệt vời cho nhóm các người chơi.</description>
+        <numPlayer>7 - 22 người</numPlayer>
+        <time>30 - 90 phút</time>
+        <age>13 +</age>
+        <weight>2.00 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-board-game-unlock/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/unlock-01-o5a45wezbuclznnwgy8wahb3u61e5l8bjnyggx16j0.png</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/687474703a2f2f7777772e6465736b6f76656872792e636f6d2f776f726470726573732f77702d636f6e74656e742f75706c6f6164732f323031372f30332f756e6c6f636b2d30312e6a7067.jpeg</image>
+        </images>
+        <title>Unlock!</title>
+        <category>Card/ Thẻ bài</category>
+        <description>Có lẽ đối với tín đồ board game thì hầu như các bạn đều là những cá nhân yêu thích giải đáp các bí ẩn, những pha &amp;#8220;hack não&amp;#8221; và &amp;#8220;cân não&amp;#8221; với những manh mối hóc búa. Và Unlock, một trò board game có thể làm bạn thoả lòng ham thích khám phá, cân [&amp;hellip;]</description>
+        <numPlayer>1 - 6 người</numPlayer>
+        <time>60 phút</time>
+        <age>10 +</age>
+        <weight>2.8 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-board-game-mat-ma-da-vinci/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/the-da-vinci-code-e1553318168553-o5a4pdmky90ikrdcqdckykcyzm17nsk2w2mohc5hl8.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/mona_lisa.jpg</image>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/leonardo-da-vinci-1.jpg</image>
+        </images>
+        <title>Mật Mã Da Vinci</title>
+        <category>Card/ Thẻ bài</category>
+        <description>Bộ board game lấy cảm hứng từ những câu đó bí ẩn mà Leonardo da Vinci để lại cho hậu thế qua những tác phẩm của mình.</description>
+        <numPlayer>5 - 12 người</numPlayer>
+        <time>30 - 120 phút</time>
+        <age>12 +</age>
+        <weight>2.06 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-cach-choi-bang-the-dice-game/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/Bang-The-Dice-Game-hocvienboardgame.vn_-1-o628drs6hzsbxipu7sauwi817wjuifzska6cl99t1o.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/Bang-The-Dice-Game_hocvienboardgame.vn_.jpg</image>
+        </images>
+        <title>BANG &amp;#8211; The dice game</title>
+        <category>Card/ Thẻ bài</category>
+        <description>BANG! là một trò chơi bắn súng, theo phong cách Spaghetti Western, giữa một nhóm Outlaws ( Kẻ ngoài vòng pháp luật ) và Sheriff ( Cảnh sát trưởng ), mỗi nhóm sẽ có mục tiêu chính của họ.</description>
+        <numPlayer>3 - 8 người</numPlayer>
+        <time>15 - 30 phút</time>
+        <age>8 +</age>
+        <weight>1.28 / 5</weight>
+    </game>
+    <game>
+        <link>https://hocvienboardgame.vn/huong-dan-cach-choi-bai-uno/</link>
+        <mainImage>https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-uno-chi-tiet-o5kimp0iaajhto233lk3y5dh1ix33q1tbehvjaxaa4.jpg</mainImage>
+        <images>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/huong-dan-cach-choi-uno-chi-tiet.jpg</image>
+            <image>https://hocvienboardgame.vn/wp-content/uploads/2019/03/huong-dan-cach-choi-uno-chi-tiet-5.jpg</image>
+        </images>
+        <title>Uno</title>
+        <category>Card/ Thẻ bài</category>
+        <description>Uno là một trò chơi tập thể được biết đến và nổi tiếng tại nhiều nơi trên khắp thế giới. Nếu như bạn cảm thấy tò mò và thích thú thì có thể dành chút thời gian cùng Học viện Board Game tìm hiểu kỹ hơn về thể loại Uno này nhé!</description>
+        <numPlayer>2 - 8 người</numPlayer>
+        <time>30 - 45 phút</time>
+        <age>6 +</age>
+        <weight>1.13 / 5</weight>
+    </game>
+</board-game>

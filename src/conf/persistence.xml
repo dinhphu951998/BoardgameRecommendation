@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="BoardgameRecommendationPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>phund.jpaclass.User</class>
+    <class>phund.jpaclass.Image</class>
+    <class>phund.jpaclass.Account</class>
+    <class>phund.jpaclass.ItemBasedPoint</class>
+    <class>phund.jpaclass.Vote</class>
+    <class>phund.jpaclass.UserBasedPoint</class>
+    <class>phund.jpaclass.Criteria</class>
+    <class>phund.jpaclass.Game</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=BoardgameRecommendation"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="12345678"/>
+    </properties>
+  </persistence-unit>
+</persistence>

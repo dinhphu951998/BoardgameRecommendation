@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://xml.netbeans.org/boardgame"
+           xmlns="http://xml.netbeans.org/boardgame"
+           elementFormDefault="qualified">
+    
+    <xs:complexType name="image">
+        <xs:sequence>
+            <xs:element name="imageUrl" type="xs:anyURI"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:integer" />
+        <xs:attribute name="gameId" type="xs:integer"/>
+    </xs:complexType>
+
+</xs:schema>

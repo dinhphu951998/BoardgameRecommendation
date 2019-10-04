@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<board-game xmlns="https://hocvienboardgame.vn/" 
+            host="https://hocvienboardgame.vn/"
+            link="https://hocvienboardgame.vn/boardgame/tong-hop-game-card-the-bai/" 
+            delim=" ">
+    
+</board-game>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<board-game xmlns="https://www.boardgamehub.net/" 
+            host="https://www.boardgamehub.net/"
+            link="https://www.boardgamehub.net/board-game-nhap-vai/ https://www.boardgamehub.net/board-game-chien-thuat/" 
+            delim=" ">
+    
+</board-game>
