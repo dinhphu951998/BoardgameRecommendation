@@ -5,12 +5,14 @@
  */
 package phund.utils;
 
+import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import javax.xml.transform.Templates;
 import javax.xml.transform.Transformer;
@@ -35,12 +37,7 @@ public class TrAXUtils {
             throws FileNotFoundException,
             TransformerConfigurationException {
         Templates result = null;
-        if (tf == null) {
-            tf = TransformerFactory.newInstance();
-        }
-
-        CustomURIResolver resolver = new CustomURIResolver();
-        tf.setURIResolver(resolver);
+        tf = getTransformerFactory();
 
         if (templatesMap == null) {
             templatesMap = new HashMap<>();
@@ -53,21 +50,28 @@ public class TrAXUtils {
         return result;
     }
 
+    private static TransformerFactory getTransformerFactory() {
+        if (tf == null) {
+            tf = TransformerFactory.newInstance();
+        }
+        return tf;
+    }
+
     public static ByteArrayOutputStream transform(String xmlPath, String xslPath)
             throws FileNotFoundException, TransformerConfigurationException, TransformerException {
 
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 
-        TransformerFactory factory = TransformerFactory.newInstance();
-        CustomURIResolver resolver = new CustomURIResolver();
-        factory.setURIResolver(resolver);
-
+        tf = getTransformerFactory();
+        resolver = new CustomURIResolver();
+        tf.setURIResolver(resolver);
 //        URI Resolver did not call when using template in transformation
 //        Templates template = factory.newTemplates(new StreamSource(new File(xslPath)));
+
         StreamSource source = new StreamSource(new FileInputStream(xmlPath));
         StreamResult result = new StreamResult(outputStream);
 
-        Transformer trans = factory.newTransformer(new StreamSource(new File(xslPath)));
+        Transformer trans = tf.newTransformer(new StreamSource(new File(xslPath)));
         trans.transform(source, result);
 
         return outputStream;
@@ -82,6 +86,23 @@ public class TrAXUtils {
         StreamResult result = new StreamResult(outputStream);
 
         Transformer trans = template.newTransformer();
+        trans.transform(source, result);
+
+        return outputStream;
+    }
+
+    public static ByteArrayOutputStream transform(InputStream xmlIs, String xslPath)
+            throws FileNotFoundException, TransformerConfigurationException, TransformerException {
+
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+        TransformerFactory factory = TransformerFactory.newInstance();
+
+        StreamSource source = new StreamSource(xmlIs);
+        StreamSource xslSource = new StreamSource(new FileInputStream(xslPath));
+        StreamResult result = new StreamResult(outputStream);
+
+        Transformer trans = factory.newTransformer(xslSource);
         trans.transform(source, result);
 
         return outputStream;

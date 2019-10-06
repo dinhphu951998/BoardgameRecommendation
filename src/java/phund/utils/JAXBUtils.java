@@ -15,13 +15,16 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.bind.ValidationEventHandler;
 import javax.xml.parsers.SAXParserFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
 import org.w3c.dom.Node;
 import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
@@ -32,12 +35,6 @@ import org.xml.sax.helpers.XMLReaderFactory;
  * @author PhuNDSE63159
  */
 public class JAXBUtils {
-
-    public static Object unmarshal(String xmlFile, Class classType) throws JAXBException {
-        JAXBContext context = JAXBContext.newInstance(classType);
-        Unmarshaller u = context.createUnmarshaller();
-        return u.unmarshal(new StreamSource(xmlFile));
-    }
 
     public static Object unmarshal(Node node, Class classType) throws JAXBException {
         JAXBContext context = JAXBContext.newInstance(classType);
@@ -51,12 +48,21 @@ public class JAXBUtils {
         return unmarshaller.unmarshal(is);
     }
 
-    public static void marshal(String xmlFile, Object data, Class type) throws JAXBException, FileNotFoundException {
+    public static Object unmarshalBoardgame(InputStream is,
+            ValidationEventHandler handler, Schema schema, Class classType) throws JAXBException {
+        JAXBContext context = JAXBContext.newInstance(classType);
+        Unmarshaller unmarshaller = context.createUnmarshaller();
+        unmarshaller.setSchema(schema);
+        unmarshaller.setEventHandler(handler);
+        return unmarshaller.unmarshal(is);
+    }
+
+    public static void marshal(OutputStream os, Object data, Class type) throws JAXBException, FileNotFoundException {
         JAXBContext context = JAXBContext.newInstance(type);
         Marshaller m = context.createMarshaller();
         m.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
         m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-        m.marshal(data, new FileOutputStream(xmlFile));
+        m.marshal(data, os);
     }
 
     public static void marshal(Object data, Node result, Class type) throws JAXBException, FileNotFoundException {

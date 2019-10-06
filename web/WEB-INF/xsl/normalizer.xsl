@@ -12,7 +12,7 @@
     <xsl:output method="xml" indent="yes" encoding="UTF-8" version="1.0"/>
 
     <xsl:template match="board-game">
-        <board-game xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../schema/boardgame.xsd'>
+        <board-game>
             <xsl:apply-templates select="game"/>
         </board-game>
     </xsl:template>
@@ -27,16 +27,14 @@
             
             <xsl:apply-templates select="images[count(image)>0]"/>
             
-            <criteria>
-                <xsl:apply-templates select="age/minAge[text()]"/>
-                <xsl:apply-templates select="age/maxAge[text()]"/>
+            <xsl:apply-templates select="age/minAge[text()]"/>
+            <xsl:apply-templates select="age/maxAge[text()]"/>
                 
-                <xsl:apply-templates select="time/minTime[text()]"/>
-                <xsl:apply-templates select="time/maxTime[text()]"/>
+            <xsl:apply-templates select="time/minTime[text()]"/>
+            <xsl:apply-templates select="time/maxTime[text()]"/>
                 
-                <xsl:apply-templates select="numPlayer/minPlayer[text()]"/>
-                <xsl:apply-templates select="numPlayer/maxPlayer[text()]"/>
-            </criteria>
+            <xsl:apply-templates select="numPlayer/minPlayer[text()]"/>
+            <xsl:apply-templates select="numPlayer/maxPlayer[text()]"/>
         </games>
     </xsl:template>
     

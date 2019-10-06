@@ -2,7 +2,7 @@
 
 <board-game xmlns="https://www.boardgamebliss.com/" 
             host="https://www.boardgamebliss.com/"
-            link="https://www.boardgamebliss.com/collections/all/availability_in-stock+number-of-players_4-players+product-type_board-games+source_import-games+category_strategy+discount_on-sale?sort_by=best-selling" 
+            link="https://www.boardgamebliss.com/collections/all/availability_in-stock+category_strategy+product-type_board-games+source_import-games+discount_on-sale+number-of-players_6-players?sort_by=best-selling" 
             delim=" ">
     
 </board-game>

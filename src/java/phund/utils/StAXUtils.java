@@ -7,6 +7,7 @@ package phund.utils;
 
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLEventWriter;
@@ -68,7 +69,7 @@ public class StAXUtils {
 
     public static XMLEventWriter getXMLEventWriter(OutputStream os) throws XMLStreamException {
         XMLOutputFactory factory = XMLOutputFactory.newFactory();
-        XMLEventWriter writer = factory.createXMLEventWriter(os);
+        XMLEventWriter writer = factory.createXMLEventWriter(os, "UTF-8");
         return writer;
     }
 

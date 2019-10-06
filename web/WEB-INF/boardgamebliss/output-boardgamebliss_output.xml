@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><board-game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schema/boardgame.xsd">
+<?xml version="1.0" encoding="UTF-8"?><board-game>
     <games>
         <title>Rattus: Arabian Traders (Import)</title>
         <thumbnail>//cdn.shopify.com/s/files/1/0274/9631/products/Rattus_-_Arabian_Traders_60x.jpg?v=1395527102</thumbnail>
@@ -6,12 +6,10 @@
         <images>
             <imageUrl>//cdn.shopify.com/s/files/1/0274/9631/products/Rattus_-_Arabian_Traders_1600x.jpg?v=1395527102</imageUrl>
         </images>
-        <criteria>
-            <minAge>10</minAge>
-            <minTime>45</minTime>
-            <minPlayer>2</minPlayer>
-            <maxPlayer>6</maxPlayer>
-        </criteria>
+        <minAge>10</minAge>
+        <minTime>45</minTime>
+        <minPlayer>2</minPlayer>
+        <maxPlayer>6</maxPlayer>
     </games>
     <games>
         <title>Kepler-3042 (Minor Damage)</title>
@@ -20,13 +18,11 @@
         <images>
             <imageUrl>//cdn.shopify.com/s/files/1/0274/9631/products/pic3167080_027e1871-d4e4-4fc6-a043-8bccfb53e879_1600x.png?v=1489768632</imageUrl>
         </images>
-        <criteria>
-            <minAge>14</minAge>
-            <minTime>60</minTime>
-            <maxTime>90</maxTime>
-            <minPlayer>1</minPlayer>
-            <maxPlayer>4</maxPlayer>
-        </criteria>
+        <minAge>14</minAge>
+        <minTime>60</minTime>
+        <maxTime>90</maxTime>
+        <minPlayer>1</minPlayer>
+        <maxPlayer>4</maxPlayer>
     </games>
     <games>
         <title>Tikal (French) (Minor Damage)</title>
@@ -36,12 +32,10 @@
         <images>
             <imageUrl>//cdn.shopify.com/s/files/1/0274/9631/products/pic2909347_f06c2824-2e2e-487b-90bd-70ca7b311d09_1600x.png?v=1481554450</imageUrl>
         </images>
-        <criteria>
-            <minAge>10</minAge>
-            <minTime>120</minTime>
-            <minPlayer>2</minPlayer>
-            <maxPlayer>4</maxPlayer>
-        </criteria>
+        <minAge>10</minAge>
+        <minTime>120</minTime>
+        <minPlayer>2</minPlayer>
+        <maxPlayer>4</maxPlayer>
     </games>
     <games>
         <title>Yggdrasil (New Edition) (Import) (Minor Damage)</title>
@@ -50,12 +44,10 @@
         <images>
             <imageUrl>//cdn.shopify.com/s/files/1/0274/9631/products/pic4314491_c7d6cb1e-808f-493c-92ef-0ec54dcd505c_1600x.jpg?v=1545067033</imageUrl>
         </images>
-        <criteria>
-            <minAge>13</minAge>
-            <minTime>90</minTime>
-            <minPlayer>1</minPlayer>
-            <maxPlayer>6</maxPlayer>
-        </criteria>
+        <minAge>13</minAge>
+        <minTime>90</minTime>
+        <minPlayer>1</minPlayer>
+        <maxPlayer>6</maxPlayer>
     </games>
     <games>
         <title>Drum Roll (Minor Damage)</title>
@@ -65,12 +57,10 @@
         <images>
             <imageUrl>//cdn.shopify.com/s/files/1/0274/9631/products/Drum_Roll_077072c7-ff2a-4b0d-815b-e5d37422f768_1600x.jpg?v=1428643376</imageUrl>
         </images>
-        <criteria>
-            <minAge>12</minAge>
-            <minTime>90</minTime>
-            <minPlayer>2</minPlayer>
-            <maxPlayer>4</maxPlayer>
-        </criteria>
+        <minAge>12</minAge>
+        <minTime>90</minTime>
+        <minPlayer>2</minPlayer>
+        <maxPlayer>4</maxPlayer>
     </games>
     <games>
         <title>Coney Island (Minor Damage)</title>
@@ -80,11 +70,9 @@
         <images>
             <imageUrl>//cdn.shopify.com/s/files/1/0274/9631/products/Coney_Island_67dd2c53-111c-4454-a80a-416934da56b9_1600x.jpg?v=1433821931</imageUrl>
         </images>
-        <criteria>
-            <minAge>10</minAge>
-            <minTime>60</minTime>
-            <minPlayer>2</minPlayer>
-            <maxPlayer>4</maxPlayer>
-        </criteria>
+        <minAge>10</minAge>
+        <minTime>60</minTime>
+        <minPlayer>2</minPlayer>
+        <maxPlayer>4</maxPlayer>
     </games>
 </board-game>

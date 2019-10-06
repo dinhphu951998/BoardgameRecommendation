@@ -64,7 +64,7 @@ public class BaseRepositoryImp<T, PK extends Serializable>
             }
         } catch (Exception ex) {
             ex.printStackTrace();
-            
+
         } finally {
             closeConnection();
         }
@@ -117,6 +117,24 @@ public class BaseRepositoryImp<T, PK extends Serializable>
     }
 
     @Override
+    public void createRange(List<T> entities) {
+        em = JPAUtils.getEntityManager();
+        EntityTransaction transaction = em.getTransaction();
+        try {
+            transaction.begin();
+            for (T entity : entities) {
+                em.persist(entity);
+            }
+            transaction.commit();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            transaction.rollback();
+        } finally {
+            closeConnection();
+        }
+    }
+
+    @Override
     public T update(T entity) {
         em = JPAUtils.getEntityManager();
         EntityTransaction transaction = em.getTransaction();
@@ -148,4 +166,5 @@ public class BaseRepositoryImp<T, PK extends Serializable>
     protected void setNamedQueryMap(Map<String, String> namedQueryMap) {
         this.namedQueryMap = namedQueryMap;
     }
+
 }

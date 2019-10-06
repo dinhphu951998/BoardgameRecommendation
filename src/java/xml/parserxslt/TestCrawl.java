@@ -6,9 +6,13 @@
 package xml.parserxslt;
 
 import com.sun.xml.bind.StringInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.XMLEvent;
+import javax.xml.transform.TransformerException;
 import phund.service.CrawlService;
 import phund.utils.StAXUtils;
 
@@ -19,11 +23,8 @@ import phund.utils.StAXUtils;
 public class TestCrawl {
 
     public static void main(String[] args) throws Exception {
+        testCrawl();
 
-        String base = "H:\\FPTU\\8\\XML\\practice\\BoardgameRecommendation\\build\\web\\";
-        
-        CrawlService service = new CrawlService(base);
-        service.startCrawler();
     }
 
     public static void testSingleElement() throws XMLStreamException {
@@ -41,4 +42,11 @@ public class TestCrawl {
 
         }
     }
+
+    public static void testCrawl() throws Exception {
+        String base = "H:\\FPTU\\8\\XML\\practice\\BoardgameRecommendation\\build\\web\\";
+        CrawlService service = new CrawlService(base);
+        service.startCrawler();
+    }
+
 }

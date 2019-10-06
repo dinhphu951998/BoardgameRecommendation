@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package phund.utils;
+package phund.service;
 
 /**
  *
  * @author PhuNDSE63159
  */
-public class MapUtils {
+public interface GameService {
     
 }

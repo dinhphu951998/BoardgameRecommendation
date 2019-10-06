@@ -22,6 +22,8 @@ public interface BaseRepository<T, PK extends Serializable> {
     
     T create(T entity);
     
+    void createRange(List<T> entities);
+    
     T update(T entity);
     
     Object find(String namedQuery, 

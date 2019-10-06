@@ -7,18 +7,43 @@ package phund.service;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.StringReader;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
 import javax.xml.bind.JAXBException;
+import javax.xml.bind.ValidationEventHandler;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.transform.Templates;
+import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import org.xml.sax.SAXException;
 import phund.constant.FileConstant;
 import phund.entity.BoardGame;
+import phund.entity.Game;
+import phund.entity.Image;
+import phund.repository.GameRepository;
+import phund.repository.GameRepositoryImp;
+import phund.repository.ImageRepository;
+import phund.repository.ImageRepositoryImp;
+import phund.resolver.CustomURIResolver;
+import phund.utils.DateUtils;
 import phund.utils.FileUtils;
 import phund.utils.JAXBUtils;
 import phund.utils.TrAXUtils;
+import static phund.utils.TrAXUtils.resolver;
+import static phund.utils.TrAXUtils.tf;
+import phund.utils.XmlUtils;
+import phund.validation.BoardGameValidationHandler;
 
 /**
  *
@@ -51,7 +76,7 @@ public class CrawlService {
     }
 
     public void startCrawler()
-            throws IOException, FileNotFoundException, TransformerException, XMLStreamException, JAXBException {
+            throws IOException, FileNotFoundException, TransformerException, XMLStreamException, JAXBException, SAXException {
         for (int i = 0; i < inputUrls.length; i++) {
             String inputUrl = baseUrl + inputUrls[i];
             String outputUrl = baseUrl + outputUrls[i];
@@ -62,36 +87,46 @@ public class CrawlService {
             System.out.println("");
             //crawl from website
             ByteArrayOutputStream os = TrAXUtils.transform(inputUrl, xslUrl);
-            InputStream inputStream = new ByteArrayInputStream(os.toByteArray());
+
             //save to file 1
-            FileUtils.writeFile(outputUrl, os);
+            FileUtils.writeFile(outputUrl, os.toByteArray());
             System.out.println("Save file success");
 
             //process string
+            InputStream inputStream = new ByteArrayInputStream(os.toByteArray());
             StringProcessor stringProcessor = new StringProcessor(inputStream);
             os = (ByteArrayOutputStream) stringProcessor.parse();
 
-            //save to file 2
-            FileUtils.writeFile(outputUrl, os);
-            System.out.println("Save file 2 success");
+            //apply last filter
+            inputStream = new ByteArrayInputStream(os.toByteArray());
+            Templates template = TrAXUtils.getTemplate(baseUrl + FileConstant.NORMALIZER);
+            os = TrAXUtils.transform(inputStream, template);
 
             //validator
-            //apply last filter
-            Templates template = TrAXUtils.getTemplate(baseUrl + FileConstant.NORMALIZER);
-            os = TrAXUtils.transform(new ByteArrayInputStream(os.toByteArray()), template);
-
-            //save to file 3
-            FileUtils.writeFile(outputUrl, os);
-            System.out.println("Save file 3 success");
+            Schema schema = XmlUtils.getSchema(baseUrl + FileConstant.BOARDGAME_SCHEMA);
+            BoardGameValidationHandler errorHandler = new BoardGameValidationHandler();
 
             //unmarshal
-            BoardGame boardGame = (BoardGame) 
-                    JAXBUtils.unmarshal(new ByteArrayInputStream(os.toByteArray()), BoardGame.class);
+            ByteArrayInputStream bis = new ByteArrayInputStream(os.toByteArray());
+            BoardGame boardGame = (BoardGame) JAXBUtils.unmarshalBoardgame(bis, errorHandler, schema, BoardGame.class);
+
+            if (errorHandler.getErrorCounter() != 0) {
+                String docFile = baseUrl + FileConstant.BASE_LOG_FILE
+                        + String.format("boardgame-document-%s.xml", DateUtils.getTodayString());
+                String errorFile = baseUrl + FileConstant.BASE_LOG_FILE
+                        + String.format("boardgame-error-%s.xml", DateUtils.getTodayString());
+                System.out.println(docFile);
+                System.out.println(errorFile);
+                FileUtils.writeFile(docFile, os.toByteArray());
+                FileUtils.writeFile(errorFile,
+                        ((ByteArrayOutputStream) errorHandler.getErrorStream()).toByteArray());
+                System.out.println("Error saved");
+            }
 
             //save to db
-            
-            System.out.println(boardGame.getGames());
-            System.out.println("");
+            GameRepository gameRepository = new GameRepositoryImp();
+            gameRepository.createRange(boardGame.getGames());
+            System.out.println("Save to db");
         }
     }
 

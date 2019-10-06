@@ -6,11 +6,12 @@
 package phund.repository;
 
 import phund.entity.Game;
+import phund.entity.Image;
 
 /**
  *
  * @author PhuNDSE63159
  */
-public interface GameRepository  extends BaseRepository<Game, Integer>{
+public interface ImageRepository  extends BaseRepository<Image, Integer>{
     
 }

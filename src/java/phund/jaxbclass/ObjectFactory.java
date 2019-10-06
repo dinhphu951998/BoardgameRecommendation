@@ -53,12 +53,4 @@ public class ObjectFactory {
         return new Image();
     }
 
-    /**
-     * Create an instance of {@link Criteria }
-     * 
-     */
-    public Criteria createCriteria() {
-        return new Criteria();
-    }
-
 }

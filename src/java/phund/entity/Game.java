@@ -11,12 +11,13 @@ import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -25,7 +26,8 @@ import javax.xml.bind.annotation.XmlTransient;
  * @author PhuNDSE63159
  */
 @Entity
-@Table(name = "Game", catalog = "BoardgameRecommendation" , schema = "dbo")
+@Table(name = "Game", catalog = "BoardgameRecommendation", schema = "dbo")
+@XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Game.findAll", query = "SELECT g FROM Game g")
     , @NamedQuery(name = "Game.findById", query = "SELECT g FROM Game g WHERE g.id = :id")
@@ -33,15 +35,20 @@ import javax.xml.bind.annotation.XmlTransient;
     , @NamedQuery(name = "Game.findByCategory", query = "SELECT g FROM Game g WHERE g.category = :category")
     , @NamedQuery(name = "Game.findByThumbnail", query = "SELECT g FROM Game g WHERE g.thumbnail = :thumbnail")
     , @NamedQuery(name = "Game.findByDescription", query = "SELECT g FROM Game g WHERE g.description = :description")
-    , @NamedQuery(name = "Game.findByLink", query = "SELECT g FROM Game g WHERE g.link = :link")})
-
-@XmlRootElement(name = "game")
+    , @NamedQuery(name = "Game.findByLink", query = "SELECT g FROM Game g WHERE g.link = :link")
+    , @NamedQuery(name = "Game.findByMinAge", query = "SELECT g FROM Game g WHERE g.minAge = :minAge")
+    , @NamedQuery(name = "Game.findByMaxAge", query = "SELECT g FROM Game g WHERE g.maxAge = :maxAge")
+    , @NamedQuery(name = "Game.findByMinTime", query = "SELECT g FROM Game g WHERE g.minTime = :minTime")
+    , @NamedQuery(name = "Game.findByMaxTime", query = "SELECT g FROM Game g WHERE g.maxTime = :maxTime")
+    , @NamedQuery(name = "Game.findByMinPlayer", query = "SELECT g FROM Game g WHERE g.minPlayer = :minPlayer")
+    , @NamedQuery(name = "Game.findByMaxPlayer", query = "SELECT g FROM Game g WHERE g.maxPlayer = :maxPlayer")})
 public class Game implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
     @Column(name = "Id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(name = "Title", length = 100)
     private String title;
@@ -53,11 +60,21 @@ public class Game implements Serializable {
     private String description;
     @Column(name = "Link", length = 255)
     private String link;
+    @Column(name = "MinAge")
+    private Integer minAge;
+    @Column(name = "MaxAge")
+    private Integer maxAge;
+    @Column(name = "MinTime")
+    private Integer minTime;
+    @Column(name = "MaxTime")
+    private Integer maxTime;
+    @Column(name = "MinPlayer")
+    private Integer minPlayer;
+    @Column(name = "MaxPlayer")
+    private Integer maxPlayer;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "game")
     private Collection<Vote> voteCollection;
-    @OneToMany(mappedBy = "gameId")
-    private Collection<Criteria> criteriaCollection;
-    @OneToMany(mappedBy = "gameId")
+    @OneToMany(mappedBy = "gameId", cascade = CascadeType.PERSIST)
     private Collection<Image> images;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "game")
     private Collection<ItemBasedPoint> itemBasedPointCollection;
@@ -71,7 +88,6 @@ public class Game implements Serializable {
         this.id = id;
     }
 
-    @XmlElement
     public Integer getId() {
         return id;
     }
@@ -80,7 +96,6 @@ public class Game implements Serializable {
         this.id = id;
     }
 
-    @XmlElement
     public String getTitle() {
         return title;
     }
@@ -89,7 +104,6 @@ public class Game implements Serializable {
         this.title = title;
     }
 
-    @XmlElement
     public String getCategory() {
         return category;
     }
@@ -98,7 +112,6 @@ public class Game implements Serializable {
         this.category = category;
     }
 
-    @XmlElement
     public String getThumbnail() {
         return thumbnail;
     }
@@ -107,7 +120,6 @@ public class Game implements Serializable {
         this.thumbnail = thumbnail;
     }
 
-    @XmlElement
     public String getDescription() {
         return description;
     }
@@ -116,13 +128,60 @@ public class Game implements Serializable {
         this.description = description;
     }
 
-    @XmlElement
     public String getLink() {
         return link;
     }
 
     public void setLink(String link) {
         this.link = link;
+    }
+
+    public Integer getMinAge() {
+        return minAge;
+    }
+
+    public void setMinAge(Integer minAge) {
+        this.minAge = minAge;
+    }
+
+    public Integer getMaxAge() {
+        return maxAge;
+    }
+
+    public void setMaxAge(Integer maxAge) {
+        this.maxAge = maxAge;
+    }
+
+    public Integer getMinTime() {
+        return minTime;
+    }
+
+    public void setMinTime(Integer minTime) {
+        this.minTime = minTime;
+    }
+
+    public Integer getMaxTime() {
+        return maxTime;
+    }
+
+    public void setMaxTime(Integer maxTime) {
+        this.maxTime = maxTime;
+    }
+
+    public Integer getMinPlayer() {
+        return minPlayer;
+    }
+
+    public void setMinPlayer(Integer minPlayer) {
+        this.minPlayer = minPlayer;
+    }
+
+    public Integer getMaxPlayer() {
+        return maxPlayer;
+    }
+
+    public void setMaxPlayer(Integer maxPlayer) {
+        this.maxPlayer = maxPlayer;
     }
 
     @XmlTransient
@@ -134,21 +193,11 @@ public class Game implements Serializable {
         this.voteCollection = voteCollection;
     }
 
-    @XmlTransient
-    public Collection<Criteria> getCriteriaCollection() {
-        return criteriaCollection;
-    }
-
-    public void setCriteriaCollection(Collection<Criteria> criteriaCollection) {
-        this.criteriaCollection = criteriaCollection;
-    }
-
-    @XmlTransient
-    public Collection<Image> getImageCollection() {
+    public Collection<Image> getImages() {
         return images;
     }
 
-    public void setImageCollection(Collection<Image> imageCollection) {
+    public void setImages(Collection<Image> imageCollection) {
         this.images = imageCollection;
     }
 
@@ -192,7 +241,7 @@ public class Game implements Serializable {
 
     @Override
     public String toString() {
-        return "phund.entity.Game[ id=" + id + " ]";
+        return "phund.entity.Game[ id=" + id + ", images  = " + images.size() + "]";
     }
-    
+
 }

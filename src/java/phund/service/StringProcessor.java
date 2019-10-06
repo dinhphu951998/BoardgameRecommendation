@@ -64,6 +64,7 @@ public class StringProcessor extends Parser {
             } //end if start element
 
         }//end while reader has next
+        writer.flush();
         return outputStream;
     }
 
@@ -89,7 +90,6 @@ public class StringProcessor extends Parser {
 
             }//end if not empty numplayer
         }//end if isChar
-        System.out.println(reader.hasNext());
         event = reader.nextTag();
         writer.add(event);
     }

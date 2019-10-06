@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.xml.bind.JAXBException;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.transform.TransformerException;
+import org.xml.sax.SAXException;
 import phund.service.CrawlService;
 
 /**
@@ -38,17 +39,11 @@ public class CrawlServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try {
             String baseUrl = getServletContext().getRealPath("/");
-//            Thread thread = new 
             CrawlService service = new CrawlService(baseUrl);
             service.startCrawler();
+            
 
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(CrawlServlet.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(CrawlServlet.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (XMLStreamException ex) {
-            Logger.getLogger(CrawlServlet.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (JAXBException ex) {
+        } catch (FileNotFoundException | TransformerException | XMLStreamException | JAXBException | SAXException ex) {
             Logger.getLogger(CrawlServlet.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
 
