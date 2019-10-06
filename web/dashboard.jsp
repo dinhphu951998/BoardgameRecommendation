@@ -11,8 +11,29 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Search page</title>
+        <link rel="stylesheet" href="resources/css/homepage.css">
+        <link rel="stylesheet" href="vendors/css/grid.css">
+        <link rel="stylesheet" href="resources/css/dashboard.css">
     </head>
     <body>
-        Login successfully
+        <header>
+            <div class="row menu">
+                <div class="col span-1-of-3">
+                    <h2><a href="">Board game</a></h2>
+                </div>
+
+                <div class="col span-2-of-3">
+                    <ul>
+                        <li><a href="#" class="active">Statistic</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <form action="ProcessServlet">
+                <button class="btn" name="btnSubmit" value="Crawl">Crawl</button>
+            </form>
+        </header>
     </body>
 </html>

@@ -5,19 +5,18 @@
  */
 package phund.utils;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.HashMap;
 import javax.xml.transform.Templates;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMResult;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 import phund.resolver.CustomURIResolver;
@@ -29,71 +28,117 @@ import phund.resolver.CustomURIResolver;
 public class TrAXUtils {
 
     public static TransformerFactory tf = null;
+    public static CustomURIResolver resolver;
+    public static java.util.Map<String, Templates> templatesMap;
 
-    public static Templates getTemplate(String xslSrc) {
-        try {
-            Templates result = null;
-            TransformerFactory tf = TransformerFactory.newInstance();
-            CustomURIResolver resolver = new CustomURIResolver();
-            tf.setURIResolver(resolver);
-            result = tf.newTemplates(new StreamSource(xslSrc));
-            return result;
-        } catch (TransformerConfigurationException ex) {
-            Logger.getLogger(TrAXUtils.class.getName()).log(Level.SEVERE, null, ex);
+    public static Templates getTemplate(String xslSrc)
+            throws FileNotFoundException,
+            TransformerConfigurationException {
+        Templates result = null;
+        if (tf == null) {
+            tf = TransformerFactory.newInstance();
         }
-        return null;
+
+        CustomURIResolver resolver = new CustomURIResolver();
+        tf.setURIResolver(resolver);
+
+        if (templatesMap == null) {
+            templatesMap = new HashMap<>();
+        }
+        result = templatesMap.get(xslSrc);
+        if (result == null) {
+            result = tf.newTemplates(new StreamSource(new File(xslSrc)));
+            templatesMap.put(xslSrc, result);
+        }
+        return result;
     }
 
-    public static void transform(String src, String dest, Templates template) {
-        try {
-            Transformer transformer = template.newTransformer();
-            StreamSource xmlFile = new StreamSource(src);
-            StreamResult destFile = new StreamResult(new FileOutputStream(dest));
-            transformer.transform(xmlFile, destFile);
+    public static ByteArrayOutputStream transform(String xmlPath, String xslPath)
+            throws FileNotFoundException, TransformerConfigurationException, TransformerException {
 
-        } catch (FileNotFoundException | TransformerException ex) {
-            ex.printStackTrace();
-        }
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+        TransformerFactory factory = TransformerFactory.newInstance();
+        CustomURIResolver resolver = new CustomURIResolver();
+        factory.setURIResolver(resolver);
+
+//        URI Resolver did not call when using template in transformation
+//        Templates template = factory.newTemplates(new StreamSource(new File(xslPath)));
+        StreamSource source = new StreamSource(new FileInputStream(xmlPath));
+        StreamResult result = new StreamResult(outputStream);
+
+        Transformer trans = factory.newTransformer(new StreamSource(new File(xslPath)));
+        trans.transform(source, result);
+
+        return outputStream;
     }
 
-    public static void transform(String xmlSrc, String xslSrc, String dest) {
-        try {
-            TransformerFactory factory = TransformerFactory.newInstance();
-            CustomURIResolver resolver = new CustomURIResolver();
-            factory.setURIResolver(resolver);
+    public static ByteArrayOutputStream transform(InputStream xmlIs, Templates template)
+            throws FileNotFoundException, TransformerConfigurationException, TransformerException {
 
-            StreamSource xsl = new StreamSource(xslSrc);
-            StreamSource xmlFile = new StreamSource(xmlSrc);
-            StreamResult destFile = new StreamResult(new FileOutputStream(dest));
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 
-            Transformer transformer = factory.newTransformer(xsl);
+        StreamSource source = new StreamSource(xmlIs);
+        StreamResult result = new StreamResult(outputStream);
 
-            transformer.transform(xmlFile, destFile);
+        Transformer trans = template.newTransformer();
+        trans.transform(source, result);
 
-        } catch (FileNotFoundException | TransformerException ex) {
-            ex.printStackTrace();
-        }
+        return outputStream;
     }
 
-    public static DOMResult transform(String srcPath, String xslPath) {
-        DOMResult domResult = new DOMResult();
-        try {
-
-            StreamSource xsl = new StreamSource(xslPath);
-            StreamSource source = new StreamSource(srcPath);
-
-            TransformerFactory factory = TransformerFactory.newInstance();
-            CustomURIResolver resolver = new CustomURIResolver();
-            factory.setURIResolver(resolver);
-
-            Transformer trans = factory.newTransformer(xsl);
-
-            trans.transform(source, domResult);
-
-        } catch (TransformerException ex) {
-            ex.printStackTrace();
-        }
-        return domResult;
-    }
-
+//    public static void transform(String src, String dest, Templates template) {
+//        try {
+//            Transformer transformer = template.newTransformer();
+//            StreamSource xmlFile = new StreamSource(new FileInputStream(src));
+//            StreamResult destFile = new StreamResult(new FileOutputStream(dest));
+//            transformer.transform(xmlFile, destFile);
+//
+//        } catch (FileNotFoundException | TransformerException ex) {
+//            ex.printStackTrace();
+//        }
+//    }
+//    public static void transform(String xmlSrc, String xslSrc, String dest) {
+//        try {
+//            TransformerFactory factory = TransformerFactory.newInstance();
+//
+//            CustomURIResolver resolver = new CustomURIResolver();
+//            factory.setURIResolver(resolver);
+//
+//            File xslFile = new File(xslSrc);
+//            StreamSource xsl = new StreamSource(xslFile);
+//            Templates templates = factory.newTemplates(xsl);
+//
+//            File xmlFile = new File(xmlSrc);
+//            StreamSource xml = new StreamSource(xmlFile);
+//            StreamResult destFile = new StreamResult(new FileOutputStream(dest));
+//
+//            Transformer transformer = templates.newTransformer();
+//
+//            transformer.transform(xml, destFile);
+//
+//        } catch (FileNotFoundException | TransformerException ex) {
+//            ex.printStackTrace();
+//        }
+//    }
+//    public static DOMResult transform(String srcPath, String xslPath) {
+//        DOMResult domResult = new DOMResult();
+//        try {
+//
+//            StreamSource xsl = new StreamSource(xslPath);
+//            StreamSource source = new StreamSource(srcPath);
+//
+//            TransformerFactory factory = TransformerFactory.newInstance();
+//            CustomURIResolver resolver = new CustomURIResolver();
+//            factory.setURIResolver(resolver);
+//
+//            Transformer trans = factory.newTransformer(xsl);
+//
+//            trans.transform(source, domResult);
+//
+//        } catch (TransformerException ex) {
+//            ex.printStackTrace();
+//        }
+//        return domResult;
+//    }
 }

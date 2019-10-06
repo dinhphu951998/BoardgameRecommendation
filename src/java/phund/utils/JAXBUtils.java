@@ -14,6 +14,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
@@ -37,22 +38,28 @@ public class JAXBUtils {
         Unmarshaller u = context.createUnmarshaller();
         return u.unmarshal(new StreamSource(xmlFile));
     }
-    
+
     public static Object unmarshal(Node node, Class classType) throws JAXBException {
         JAXBContext context = JAXBContext.newInstance(classType);
         Unmarshaller u = context.createUnmarshaller();
         return u.unmarshal(new DOMSource(node));
     }
-    
-    public static void marshal(String xmlFile, Object data, Class type) throws JAXBException, FileNotFoundException{
+
+    public static Object unmarshal(InputStream is, Class classType) throws JAXBException {
+        JAXBContext context = JAXBContext.newInstance(classType);
+        Unmarshaller unmarshaller = context.createUnmarshaller();
+        return unmarshaller.unmarshal(is);
+    }
+
+    public static void marshal(String xmlFile, Object data, Class type) throws JAXBException, FileNotFoundException {
         JAXBContext context = JAXBContext.newInstance(type);
         Marshaller m = context.createMarshaller();
         m.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
         m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
         m.marshal(data, new FileOutputStream(xmlFile));
     }
-    
-    public static void marshal(Object data, Node result, Class type) throws JAXBException, FileNotFoundException{
+
+    public static void marshal(Object data, Node result, Class type) throws JAXBException, FileNotFoundException {
         JAXBContext context = JAXBContext.newInstance(type);
         Marshaller m = context.createMarshaller();
         m.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
@@ -73,6 +80,5 @@ public class JAXBUtils {
         JCodeModel code = model.generateCode(null, null);
         code.build(new File(output));
     }
-
 
 }

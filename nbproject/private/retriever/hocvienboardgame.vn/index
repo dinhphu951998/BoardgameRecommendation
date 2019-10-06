@@ -1,0 +1,1977 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Language" content="vi">
+	<meta property = "og:image" content="https://hocvienboardgame.vn/wp-content/uploads/2019/03/concept-artist-cover-image.jpg" />
+	<meta property="og:image:secure_url" content="https://hocvienboardgame.vn/wp-content/uploads/2019/03/concept-artist-cover-image.jpg">
+	<meta name="twitter:image" content="https://hocvienboardgame.vn/wp-content/uploads/2019/03/concept-artist-cover-image.jpg">
+	<script type="text/javascript">
+		const HOME_URL = 'http://localhost/hocvienboardgame';
+		const AJAX_URL = 'https://hocvienboardgame.vn/wp-admin/admin-ajax.php';
+	</script>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-4603106554778904",
+	    enable_page_level_ads: true
+	  });
+	</script>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PKSRL8J');</script>
+	<!-- End Google Tag Manager -->
+	
+<!-- This site is optimized with the Yoast SEO plugin v9.7 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://hocvienboardgame.vn/" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Trang chủ - Học Viện Board Game" />
+<meta property="og:url" content="https://hocvienboardgame.vn/" />
+<meta property="og:site_name" content="Học Viện Board Game" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Trang chủ - Học Viện Board Game" />
+<script type='application/ld+json'>{"@context":"https://schema.org","@type":"WebSite","@id":"https://hocvienboardgame.vn/#website","url":"https://hocvienboardgame.vn/","name":"H\u1ecdc Vi\u1ec7n Board Game","potentialAction":{"@type":"SearchAction","target":"https://hocvienboardgame.vn/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"https://schema.org","@type":"Person","url":"https://hocvienboardgame.vn/","sameAs":[],"@id":"#person","name":"Hoc Vien Boardgame"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/hocvienboardgame.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://hocvienboardgame.vn/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tali-css'  href='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/style.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/css/bootstrap.min.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-css'  href='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/css/slick.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-theme-css'  href='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/css/slick-theme.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='awesome-css'  href='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/css/all.min.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='materialdesignicons-css'  href='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/css/materialdesignicons.min.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/css/style.css?ver=1.0' type='text/css' media='all' />
+<script>if (document.location.protocol != "https:") {document.location = document.URL.replace(/^http:/i, "https:");}</script><script type='text/javascript' src='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/js/jquery-3.3.1.min.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='https://hocvienboardgame.vn/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://hocvienboardgame.vn/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://hocvienboardgame.vn/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.1" />
+<link rel='shortlink' href='https://hocvienboardgame.vn/' />
+<link rel="alternate" type="application/json+oembed" href="https://hocvienboardgame.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhocvienboardgame.vn%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://hocvienboardgame.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhocvienboardgame.vn%2F&#038;format=xml" />
+<title>Trang chủ - Học Viện Board Game</title><link rel="icon" href="https://hocvienboardgame.vn/wp-content/uploads/2019/03/cropped-logo-black-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://hocvienboardgame.vn/wp-content/uploads/2019/03/cropped-logo-black-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://hocvienboardgame.vn/wp-content/uploads/2019/03/cropped-logo-black-180x180.png" />
+<meta name="msapplication-TileImage" content="https://hocvienboardgame.vn/wp-content/uploads/2019/03/cropped-logo-black-270x270.png" />
+
+</head>
+<body data-rsssl=1>
+	<header id="header-homepage" >
+		<div class="header-desktop">
+			<div class="menu-area">
+				<div class="position-left">
+					<a class="logo" href="https://hocvienboardgame.vn" >
+						<img src="https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/images/logo-Website.svg" alt="" class="img-logo">
+					</a>
+				</div>
+				<div class="position-right">
+					<div class="open-close">
+						<button type="button" class="sign-menu">
+							<span class="icon-bar icon1"></span>
+							<span class="icon-bar icon2"></span>
+							<span class="icon-bar icon3"></span>
+							<span class="icon-bar icon4"></span>
+						</div>
+						</button>
+					</div>
+					<div class="box" >
+						<div class="fix-blur">
+							<div class="nav-nav-bar">
+								<div class="nav-menu">
+									<ul id="header-menu-ul" class="navbar-nav navbar-nav-standard"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-396" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item active menu-item-396 nav-item"><a title="Trang chủ" href="https://hocvienboardgame.vn/" class="nav-link">Trang chủ</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-397 nav-item"><a title="Danh Mục" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-397">Danh Mục</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-397" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-399" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-399 nav-item dropdown-submenu"><a title="Abstract/ Chiến thuật trừu tượng" href="https://hocvienboardgame.vn/boardgame/tong-hop-game-abstract-chien-thuat-truu-tuong/" class="dropdown-item">Abstract/ Chiến thuật trừu tượng</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-400" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-400 nav-item dropdown-submenu"><a title="Card/ Thẻ bài" href="https://hocvienboardgame.vn/boardgame/tong-hop-game-card-the-bai/" class="dropdown-item">Card/ Thẻ bài</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-401" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-401 nav-item dropdown-submenu"><a title="Co-op/ Đồng đội" href="https://hocvienboardgame.vn/boardgame/tong-hop-board-game-co-op-dong-doi/" class="dropdown-item">Co-op/ Đồng đội</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-403" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-403 nav-item dropdown-submenu"><a title="Dexterity/ Nhanh nhẹn" href="https://hocvienboardgame.vn/boardgame/tong-hop-game-dexterity-nhanh-nhen/" class="dropdown-item">Dexterity/ Nhanh nhẹn</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-404" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-404 nav-item dropdown-submenu"><a title="Dice/ Xúc xắc" href="https://hocvienboardgame.vn/boardgame/tong-hop-game-dice-xuc-xac/" class="dropdown-item">Dice/ Xúc xắc</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-405" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-405 nav-item dropdown-submenu"><a title="Economic/ Kinh tế" href="https://hocvienboardgame.vn/boardgame/tong-hop-game-economic-kinh-te/" class="dropdown-item">Economic/ Kinh tế</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-406" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-406 nav-item dropdown-submenu"><a title="Hidden Role/ Ẩn vai" href="https://hocvienboardgame.vn/boardgame/tong-hop-game-hidden-role-an-vai/" class="dropdown-item">Hidden Role/ Ẩn vai</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-407" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-407 nav-item dropdown-submenu"><a title="RPG/ Nhập vai" href="https://hocvienboardgame.vn/boardgame/tong-hop-game-rpg-nhap-vai/" class="dropdown-item">RPG/ Nhập vai</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-408" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-408 nav-item dropdown-submenu"><a title="Tile laying/ Đặt thẻ" href="https://hocvienboardgame.vn/boardgame/tong-hop-game-tile-laying-dat-the/" class="dropdown-item">Tile laying/ Đặt thẻ</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1492" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1492 nav-item dropdown-submenu"><a title="Tiểu thuyết" href="https://hocvienboardgame.vn/boardgame/tong-hop-board-game-tieu-thuyet/" class="dropdown-item">Tiểu thuyết</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1489 nav-item"><a title="Tin Tức" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-1489">Tin Tức</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-1489" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3141" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3141 nav-item dropdown-submenu"><a title="Review" href="https://hocvienboardgame.vn/review/" class="dropdown-item">Review</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3145" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3145 nav-item dropdown-submenu"><a title="Góc chuyên gia" href="https://hocvienboardgame.vn/tong-hop-tin-tuc-goc-chuyen-gia/" class="dropdown-item">Góc chuyên gia</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-3153" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3153 nav-item dropdown-submenu"><a title="Mẹo chơi" href="https://hocvienboardgame.vn/meo-choi/" class="dropdown-item">Mẹo chơi</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-398" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-398 nav-item"><a title="Liên Hệ" href="https://hocvienboardgame.vn/lien-he/" class="nav-link">Liên Hệ</a></li>
+</ul>								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text_group">
+					<a href="http://forum.hocvienboardgame.vn">Tham gia Cộng đồng</a>
+					<i class="fas fa-angle-double-up"></i>
+				</div>
+			</div>
+		</div>
+	</header>	<main id="page-header">
+		<section id="header_wrapper" class="section header_wrapper">
+			<div class="scrolling-porfolio">
+					<div class="background-porfolio" style="background-image:url('https://hocvienboardgame.vn/wp-content/uploads/2019/03/concept-artist-cover-image.jpg')">
+		<div class="text-inner">
+			<div class="text-search">
+				<h1 class="title">HỌC VIỆN BOARD GAME</h1>
+				<h2 class="sub-title">Nơi ‘gà mờ’ thành ‘gà chiến’</h2>
+				<div class="search">
+					<form class="formSearch" action="https://hocvienboardgame.vn" method="get">
+	<input class="inputSearch" type="search" placeholder="Hôm nay bạn muốn chơi game nào?" aria-label="Search" autocomplete="off" name="s">
+	<div class="filter">
+		<img src="https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/images/filter.svg" alt="">
+	</div>
+	<button class="btn btn-outline-light buttonSearch" type="submit">
+		<img src="https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/images/icons/icon-search.svg" alt="Icon search" class="iconSearch">
+	</button>
+</form>
+<div id="load-data">
+	<div class="loading-gif">
+		<img src="https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/images/modal-loader.gif" class="loading">
+	</div>
+	<div class="loading-item"></div>
+</div>					<div class="fix-blur"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+				
+<div class="list-game">
+	<div class="list-image-row" data-row1-big="8 " data-row1-medium = "8" data-row1-small= "9">
+												<article class="item small">
+						<a href="https://hocvienboardgame.vn/king-of-tokyo/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/img_213_MAIN-odk6vpt8kltznis6bx1hevynv3009o0cbzdpobd08g.png" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">King of Tokyo</h4>
+								</div>
+							</div>
+							<div class="sub-title">King of Tokyo</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-king-of-new-york/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/tgbg-king-of-newyork-1_grande-odi9cr8pwfgw06gzuzzavi1ic3rtktfi7h9mp2iwz4.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">King of New York</h4>
+								</div>
+							</div>
+							<div class="sub-title">King of New York</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-patchwork/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/54ec12abb464a-odd8txxnxt2z18d1dcnb4ycq21llx8l7pc400kdqwg.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Patchwork</h4>
+								</div>
+							</div>
+							<div class="sub-title">Patchwork</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-mascarade/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/mascarade-oczrql1gbl2814v447ve19scgq9pub9n1ql6irh6cw.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Mascarade</h4>
+								</div>
+							</div>
+							<div class="sub-title">Mascarade</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/cach-choi-board-game-dong-hanh/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-dong-hanh-chi-tiet-1-ocjfhjkj1haezbp45tqtqq2rvf7ihmvt5496p0vx4g.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Đồng hành</h4>
+								</div>
+							</div>
+							<div class="sub-title">Đồng hành</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-board-game-xom-chim/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-xom-chim-chi-tiet-3-oc90o25ftjq6etqhmoyxf9adysvfmlormknse5t5dc.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Xóm chim</h4>
+								</div>
+							</div>
+							<div class="sub-title">Xóm chim</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-isle-of-skye/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/header-ocoylsjmde2ykjeymcairuaqnjtj4wc40nowqwg9rk.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Isle of Skye</h4>
+								</div>
+							</div>
+							<div class="sub-title">Isle of Skye</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-board-game-i-hate-zomebie/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/i-hate-zombie-oc79kfmz5i1k4lecbrrajht7lpfbc1hqn2lpehyyr4.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">I Hate Zombies</h4>
+								</div>
+							</div>
+							<div class="sub-title">I Hate Zombies</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-luat-choi-board-game-carcassonne/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-luat-choi-board-game-carcassonne-chi-tiet-1-oc5gqsptlxgxwh4w4jkpnvoaehmg8c47gn5fmo2smo.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Carcassonne</h4>
+								</div>
+							</div>
+							<div class="sub-title">Carcassonne</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/cach-choi-lop-hoc-mat-ngu/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-Lop-Hoc-Mat-Ngu-Cuoc-Dua-Sao-Choi-oc0cik7hjwfsy4tuq8150022lh2lzflja4cmm7rdrk.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Lớp Học Mật Ngữ</h4>
+								</div>
+							</div>
+							<div class="sub-title">Lớp Học Mật Ngữ</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-luat-choi-marvel-champions-the-card-game/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-marvel-champions-the-card-game-obx0iv4pnb3lmzfgq0dl928c0cb22spa1lvrm0m8og.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Marvel Champions The Card Game</h4>
+								</div>
+							</div>
+							<div class="sub-title">Marvel Champions The Card Game</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-pandemic/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-pandemic-chi-tiet-2-obwu48garpduzcfkfthyyrdsvv1wgc4803fvkwkpdc.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Pandemic</h4>
+								</div>
+							</div>
+							<div class="sub-title">Pandemic</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-coup-rebellion-g54/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/A18WFVhUAtL._SL1500_-oc22r61oorns3m815qjzllbn8teo9kng03dvh5l9ps.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Coup: Rebellion G54</h4>
+								</div>
+							</div>
+							<div class="sub-title">Coup: Rebellion G54</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-board-game-dixit/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-dixit-obx1fuavf28qyhj15rje88ni9zrn4im9ktu0qhq0ds.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Dixit</h4>
+								</div>
+							</div>
+							<div class="sub-title">Dixit</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-halli-galli/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/Halli-Galli_swan-obkndp6mxfuuo2vjfjlw7gfr4wb1buwnsek6fjafsg.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Halli Galli</h4>
+								</div>
+							</div>
+							<div class="sub-title">Halli Galli</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-lost-cities/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/Lost-Cities-The-Board-Game.w610.h610.fill_-obkgs3jbd2ljwk06uu8vxex5ejevm7n9sdxn9jl0mo.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Lost Cities</h4>
+								</div>
+							</div>
+							<div class="sub-title">Lost Cities</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-co-tuong/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-choi-co-tuong-chi-tiet-o5j8butr0aphdt3rrr0wglre3xpq49a4hd8g4a6c8g.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Cờ tướng</h4>
+								</div>
+							</div>
+							<div class="sub-title">Cờ tướng</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/cach-choi-board-game-patchwork/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-patchwork-ob537ibde9v19ne5tliovbooo0w6t2izv0zd9bwh2o.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Patchwork</h4>
+								</div>
+							</div>
+							<div class="sub-title">Patchwork</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/cach-choi-boardgame-kingdomino/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-kingdomino-1-oazr732y539xjs2ninxlgnf297cj46oq5pj3cl0qy8.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Kingdomino</h4>
+								</div>
+							</div>
+							<div class="sub-title">Kingdomino</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/board-game-century-spice-road/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/Century-Spice-Road-ob505aqm2kzpzlhadgig0mw18m3vanzzpjaukdb8mo.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Century: Spice Road</h4>
+								</div>
+							</div>
+							<div class="sub-title">Century: Spice Road</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-skull-sieu-chi-tiet/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/614L8vwopqL-oatl3rw5d2aqedpiinbgi8m6rv7tohuuwlezpvqx68.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Skull</h4>
+								</div>
+							</div>
+							<div class="sub-title">Skull</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/cach-choi-boardgame-katamino/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-boargame-katamino-6-oat8wv5641gp5b8zfxcv7zvp0qjpghez86yugiiuls.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">KATAMINO</h4>
+								</div>
+							</div>
+							<div class="sub-title">KATAMINO</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/cach-choi-haikyu-volleyball-card-game/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-boardgame-haikyu-volleyball-card-game-oa9stnn34u66cmbdh78mtfsbzzybwhfbrw6kr9kl80.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">HAIKYU!! VOLLEYBALL CARD GAME</h4>
+								</div>
+							</div>
+							<div class="sub-title">HAIKYU!! VOLLEYBALL CARD GAME</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-board-game-love-letter-chi-tiet/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/BackSilhouette-o9scik3wuwbxjbtg4gz27seqrslxkm69lr3hl94tww.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Love Letter</h4>
+								</div>
+							</div>
+							<div class="sub-title">Love Letter</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/cach-choi-board-game-mr-jack/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/pic3066125-o9l5srozlwgf0um741959lai893a562qqrxf0ws60g.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Mr Jack</h4>
+								</div>
+							</div>
+							<div class="sub-title">Mr Jack</div>
+						</a>
+					</article>
+					</div>
+	<div class="list-image-row" data-row2-big="8 " data-row2-medium = "8" data-row2-small= "8">
+												<article class="item medium">
+						<a href="https://hocvienboardgame.vn/cach-choi-boardgame-spot-it/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/Spot_It_logo-o8x2zfro1gpk7c3nbuww6nbxaa73bs2o2q56xv8kmo.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Spot it</h4>
+								</div>
+							</div>
+							<div class="sub-title">Spot it</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/cach-choi-boardgame-sheriff-of-nottingham/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-boardgame-sheriff-ò-nottingham-1-o8rtbqpito3x03pla1s613d2it1igpldornjc0qbn4.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Sheriff of Nottingham</h4>
+								</div>
+							</div>
+							<div class="sub-title">Sheriff of Nottingham</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-choi-boardgame-rut-khi/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/maxresdefault-2-o8kq2v2hs385c52ivltgfdhzulutx9dqo1gcnf68vk.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">RÚT KHỈ</h4>
+								</div>
+							</div>
+							<div class="sub-title">RÚT KHỈ</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-board-game-hoi-pho/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/main-o8v7xwkdkurj4fw5o3fxd70ic071y9ihwuf4nbt3e8.png" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Hội Phố</h4>
+								</div>
+							</div>
+							<div class="sub-title">Hội Phố</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-boardgame-onitama/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-onitama-1-o8kgxfksje9ec1l3iphk2078w3kr84kdpif4n9mflc.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Onitama</h4>
+								</div>
+							</div>
+							<div class="sub-title">Onitama</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/cach-choi-meo-no/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/1_exploding_kittens-o852h3d3q227jb3bvqp0rxe9t1jqf1ei306f2l0m7k.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Mèo nổ</h4>
+								</div>
+							</div>
+							<div class="sub-title">Mèo nổ</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-tokaido/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/pic1293719-o7pm1cctou3sp2bs8enukdbm15httrqqz1opy4ajjk.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Tokaido</h4>
+								</div>
+							</div>
+							<div class="sub-title">Tokaido</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/cach-choi-boardgame-parfum/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-boardgame-parfum-o7gaum6k7tnywjx6fzxkyv74nmuunao8aajvrdqz5c.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Parfum</h4>
+								</div>
+							</div>
+							<div class="sub-title">Parfum</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/cach-choi-rut-go-jenga/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/jenga-o7f39myuebupgky76ar3hajgeq5fbexs8klil2378w.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Rút gỗ Jenga</h4>
+								</div>
+							</div>
+							<div class="sub-title">Rút gỗ Jenga</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-pyramid-poker/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-boardgame-pyramid-poker-o7ez7yx99mg082jgrtzhkjuua24ng1najkzm6c2lio.jpeg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Pyramid Poker</h4>
+								</div>
+							</div>
+							<div class="sub-title">Pyramid Poker</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-luat-choi-cheating-moth/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/feature-01-2-o7dl7scoe64p11emkozl9tkhu6zzsd1p1i8oet7y40.png" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Cheating Moth</h4>
+								</div>
+							</div>
+							<div class="sub-title">Cheating Moth</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-shadow-hunter/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/feature-01-o79u1mtp9yqe2zrkhrt5ga0mntnfyfr6ca6oeibcds.png" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Shadow Hunter</h4>
+								</div>
+							</div>
+							<div class="sub-title">Shadow Hunter</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-choi-board-game-liars-dice/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/pic605236-1-o780s786vmjaqsg5j7ta65du2hpihuo1bo1na9ucts.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Liar’s Dice</h4>
+								</div>
+							</div>
+							<div class="sub-title">Liar’s Dice</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-harry-potter-hogwarts-battle/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-harry-potter-hogwarts-battle-o712rkpiljcwbccxv5aoxxc6een9k3t3iphaqp5rw0.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Harry Potter: Hogwarts Battle</h4>
+								</div>
+							</div>
+							<div class="sub-title">Harry Potter: Hogwarts Battle</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-choi-boardgame-thanos-rising-de-hieu-don-gian/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/0001-o6xn9qofkbch006jewsh3bem0tlhpp5klvdqar1jsg.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Thanos Rising: Avengers Infinity War</h4>
+								</div>
+							</div>
+							<div class="sub-title">Thanos Rising: Avengers Infinity War</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-boardgame-domino/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-choi-domino-chi-tiet-o6qt3oj8rzus34tfm8iyxmk6wlk6hne4uqz7mmwnlc.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Domino</h4>
+								</div>
+							</div>
+							<div class="sub-title">Domino</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-board-game-reef/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/pic4012598-o6qk8ig456xptsffc9vga61leipctkbab0bt8854ds.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Reef</h4>
+								</div>
+							</div>
+							<div class="sub-title">Reef</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-luat-choi-five-tribes/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-five-tribes-o6q8p2q1k88gi5vg776gri2hosc7tg23isd6em44fk.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Five Tribes</h4>
+								</div>
+							</div>
+							<div class="sub-title">Five Tribes</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-boardgame-azul/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-azul-o6q5zsfe7j22v36qa5ajp1v0b3ul57u859m09md0fk.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Azul</h4>
+								</div>
+							</div>
+							<div class="sub-title">Azul</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/luat-choi-board-game-sushi-go/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/hinhdaidien-01-o6l9t19oxoazhge3igfofmgal2h8gjjlfjpizytrao.png" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Sushi Go!</h4>
+								</div>
+							</div>
+							<div class="sub-title">Sushi Go!</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/tim-hieu-luat-choi-spyfall/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-spyfall-o6l0m55129c6f714oxco6mfqczelscx9ls544bfzow.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Spyfall</h4>
+								</div>
+							</div>
+							<div class="sub-title">Spyfall</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/cach-choi-splendor/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-boardgame-splendor-o6jjgcso6nia0swwv6j1126t9m7wtmbk5ewj9v1ab4.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Splendor</h4>
+								</div>
+							</div>
+							<div class="sub-title">Splendor</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-santorini-chi-tiet-nhat/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/pic3283110_0e4b365d0da14dfcb29bfd468b79a57a_grande-o6g3d4xro480ktsqa79cyciqdgkiv3rvaqiasamhrk.png" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Santorini</h4>
+								</div>
+							</div>
+							<div class="sub-title">Santorini</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-yamatai/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/yamatai-hocvienboardgame-o5524rzokdk7yeb7lz9w2z0rq4phhk928rno19860g.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Yamatai</h4>
+								</div>
+							</div>
+							<div class="sub-title">Yamatai</div>
+						</a>
+					</article>
+					</div>
+	<div class="list-image-row" data-row3-big="8 " data-row3-medium = "8" data-row3-small= "8">
+												<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-boardgame-len-mam/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-Len-Mam-2-o672o56mnavef0pnskisv0vqxa4nxta4vlayfm0ewg.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Lên Mâm</h4>
+								</div>
+							</div>
+							<div class="sub-title">Lên Mâm</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/cach-choi-tam-quoc-sat-quoc-chien/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/tam-quốc-sát-feature-o67d0agagyb9165dpxkcjm4lq5v8frod1jmjkg85f4.png" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Tam Quốc Sát &#8211; Quốc Chiến</h4>
+								</div>
+							</div>
+							<div class="sub-title">Tam Quốc Sát &#8211; Quốc Chiến</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/dau-tri-co-mat-chuoc-nhu-trong-phim-tvb/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-choi-mat-chuoc-kieu-hong-kong-o6g4tii0hrx7ilpufuayw4pe0eetrxpf5z6bhcyr1s.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Mạt chược (Kiểu Hồng Kông)</h4>
+								</div>
+							</div>
+							<div class="sub-title">Mạt chược (Kiểu Hồng Kông)</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/luat-choi-captain-sonar-chi-tiet/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/featureimage-01-o62co7nlhl5b9m95w723od8qpihpy3ktgqs6pc3er4.png" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Captain Sonar</h4>
+								</div>
+							</div>
+							<div class="sub-title">Captain Sonar</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-ticket-to-ride/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-choi-ticket-to-ride-chi-tiet-1-o5kq8pwqr3lq7tw4hp6nxu1b7vg1t4dhbqzjmofsds.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Ticket To Ride</h4>
+								</div>
+							</div>
+							<div class="sub-title">Ticket To Ride</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/cach-choi-deception-murder-in-hongkong/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/pic2568916-o611es0mlk0frtol2qp8bpvowwn8xp027fblyatto0.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">DECEPTION: MURDER IN HONGKONG</h4>
+								</div>
+							</div>
+							<div class="sub-title">DECEPTION: MURDER IN HONGKONG</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-soi-ultimate-chi-tiet-nhat/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/Werewolfcover-o60i01po85i3b2mm67m4bjhbwilm1m37t12q4gud0w.png" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Sói Ultimate &#8211; Ultimate Werewolf</h4>
+								</div>
+							</div>
+							<div class="sub-title">Sói Ultimate &#8211; Ultimate Werewolf</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-soi-one-night-one-night-ultimate-werewolf/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/soi1dem-01-o5kt7m3zytxmjemeawlahuyf7ckr5yqkottedhy0s0.png" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Sói One night &#8211; One Night Ultimate Werewolf</h4>
+								</div>
+							</div>
+							<div class="sub-title">Sói One night &#8211; One Night Ultimate Werewolf</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-soi-millers-the-werewolves-of-millers-hollow/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/masoi-o5hfgd61zhli9dj9e7zt5ygqqd1su1jndrgp9t14ds.png" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Sói Millers &#8211; The Werewolves of Millers Hollow</h4>
+								</div>
+							</div>
+							<div class="sub-title">Sói Millers &#8211; The Werewolves of Millers Hollow</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-poker/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-choi-poker-chi-tiet-o5j524jh0bjl82448d03nt9zljzp10wfano37mqhkg.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Poker</h4>
+								</div>
+							</div>
+							<div class="sub-title">Poker</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-secret-hitler-2016/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/secret-hitler-3-hocvienboardgame.vn_-o5j948kbd7k5xxvn1iod8xxftrtpj8ycpud8s23ecw.png" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Secret Hitler (2016)</h4>
+								</div>
+							</div>
+							<div class="sub-title">Secret Hitler (2016)</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-monopoly/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-choi-board-game-monopoly-chi-tiet-o5h851npfb4rty0rzwfa5wl3vgx3ij6nig8we9ghgw.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Monopoly</h4>
+								</div>
+							</div>
+							<div class="sub-title">Monopoly</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-camel-up/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/4250231705588-o5gyu3u24kmis4jft4d3ofc3knskp9hxgnk84q2qnk.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Camel Up</h4>
+								</div>
+							</div>
+							<div class="sub-title">Camel Up</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-catan/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-choi-board-game-catan-chi-tiet-3-o5dr0971q6ewb3hbt6hgx68q5ugivkh7tt2ybir7n4.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">CATAN</h4>
+								</div>
+							</div>
+							<div class="sub-title">CATAN</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-avalon/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-avalon-o5701nk6f8z5hwentew81cilvhcb532ty5hjszff5c.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">The Resistance: Avalon</h4>
+								</div>
+							</div>
+							<div class="sub-title">The Resistance: Avalon</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-witch-hunt/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/witchhunt-01-o5a3v39uszhu7p8i3fic7jjho4h7cvs627o88qvg4w.png" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Witch Hunt</h4>
+								</div>
+							</div>
+							<div class="sub-title">Witch Hunt</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-unlock/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/unlock-01-o5a45wf1eeajq9j8z3pvvtcbln75vkp1jpr8xaugkw.png" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Unlock!</h4>
+								</div>
+							</div>
+							<div class="sub-title">Unlock!</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-coup-chi-tiet/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/imgp6394-o8iq6ogrgo751kju1ukzthsbdyolcch0tpzf90p5rk.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Coup</h4>
+								</div>
+							</div>
+							<div class="sub-title">Coup</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-board-game-mat-ma-da-vinci/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/the-da-vinci-code-e1553318168553-o5a4pdmn0sygbd8p8itkjwe6r36zds0sw4fgxpyrn4.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Mật Mã Da Vinci</h4>
+								</div>
+							</div>
+							<div class="sub-title">Mật Mã Da Vinci</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-tro-choi-o-an-quan/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/4_1-o4uoup646vufqfvbjsobqiwid5aac90fogem3jzzhs.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Ô Ăn Quan</h4>
+								</div>
+							</div>
+							<div class="sub-title">Ô Ăn Quan</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-bang-the-dice-game/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/Bang-The-Dice-Game-hocvienboardgame.vn_-1-o628drs8kjq9o4l6pxruhu98zdpm8fgikbz51n333k.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">BANG &#8211; The dice game</h4>
+								</div>
+							</div>
+							<div class="sub-title">BANG &#8211; The dice game</div>
+						</a>
+					</article>
+														<article class="item small">
+						<a href="https://hocvienboardgame.vn/huong-dan-choi-co-ca-ngua/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/photo-1-1506685018866-o4usrycz8l7oguospurzfvo83p212rsaflrgeik4fk.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Cờ Cá Ngựa</h4>
+								</div>
+							</div>
+							<div class="sub-title">Cờ Cá Ngựa</div>
+						</a>
+					</article>
+														<article class="item medium">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-bai-uno/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-uno-chi-tiet-o5kimp0kcuhfk9xflr13jheot02utpijbganzoqkc0.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Uno</h4>
+								</div>
+							</div>
+							<div class="sub-title">Uno</div>
+						</a>
+					</article>
+														<article class="item big">
+						<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-co-vua/" class="porfolio-item">
+							<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-co-vua-chi-tiet-nhat-o4sw5lsvohhpmh0atj6twrhsiz3afvo74igttvdbao.jpg" alt="" class="porfolio-img">
+							<div class="text-holder">
+								<div class="text-item">
+									<h4 class="name">Cờ vua</h4>
+								</div>
+							</div>
+							<div class="sub-title">Cờ vua</div>
+						</a>
+					</article>
+					</div>
+</div>				<div class="list-game mobile">
+									<article class="item ">
+					<a href="https://hocvienboardgame.vn/king-of-tokyo/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/img_213_MAIN-odk6vpt8kltznis6bx1hevynv3009o0cbzdpobd08g.png" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">King of Tokyo</h4>
+							</div>
+							<div class="sub-title">King of Tokyo</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-king-of-new-york/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/tgbg-king-of-newyork-1_grande-odi9cr8pwfgw06gzuzzavi1ic3rtktfi7h9mp2iwz4.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">King of New York</h4>
+							</div>
+							<div class="sub-title">King of New York</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-patchwork/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/54ec12abb464a-odd8txxnxt2z18d1dcnb4ycq21llx8l7pc400kdqwg.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Patchwork</h4>
+							</div>
+							<div class="sub-title">Patchwork</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-mascarade/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/mascarade-oczrql1gbl2814v447ve19scgq9pub9n1ql6irh6cw.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Mascarade</h4>
+							</div>
+							<div class="sub-title">Mascarade</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/cach-choi-board-game-dong-hanh/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-dong-hanh-chi-tiet-1-ocjfhjkj1haezbp45tqtqq2rvf7ihmvt5496p0vx4g.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Đồng hành</h4>
+							</div>
+							<div class="sub-title">Đồng hành</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-board-game-xom-chim/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-xom-chim-chi-tiet-3-oc90o25ftjq6etqhmoyxf9adysvfmlormknse5t5dc.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Xóm chim</h4>
+							</div>
+							<div class="sub-title">Xóm chim</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-isle-of-skye/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/header-ocoylsjmde2ykjeymcairuaqnjtj4wc40nowqwg9rk.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Isle of Skye</h4>
+							</div>
+							<div class="sub-title">Isle of Skye</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-board-game-i-hate-zomebie/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/i-hate-zombie-oc79kfmz5i1k4lecbrrajht7lpfbc1hqn2lpehyyr4.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">I Hate Zombies</h4>
+							</div>
+							<div class="sub-title">I Hate Zombies</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-luat-choi-board-game-carcassonne/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-luat-choi-board-game-carcassonne-chi-tiet-1-oc5gqsptlxgxwh4w4jkpnvoaehmg8c47gn5fmo2smo.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Carcassonne</h4>
+							</div>
+							<div class="sub-title">Carcassonne</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/cach-choi-lop-hoc-mat-ngu/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-Lop-Hoc-Mat-Ngu-Cuoc-Dua-Sao-Choi-oc0cik7hjwfsy4tuq8150022lh2lzflja4cmm7rdrk.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Lớp Học Mật Ngữ</h4>
+							</div>
+							<div class="sub-title">Lớp Học Mật Ngữ</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-luat-choi-marvel-champions-the-card-game/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-marvel-champions-the-card-game-obx0iv4pnb3lmzfgq0dl928c0cb22spa1lvrm0m8og.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Marvel Champions The Card Game</h4>
+							</div>
+							<div class="sub-title">Marvel Champions The Card Game</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-pandemic/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-pandemic-chi-tiet-2-obwu48garpduzcfkfthyyrdsvv1wgc4803fvkwkpdc.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Pandemic</h4>
+							</div>
+							<div class="sub-title">Pandemic</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-coup-rebellion-g54/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/A18WFVhUAtL._SL1500_-oc22r61oorns3m815qjzllbn8teo9kng03dvh5l9ps.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Coup: Rebellion G54</h4>
+							</div>
+							<div class="sub-title">Coup: Rebellion G54</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-board-game-dixit/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-dixit-obx1fuavf28qyhj15rje88ni9zrn4im9ktu0qhq0ds.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Dixit</h4>
+							</div>
+							<div class="sub-title">Dixit</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-halli-galli/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/Halli-Galli_swan-obkndp6mxfuuo2vjfjlw7gfr4wb1buwnsek6fjafsg.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Halli Galli</h4>
+							</div>
+							<div class="sub-title">Halli Galli</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-lost-cities/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/Lost-Cities-The-Board-Game.w610.h610.fill_-obkgs3jbd2ljwk06uu8vxex5ejevm7n9sdxn9jl0mo.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Lost Cities</h4>
+							</div>
+							<div class="sub-title">Lost Cities</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-co-tuong/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-choi-co-tuong-chi-tiet-o5j8butr0aphdt3rrr0wglre3xpq49a4hd8g4a6c8g.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Cờ tướng</h4>
+							</div>
+							<div class="sub-title">Cờ tướng</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/cach-choi-board-game-patchwork/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-patchwork-ob537ibde9v19ne5tliovbooo0w6t2izv0zd9bwh2o.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Patchwork</h4>
+							</div>
+							<div class="sub-title">Patchwork</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/cach-choi-boardgame-kingdomino/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-kingdomino-1-oazr732y539xjs2ninxlgnf297cj46oq5pj3cl0qy8.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Kingdomino</h4>
+							</div>
+							<div class="sub-title">Kingdomino</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/board-game-century-spice-road/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/Century-Spice-Road-ob505aqm2kzpzlhadgig0mw18m3vanzzpjaukdb8mo.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Century: Spice Road</h4>
+							</div>
+							<div class="sub-title">Century: Spice Road</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-skull-sieu-chi-tiet/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/614L8vwopqL-oatl3rw5d2aqedpiinbgi8m6rv7tohuuwlezpvqx68.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Skull</h4>
+							</div>
+							<div class="sub-title">Skull</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/cach-choi-boardgame-katamino/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-boargame-katamino-6-oat8wv5641gp5b8zfxcv7zvp0qjpghez86yugiiuls.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">KATAMINO</h4>
+							</div>
+							<div class="sub-title">KATAMINO</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/cach-choi-haikyu-volleyball-card-game/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-boardgame-haikyu-volleyball-card-game-oa9stnn34u66cmbdh78mtfsbzzybwhfbrw6kr9kl80.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">HAIKYU!! VOLLEYBALL CARD GAME</h4>
+							</div>
+							<div class="sub-title">HAIKYU!! VOLLEYBALL CARD GAME</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-board-game-love-letter-chi-tiet/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/BackSilhouette-o9scik3wuwbxjbtg4gz27seqrslxkm69lr3hl94tww.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Love Letter</h4>
+							</div>
+							<div class="sub-title">Love Letter</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/cach-choi-board-game-mr-jack/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/pic3066125-o9l5srozlwgf0um741959lai893a562qqrxf0ws60g.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Mr Jack</h4>
+							</div>
+							<div class="sub-title">Mr Jack</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/cach-choi-boardgame-spot-it/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/Spot_It_logo-o8x2zfro1gpk7c3nbuww6nbxaa73bs2o2q56xv8kmo.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Spot it</h4>
+							</div>
+							<div class="sub-title">Spot it</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/cach-choi-boardgame-sheriff-of-nottingham/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-boardgame-sheriff-ò-nottingham-1-o8rtbqpito3x03pla1s613d2it1igpldornjc0qbn4.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Sheriff of Nottingham</h4>
+							</div>
+							<div class="sub-title">Sheriff of Nottingham</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-choi-boardgame-rut-khi/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/maxresdefault-2-o8kq2v2hs385c52ivltgfdhzulutx9dqo1gcnf68vk.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">RÚT KHỈ</h4>
+							</div>
+							<div class="sub-title">RÚT KHỈ</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-board-game-hoi-pho/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/main-o8v7xwkdkurj4fw5o3fxd70ic071y9ihwuf4nbt3e8.png" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Hội Phố</h4>
+							</div>
+							<div class="sub-title">Hội Phố</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-boardgame-onitama/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-onitama-1-o8kgxfksje9ec1l3iphk2078w3kr84kdpif4n9mflc.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Onitama</h4>
+							</div>
+							<div class="sub-title">Onitama</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/cach-choi-meo-no/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/1_exploding_kittens-o852h3d3q227jb3bvqp0rxe9t1jqf1ei306f2l0m7k.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Mèo nổ</h4>
+							</div>
+							<div class="sub-title">Mèo nổ</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-tokaido/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/pic1293719-o7pm1cctou3sp2bs8enukdbm15httrqqz1opy4ajjk.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Tokaido</h4>
+							</div>
+							<div class="sub-title">Tokaido</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/cach-choi-boardgame-parfum/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-boardgame-parfum-o7gaum6k7tnywjx6fzxkyv74nmuunao8aajvrdqz5c.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Parfum</h4>
+							</div>
+							<div class="sub-title">Parfum</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/cach-choi-rut-go-jenga/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/jenga-o7f39myuebupgky76ar3hajgeq5fbexs8klil2378w.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Rút gỗ Jenga</h4>
+							</div>
+							<div class="sub-title">Rút gỗ Jenga</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-pyramid-poker/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-boardgame-pyramid-poker-o7ez7yx99mg082jgrtzhkjuua24ng1najkzm6c2lio.jpeg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Pyramid Poker</h4>
+							</div>
+							<div class="sub-title">Pyramid Poker</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-luat-choi-cheating-moth/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/feature-01-2-o7dl7scoe64p11emkozl9tkhu6zzsd1p1i8oet7y40.png" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Cheating Moth</h4>
+							</div>
+							<div class="sub-title">Cheating Moth</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-shadow-hunter/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/feature-01-o79u1mtp9yqe2zrkhrt5ga0mntnfyfr6ca6oeibcds.png" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Shadow Hunter</h4>
+							</div>
+							<div class="sub-title">Shadow Hunter</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-choi-board-game-liars-dice/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/pic605236-1-o780s786vmjaqsg5j7ta65du2hpihuo1bo1na9ucts.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Liar’s Dice</h4>
+							</div>
+							<div class="sub-title">Liar’s Dice</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-harry-potter-hogwarts-battle/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-harry-potter-hogwarts-battle-o712rkpiljcwbccxv5aoxxc6een9k3t3iphaqp5rw0.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Harry Potter: Hogwarts Battle</h4>
+							</div>
+							<div class="sub-title">Harry Potter: Hogwarts Battle</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-choi-boardgame-thanos-rising-de-hieu-don-gian/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/0001-o6xn9qofkbch006jewsh3bem0tlhpp5klvdqar1jsg.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Thanos Rising: Avengers Infinity War</h4>
+							</div>
+							<div class="sub-title">Thanos Rising: Avengers Infinity War</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-boardgame-domino/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-choi-domino-chi-tiet-o6qt3oj8rzus34tfm8iyxmk6wlk6hne4uqz7mmwnlc.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Domino</h4>
+							</div>
+							<div class="sub-title">Domino</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-board-game-reef/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/pic4012598-o6qk8ig456xptsffc9vga61leipctkbab0bt8854ds.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Reef</h4>
+							</div>
+							<div class="sub-title">Reef</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-luat-choi-five-tribes/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-five-tribes-o6q8p2q1k88gi5vg776gri2hosc7tg23isd6em44fk.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Five Tribes</h4>
+							</div>
+							<div class="sub-title">Five Tribes</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-boardgame-azul/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-azul-o6q5zsfe7j22v36qa5ajp1v0b3ul57u859m09md0fk.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Azul</h4>
+							</div>
+							<div class="sub-title">Azul</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/luat-choi-board-game-sushi-go/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/hinhdaidien-01-o6l9t19oxoazhge3igfofmgal2h8gjjlfjpizytrao.png" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Sushi Go!</h4>
+							</div>
+							<div class="sub-title">Sushi Go!</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/tim-hieu-luat-choi-spyfall/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-spyfall-o6l0m55129c6f714oxco6mfqczelscx9ls544bfzow.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Spyfall</h4>
+							</div>
+							<div class="sub-title">Spyfall</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/cach-choi-splendor/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-boardgame-splendor-o6jjgcso6nia0swwv6j1126t9m7wtmbk5ewj9v1ab4.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Splendor</h4>
+							</div>
+							<div class="sub-title">Splendor</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-santorini-chi-tiet-nhat/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/pic3283110_0e4b365d0da14dfcb29bfd468b79a57a_grande-o6g3d4xro480ktsqa79cyciqdgkiv3rvaqiasamhrk.png" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Santorini</h4>
+							</div>
+							<div class="sub-title">Santorini</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-yamatai/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/yamatai-hocvienboardgame-o5524rzokdk7yeb7lz9w2z0rq4phhk928rno19860g.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Yamatai</h4>
+							</div>
+							<div class="sub-title">Yamatai</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-boardgame-len-mam/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-Len-Mam-2-o672o56mnavef0pnskisv0vqxa4nxta4vlayfm0ewg.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Lên Mâm</h4>
+							</div>
+							<div class="sub-title">Lên Mâm</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/cach-choi-tam-quoc-sat-quoc-chien/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/tam-quốc-sát-feature-o67d0agagyb9165dpxkcjm4lq5v8frod1jmjkg85f4.png" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Tam Quốc Sát &#8211; Quốc Chiến</h4>
+							</div>
+							<div class="sub-title">Tam Quốc Sát &#8211; Quốc Chiến</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/dau-tri-co-mat-chuoc-nhu-trong-phim-tvb/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-choi-mat-chuoc-kieu-hong-kong-o6g4tii0hrx7ilpufuayw4pe0eetrxpf5z6bhcyr1s.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Mạt chược (Kiểu Hồng Kông)</h4>
+							</div>
+							<div class="sub-title">Mạt chược (Kiểu Hồng Kông)</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/luat-choi-captain-sonar-chi-tiet/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/featureimage-01-o62co7nlhl5b9m95w723od8qpihpy3ktgqs6pc3er4.png" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Captain Sonar</h4>
+							</div>
+							<div class="sub-title">Captain Sonar</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-ticket-to-ride/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-choi-ticket-to-ride-chi-tiet-1-o5kq8pwqr3lq7tw4hp6nxu1b7vg1t4dhbqzjmofsds.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Ticket To Ride</h4>
+							</div>
+							<div class="sub-title">Ticket To Ride</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/cach-choi-deception-murder-in-hongkong/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/pic2568916-o611es0mlk0frtol2qp8bpvowwn8xp027fblyatto0.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">DECEPTION: MURDER IN HONGKONG</h4>
+							</div>
+							<div class="sub-title">DECEPTION: MURDER IN HONGKONG</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-soi-ultimate-chi-tiet-nhat/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/Werewolfcover-o60i01po85i3b2mm67m4bjhbwilm1m37t12q4gud0w.png" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Sói Ultimate &#8211; Ultimate Werewolf</h4>
+							</div>
+							<div class="sub-title">Sói Ultimate &#8211; Ultimate Werewolf</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-soi-one-night-one-night-ultimate-werewolf/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/soi1dem-01-o5kt7m3zytxmjemeawlahuyf7ckr5yqkottedhy0s0.png" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Sói One night &#8211; One Night Ultimate Werewolf</h4>
+							</div>
+							<div class="sub-title">Sói One night &#8211; One Night Ultimate Werewolf</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-soi-millers-the-werewolves-of-millers-hollow/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/masoi-o5hfgd61zhli9dj9e7zt5ygqqd1su1jndrgp9t14ds.png" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Sói Millers &#8211; The Werewolves of Millers Hollow</h4>
+							</div>
+							<div class="sub-title">Sói Millers &#8211; The Werewolves of Millers Hollow</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-poker/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-choi-poker-chi-tiet-o5j524jh0bjl82448d03nt9zljzp10wfano37mqhkg.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Poker</h4>
+							</div>
+							<div class="sub-title">Poker</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-secret-hitler-2016/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/secret-hitler-3-hocvienboardgame.vn_-o5j948kbd7k5xxvn1iod8xxftrtpj8ycpud8s23ecw.png" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Secret Hitler (2016)</h4>
+							</div>
+							<div class="sub-title">Secret Hitler (2016)</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-monopoly/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-choi-board-game-monopoly-chi-tiet-o5h851npfb4rty0rzwfa5wl3vgx3ij6nig8we9ghgw.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Monopoly</h4>
+							</div>
+							<div class="sub-title">Monopoly</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-camel-up/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/4250231705588-o5gyu3u24kmis4jft4d3ofc3knskp9hxgnk84q2qnk.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Camel Up</h4>
+							</div>
+							<div class="sub-title">Camel Up</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-catan/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-choi-board-game-catan-chi-tiet-3-o5dr0971q6ewb3hbt6hgx68q5ugivkh7tt2ybir7n4.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">CATAN</h4>
+							</div>
+							<div class="sub-title">CATAN</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-avalon/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-board-game-avalon-o5701nk6f8z5hwentew81cilvhcb532ty5hjszff5c.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">The Resistance: Avalon</h4>
+							</div>
+							<div class="sub-title">The Resistance: Avalon</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-witch-hunt/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/witchhunt-01-o5a3v39uszhu7p8i3fic7jjho4h7cvs627o88qvg4w.png" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Witch Hunt</h4>
+							</div>
+							<div class="sub-title">Witch Hunt</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-unlock/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/unlock-01-o5a45wf1eeajq9j8z3pvvtcbln75vkp1jpr8xaugkw.png" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Unlock!</h4>
+							</div>
+							<div class="sub-title">Unlock!</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-coup-chi-tiet/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/imgp6394-o8iq6ogrgo751kju1ukzthsbdyolcch0tpzf90p5rk.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Coup</h4>
+							</div>
+							<div class="sub-title">Coup</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-mat-ma-da-vinci/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/the-da-vinci-code-e1553318168553-o5a4pdmn0sygbd8p8itkjwe6r36zds0sw4fgxpyrn4.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Mật Mã Da Vinci</h4>
+							</div>
+							<div class="sub-title">Mật Mã Da Vinci</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-tro-choi-o-an-quan/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/4_1-o4uoup646vufqfvbjsobqiwid5aac90fogem3jzzhs.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Ô Ăn Quan</h4>
+							</div>
+							<div class="sub-title">Ô Ăn Quan</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-bang-the-dice-game/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/Bang-The-Dice-Game-hocvienboardgame.vn_-1-o628drs8kjq9o4l6pxruhu98zdpm8fgikbz51n333k.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">BANG &#8211; The dice game</h4>
+							</div>
+							<div class="sub-title">BANG &#8211; The dice game</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-choi-co-ca-ngua/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/photo-1-1506685018866-o4usrycz8l7oguospurzfvo83p212rsaflrgeik4fk.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Cờ Cá Ngựa</h4>
+							</div>
+							<div class="sub-title">Cờ Cá Ngựa</div>
+						</div>
+					</a>
+				</article>
+											<article class="item big">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-bai-uno/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-uno-chi-tiet-o5kimp0kcuhfk9xflr13jheot02utpijbganzoqkc0.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Uno</h4>
+							</div>
+							<div class="sub-title">Uno</div>
+						</div>
+					</a>
+				</article>
+											<article class="item ">
+					<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-co-vua/" class="porfolio-item">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/huong-dan-cach-choi-co-vua-chi-tiet-nhat-o4sw5lsvohhpmh0atj6twrhsiz3afvo74igttvdbao.jpg" alt="" class="porfolio-img">
+						<div class="text-holder">
+							<div class="text-item">
+								<h4 class="name">Cờ vua</h4>
+							</div>
+							<div class="sub-title">Cờ vua</div>
+						</div>
+					</a>
+				</article>
+			</div>				<div class="box-up-filter">
+	<div class="frame-filter">
+		<div class="open-frame">
+			<img src="https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/images/icons/icon-close.svg" alt="Icon close" class="iconClose">
+		</div>
+		<div class="box-inner-filter">
+			<form class="list-item" method="GET" action="https://hocvienboardgame.vn">
+				<div class="item-select">
+					<p>Số lượng người chơi:</p>
+					<input type="text" id="number_person" name="people" class="filter" placeholder="Nhóm bạn có bao nhiêu người ?">
+				</div>
+				<div class="item-select">
+					<p>Thời gian chơi:</p>
+					<input type="radio" name="chooseone" value="1" class="age_radio" checked="checked">Dưới 30p<br>
+					<input type="radio" name="chooseone" value="2" class="age_radio" >Từ 30p - 60p<br>
+					<input type="radio" name="chooseone" value="3" class="age_radio" >Từ 60p - 120p<br>
+					<input type="radio" name="chooseone" value="4" class="age_radio" >Trên 120p<br>
+				</div>
+				<div class="item-select">
+					<p>Độ nặng game:</p>
+					<input type="radio" name="chooseweight" value="1" class="weight_radio" checked="checked">Dưới 1<br>
+					<input type="radio" name="chooseweight" value="2" class="weight_radio" >1-2<br>
+					<input type="radio" name="chooseweight" value="3" class="weight_radio" >2-3<br>
+					<input type="radio" name="chooseweight" value="4" class="weight_radio" >3-4<br>
+					<input type="radio" name="chooseweight" value="5" class="weight_radio" >Trên 4<br>
+				</div>
+				<div class="button_search">
+					<span>TÌM KIẾM NGAY</span>
+				</div>
+			</form>
+			<div class="section category_post">
+				<h1 class="title-category">Kết quả tìm kiếm</h1>
+				<div class="loading-gif">
+					<img src="https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/images/modal-loader.gif" class="loading" style="width:160px;">
+				</div>
+				<div class="frame-post">
+					<div class="content-post" id='load_data_filter'>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>			</div>
+			<div class="button-arrow-right">
+				<a  class="btt_arrow" href="#" >
+					<img src="https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/images/next.png" alt="" class="img-arrow">
+				</a>
+			</div>
+			<div class="icon-mouse">
+				<a  class="link-mouse" href="#" >
+					<img src="https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/images/mouse.svg" alt="" class="img-mouse">
+					<i class="fas fa-angle-double-down"></i>
+				</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer footer_homepage  ">
+		<div class="container">
+			<div class="footer-four-item">
+				<div class="item">
+					<div class="logo">
+						<img src="https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/images/logo-Website.svg" alt="">
+					</div>
+					<div class="content">
+						Nơi cung cấp thông tin và hướng dẫn dành cho các board game "thủ".
+					</div>
+					<a href="https://www.dmca.com/Protection/Status.aspx?ID=45e9cb2a-6454-499a-a0a1-72c64053771d" title="Content Protection by DMCA.com" class="dmca-badge"><img src="https://images.dmca.com/Badges/dmca-badge-w200-5x1-09.png?ID=45e9cb2a-6454-499a-a0a1-72c64053771d" alt="Content Protection by DMCA.com"></a><script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+				</div>
+				<div class="item">
+					<div class="title">Game mới nhất</div>
+						<div class="item-inner">
+		<div class="link">
+			<div class="item-images">
+				<div class="wrap-image">
+					<a href="https://hocvienboardgame.vn/king-of-tokyo/">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/img_213_MAIN-odk6vpt6i1w1wwwttrkhtjxg3lu8jojmbxkx7xjq6k.png" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="infomation">
+				<a href="https://hocvienboardgame.vn/king-of-tokyo/"><h3 class="sub-title">King of Tokyo</h3></a>
+				<div class="time">
+					17 - 09 - 2019				</div>
+			</div>
+		</div>
+	</div>
+	<div class="item-inner">
+		<div class="link">
+			<div class="item-images">
+				<div class="wrap-image">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-king-of-new-york/">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/tgbg-king-of-newyork-1_grande-odi9cr8ntviy9klncuiba60akmm1utys7fgu8opmx8.jpg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="infomation">
+				<a href="https://hocvienboardgame.vn/huong-dan-board-game-king-of-new-york/"><h3 class="sub-title">King of New York</h3></a>
+				<div class="time">
+					10 - 09 - 2019				</div>
+			</div>
+		</div>
+	</div>
+	<div class="item-inner">
+		<div class="link">
+			<div class="item-images">
+				<div class="wrap-image">
+					<a href="https://hocvienboardgame.vn/huong-dan-board-game-patchwork/">
+						<img src="https://hocvienboardgame.vn/wp-content/uploads/bfi_thumb/54ec12abb464a-odd8txxlv951amhov76bjmbiakfu794hpab7k6kguk.jpg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="infomation">
+				<a href="https://hocvienboardgame.vn/huong-dan-board-game-patchwork/"><h3 class="sub-title">Patchwork</h3></a>
+				<div class="time">
+					09 - 09 - 2019				</div>
+			</div>
+		</div>
+	</div>
+				</div>
+				<div class="item">
+					<div class="title">Facebook</div>
+					<div class="wrap-link-img">
+						<div class="fb-page" data-href="https://www.facebook.com/hocvienboardgame.vn/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" ><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="title">Game yêu thích</div>
+					<ul class="list-love-game">
+												    						        <li class="item-lovegame">
+									<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-poker/">
+										Cách chơi poker									</a>
+								</li>
+						    						        <li class="item-lovegame">
+									<a href="https://hocvienboardgame.vn/huong-dan-cach-choi-poker/">
+										Hướng dẫn cách chơi Poker									</a>
+								</li>
+						    											</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="bottom-inner">
+					<div class="item-col-1">
+						<div class="title">Made with pride by Tali</div>
+					</div>
+					<div class="item-col-2">
+						<div class="network-social">
+							<a href="https://www.facebook.com/hocvienboardgame.vn/" class="icon"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+							<a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+							<a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a id="edgt-back-to-top" href="#" class="edgt-back-to-top">
+            <span class="edgt-icon-stack">
+                <img src="https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/images/backtotop.png" alt="Back-to-Top">
+            </span>
+        </a>
+	</footer>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2"></script>
+	<script>
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.7";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKSRL8J"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<script type='text/javascript' src='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/js/popper.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/js/bootstrap.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/js/bootbox.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/js/bootbox.locales.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/js/all.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/js/slick.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/js/scroll-converter.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/js/jquery.validate.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/js/Chart.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/js/Chart.bundle.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/js/platform.js?ver=1.0'></script>
+<script type='text/javascript' src='https://hocvienboardgame.vn/wp-content/themes/hocvienboardgame/assets/js/script.js?ver=1.0'></script>
+<script type='text/javascript' src='https://hocvienboardgame.vn/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
+ 
+</body>
+</html>

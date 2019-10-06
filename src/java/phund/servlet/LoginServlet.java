@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import phund.jpaclass.Account;
+import phund.entity.Account;
 import phund.service.AccountServiceImp;
 import phund.service.AccountService;
 

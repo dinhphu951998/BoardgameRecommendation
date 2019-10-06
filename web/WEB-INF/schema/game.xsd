@@ -7,8 +7,6 @@ and open the template in the editor.
 
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://xml.netbeans.org/boardgame"
-           xmlns="http://xml.netbeans.org/boardgame"
            elementFormDefault="qualified">
     
     <xs:include schemaLocation="image.xsd"/>
@@ -17,9 +15,9 @@ and open the template in the editor.
     <xs:complexType name="game">
         <xs:sequence>
             <xs:element name="title" type="xs:string"/>
-            <xs:element name="category" type="xs:string"/>
+            <xs:element name="category" type="xs:string" minOccurs="0"/>
             <xs:element name="thumbnail" type="xs:string"/>
-            <xs:element name="description" type="xs:string"/>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
             <xs:element name="link" type="xs:string"/>
             <xs:element name="images" type="image" maxOccurs="unbounded"/>
             <xs:element name="criteria" type="criteria"/>

@@ -5,22 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Boardgame recommendation</title>
-    <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="vendors/css/grid.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" 
-          href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
-          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/index-css.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Arial:300,400,700,900" rel="stylesheet">
 </head>
 
 <body>
+    <div class="container">
 
-    <h1>Welcome to boardgame recommendation</h1>
-    <form method="POST" action="ProcessServlet">
-        username <input type="text" name="username" /> <br/> password <input type="password" name="password" /><br/>
-        <input type="submit" name="btnSubmit" value="Login">
-    </form>
+
+        <div class="login-cover">
+            <h2>Board game recommendation</h2>
+
+            <form action="">
+
+                <input type="text" class="input-box" placeholder="Username" name="username" value="phund"/>
+                <br />
+                <input type="password" class="input-box" placeholder="Password" name="password" value="123"/>
+                <br />
+                <input type="submit" class="btn" value="Login" name="btnSubmit">
+
+            </form>
+
+
+        </div>
+
+    </div>
 
 </body>
 

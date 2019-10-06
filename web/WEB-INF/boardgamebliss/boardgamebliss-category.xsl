@@ -29,9 +29,9 @@
                 <xsl:variable name="href" select="a/@href"/>
                 <xsl:variable name="link" select="concat($host, $href)"/>
                 
-                <mainImage>
+                <thumbnail>
                     <xsl:value-of select="a/div/img/@src"/>
-                </mainImage>
+                </thumbnail>
                 <link>
                     <xsl:value-of select="$link"/>
                 </link>

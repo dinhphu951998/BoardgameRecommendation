@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<board-game 
+    xmlns:prefix="https://www.boardgamebliss.com/" xmlns:exsl="http://exslt.org/common">
+    <game>
+        <thumbnail>//cdn.shopify.com/s/files/1/0274/9631/products/Rattus_-_Arabian_Traders_60x.jpg?v=1395527102</thumbnail>
+        <link>https://www.boardgamebliss.com//collections/all/products/rattus-arabian-traders</link>
+        <title>Rattus: Arabian Traders (Import)</title>
+        <images>
+            <image>//cdn.shopify.com/s/files/1/0274/9631/products/Rattus_-_Arabian_Traders_1600x.jpg?v=1395527102</image>
+        </images>
+        <numPlayer>
+            <minPlayer>2</minPlayer>
+            <maxPlayer>6</maxPlayer>
+        </numPlayer>
+        <time>
+            <minTime>45</minTime>
+        </time>
+        <age>
+            <minAge>10</minAge>
+        </age>
+        <description></description>
+    </game>
+    <game>
+        <thumbnail>//cdn.shopify.com/s/files/1/0274/9631/products/pic3167080_027e1871-d4e4-4fc6-a043-8bccfb53e879_60x.png?v=1489768632</thumbnail>
+        <link>https://www.boardgamebliss.com//collections/all/products/kepler-3042-minor-damage</link>
+        <title>Kepler-3042 (Minor Damage)</title>
+        <images>
+            <image>//cdn.shopify.com/s/files/1/0274/9631/products/pic3167080_027e1871-d4e4-4fc6-a043-8bccfb53e879_1600x.png?v=1489768632</image>
+        </images>
+        <numPlayer>
+            <minPlayer>1</minPlayer>
+            <maxPlayer>4</maxPlayer>
+        </numPlayer>
+        <time>
+            <minTime>60</minTime>
+            <maxTime>90</maxTime>
+        </time>
+        <age>
+            <minAge>14</minAge>
+        </age>
+        <description></description>
+    </game>
+    <game>
+        <thumbnail>//cdn.shopify.com/s/files/1/0274/9631/products/pic2909347_f06c2824-2e2e-487b-90bd-70ca7b311d09_60x.png?v=1481554450</thumbnail>
+        <link>https://www.boardgamebliss.com//collections/all/products/tikal-french-import-minor-damage</link>
+        <title>Tikal (French) (Minor Damage)</title>
+        <images>
+            <image>//cdn.shopify.com/s/files/1/0274/9631/products/pic2909347_f06c2824-2e2e-487b-90bd-70ca7b311d09_1600x.png?v=1481554450</image>
+        </images>
+        <numPlayer>
+            <minPlayer>2</minPlayer>
+            <maxPlayer>4</maxPlayer>
+        </numPlayer>
+        <time>
+            <minTime>120</minTime>
+        </time>
+        <age>
+            <minAge>10</minAge>
+        </age>
+        <description>Note: This game is in FrenchTikal is a game of exploration within the Central American jungles in search of lost temples and the treasures within. Players send their team of explorers into the jungle, exposing more and more of the terrain. Along the way, you find temples that require further uncovering and treasures. Players attempt to score points for occupying temples and holding onto treasure.Tikal is the first game of the Mask Trilogy. </description>
+    </game>
+    <game>
+        <thumbnail>//cdn.shopify.com/s/files/1/0274/9631/products/pic4314491_c7d6cb1e-808f-493c-92ef-0ec54dcd505c_60x.jpg?v=1545067033</thumbnail>
+        <link>https://www.boardgamebliss.com//collections/all/products/yggdrasil-new-edition-minor-damage</link>
+        <title>Yggdrasil (New Edition) (Import) (Minor Damage)</title>
+        <images>
+            <image>//cdn.shopify.com/s/files/1/0274/9631/products/pic4314491_c7d6cb1e-808f-493c-92ef-0ec54dcd505c_1600x.jpg?v=1545067033</image>
+        </images>
+        <numPlayer>
+            <minPlayer>1</minPlayer>
+            <maxPlayer>6</maxPlayer>
+        </numPlayer>
+        <time>
+            <minTime>90</minTime>
+        </time>
+        <age>
+            <minAge>13</minAge>
+        </age>
+        <description></description>
+    </game>
+    <game>
+        <thumbnail>//cdn.shopify.com/s/files/1/0274/9631/products/Drum_Roll_077072c7-ff2a-4b0d-815b-e5d37422f768_60x.jpg?v=1428643376</thumbnail>
+        <link>https://www.boardgamebliss.com//collections/all/products/drum-roll-minor-damage</link>
+        <title>Drum Roll (Minor Damage)</title>
+        <images>
+            <image>//cdn.shopify.com/s/files/1/0274/9631/products/Drum_Roll_077072c7-ff2a-4b0d-815b-e5d37422f768_1600x.jpg?v=1428643376</image>
+        </images>
+        <numPlayer>
+            <minPlayer>2</minPlayer>
+            <maxPlayer>4</maxPlayer>
+        </numPlayer>
+        <time>
+            <minTime>90</minTime>
+        </time>
+        <age>
+            <minAge>12</minAge>
+        </age>
+        <description>In Drum Roll each player takes over the role of a circus owner in the early 1900s. Each player moves around Europe hiring performers and giving shows.There are five main categories of performers: the Tamers, the Acrobats, the Bizarre, the Magicians, and the Jugglers. Each of them have different demands the player must fulfill in order to give their best performance.The requirements, which vary between performers, are Rehearsal, Equipment, Supplies, Costumes, and Promotion. There are three levels of performances that each performer can end up doing in a show: a poor one, a good one, and an outstanding one. The higher the level of performance, the more requirements each performer will have to fulfill in order to achieve it.The better the performance, the more each player can get out of it. When performers do outstanding performances, the player must choose between getting the maximum amount of benefit out of them, or getting the Prestige Points they are offering. There are also other ways to improve a circus such as trailers, investments, and personnel that will help your performers do their best.</description>
+    </game>
+    <game>
+        <thumbnail>//cdn.shopify.com/s/files/1/0274/9631/products/Coney_Island_67dd2c53-111c-4454-a80a-416934da56b9_60x.jpg?v=1433821931</thumbnail>
+        <link>https://www.boardgamebliss.com//collections/all/products/coney-island-minor-damage</link>
+        <title>Coney Island (Minor Damage)</title>
+        <images>
+            <image>//cdn.shopify.com/s/files/1/0274/9631/products/Coney_Island_67dd2c53-111c-4454-a80a-416934da56b9_1600x.jpg?v=1433821931</image>
+        </images>
+        <numPlayer>
+            <minPlayer>2</minPlayer>
+            <maxPlayer>4</maxPlayer>
+        </numPlayer>
+        <time>
+            <minTime>60</minTime>
+        </time>
+        <age>
+            <minAge>10</minAge>
+        </age>
+        <description>There's still much left to do in order to become the world's largest and most diverse amusement park! Your family (one of four) has a small, but steady income that should suffice to hire a few showmen to bring life to the oh-so-empty park site. As you earn more, you can afford a favor or two: the police officer is kinder to you, you can hire a migrant worker to do extra work, and you can even finagle the attention of a promoter or a journalist!The families will need to co-operate from time to time; after all, those grand attractions don't build themselves. In the end, the grand attractions are what will impress the crowds and bring about euphoric headlines in the newspapers!To set up Coney Island, each player takes two money tiles, a random building material and a player board, covering most of the spaces on that board with showmen tiles. At the start of each turn, a player receives income. At the beginning of the game a player's income is one VP, one money and one randomly drawn building material; as the game progresses, the player can remove showmen tiles to uncover VP, money and material spaces, thereby boosting his income. A player can never have more than five money tiles and five materials.A player then takes one to three main actions and up to five special actions:By spending two money, a player can acquire one of five character tiles (either from the supply or another player); each character provides a special action that the player can use each turn, such as spending money or VPs for material or buying newspaper tiles (which are worth points and can be spent for an additional action).Each main action may be executed at most once per turn unless extra actions are used from newspapers or from bonuses earned by placing certain building site tiles.After one player reaches 60 VP, and each player has had the same number of turns, the game ends, with players scoring their newspaper tiles and losing points for each showman on their player boards. The player with the most points wins.</description>
+    </game>
+</board-game>

@@ -21,6 +21,7 @@ import phund.service.AccountService;
 public class ProcessServlet extends HttpServlet {
 
     private final String LOGIN_SERVLET = "LoginServlet";
+    private final String CRAWL_SERVLET = "CrawlServlet";
     private final String LOGIN_PAGE = "index.html";
 
     private AccountService accountService;
@@ -41,6 +42,8 @@ public class ProcessServlet extends HttpServlet {
 
             } else if (btnSubmit.equals("Login")) {
                 url = LOGIN_SERVLET;
+            }else if(btnSubmit.equals("Crawl")){
+                url = CRAWL_SERVLET;
             }
 
         } finally {

@@ -5,7 +5,7 @@
  */
 package phund.repository;
 
-import phund.jpaclass.Account;
+import phund.entity.Account;
 
 /**
  *

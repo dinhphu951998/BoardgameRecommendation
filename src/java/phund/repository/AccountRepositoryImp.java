@@ -8,7 +8,7 @@ package phund.repository;
 import java.util.HashMap;
 import java.util.Map;
 import javax.persistence.Query;
-import phund.jpaclass.Account;
+import phund.entity.Account;
 
 /**
  *

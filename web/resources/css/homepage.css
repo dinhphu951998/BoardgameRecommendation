@@ -1,0 +1,258 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Arial';
+    text-rendering: optimizeLegibility;
+    color: white;
+    font-size: 14px;
+}
+
+.btn {
+    background-color: #00acac;
+    width: 350px;
+    height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 20px;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    transition-delay: 0.08s;
+}
+
+header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url("https://miro.medium.com/max/3840/1*fcOemY1xrwLcWUnX8l8g8Q.jpeg");
+    background-position: center;
+    height: 100vh;
+}
+
+.menu {
+    border-bottom: 1px solid #6c757d;
+    padding: 5px 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+section {
+    padding: 50px 120px;
+}
+
+h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+ul {
+    text-align: center;
+    margin-top: 5px;
+    float: right;
+    margin-right: 100px;
+}
+
+ul li {
+    list-style-type: none;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+ul li a {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    color: #00acac;
+}
+
+.input-box {
+    width: 350px;
+    height: 35px;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: white;
+    color: #2d353c;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.search-box {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    text-align: center;
+}
+
+.search-box input {
+    height: 60px;
+    width: 100vh;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.game-section {
+    color: #495057;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.title p {
+    font-size: 16px;
+}
+
+.game-section img {
+    width: 270px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.desc span {
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.game-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.game-item {
+    position: relative;
+}
+
+.game-item img {
+    transition: 0.7s;
+}
+
+.game-item:hover .rate,
+.game-item:active .rate {
+    opacity: 1;
+    transform: translateY(-50px);
+    z-index: 1;
+}
+
+.game-item:hover img,
+.game-item:active img {
+    filter: blur(1px) brightness(50%);
+}
+
+
+/*----------rating----------*/
+
+
+/* Base setup */
+
+.rate {
+    display: inline-block;
+    border: 0;
+    transition: 0.4s;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+
+/* Hide radio */
+
+.rate>input {
+    display: none;
+}
+
+
+/* Order correctly by floating highest to the right */
+
+.rate>label {
+    float: right;
+}
+
+.rate label {
+    color: #b6c2c9;
+}
+
+
+/* The star of the show */
+
+.rate>label:before {
+    display: inline-block;
+    font-size: 2.5rem;
+    padding: .3rem .2rem;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: "\f005 ";
+    /* full star */
+}
+
+
+/* Zero stars rating */
+
+.rate>label:last-child:before {
+    content: "\f006 ";
+    /* empty star outline */
+}
+
+
+/* Half star trick */
+
+.rate .half:before {
+    content: "\f089 ";
+    /* half star no outline */
+    position: absolute;
+    padding-right: 0;
+}
+
+
+/* Click + hover color */
+
+input:checked~label,
+
+/* color current and previous stars on checked */
+
+label:hover,
+label:hover~label {
+    color: #00acac;
+}
+
+
+/* color previous stars on hover */
+
+
+/* Hover highlights */
+
+input:checked+label:hover,
+input:checked~label:hover,
+
+/* highlight current and previous stars */
+
+input:checked~label:hover~label,
+
+/* highlight previous selected stars for new rating */
+
+label:hover~input:checked~label
+/* highlight previous selected stars */
+
+{
+    color: #00acac;
+}

@@ -7,9 +7,6 @@ package phund.resolver;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.xml.transform.*;
 import javax.xml.transform.stream.StreamSource;
 import phund.checker.XmlSyntaxChecker;
@@ -22,7 +19,6 @@ import phund.utils.HttpUtils;
  */
 public class CustomURIResolver implements URIResolver {
 
-    private final String STAGING_FILE = "src/xml/parser/hocvienboardgame/staging.xml";
     private int count = 0;
 
     @Override
@@ -37,7 +33,6 @@ public class CustomURIResolver implements URIResolver {
             XmlSyntaxChecker checker = new XmlSyntaxChecker();
             content = checker.refineHtml(content);
             content = checker.check(content);
-            FileUtils.writeFile(STAGING_FILE, content);
 
             InputStream stream = new ByteArrayInputStream(content.toString().getBytes());
             return new StreamSource(stream);

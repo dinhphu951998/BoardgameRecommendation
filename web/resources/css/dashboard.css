@@ -1,0 +1,11 @@
+header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url("../img/chess-king-1372062558Apo.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+button[class=btn] {
+    margin-left: 50px;
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<board-game
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='boardgame.xsd'>
+    <games id="">
+        <title></title>
+        <category></category>
+        <thumbnail></thumbnail>
+        <description></description>
+        <link></link>
+        <images id="" gameId="">
+            <imageUrl></imageUrl>
+        </images>
+        <images id="" gameId="">
+            <imageUrl></imageUrl>
+        </images>
+        <images id="" gameId="">
+            <imageUrl></imageUrl>
+        </images>
+        <criteria id="" gameId="">
+            <minAge></minAge>
+            <maxAge></maxAge>
+            <minTime></minTime>
+            <maxTime></maxTime>
+            <minPlayer></minPlayer>
+            <maxPlayer></maxPlayer>
+        </criteria>
+    </games>
+    <games id="">
+        <title></title>
+        <category></category>
+        <thumbnail></thumbnail>
+        <description></description>
+        <link></link>
+        <images id="" gameId="">
+            <imageUrl></imageUrl>
+        </images>
+        <criteria id="" gameId="">
+            <minAge></minAge>
+            <maxAge></maxAge>
+            <minTime></minTime>
+            <maxTime></maxTime>
+            <minPlayer></minPlayer>
+            <maxPlayer></maxPlayer>
+        </criteria>
+    </games>
+    <games id="">
+        <title></title>
+        <category></category>
+        <thumbnail></thumbnail>
+        <description></description>
+        <link></link>
+        <images id="" gameId="">
+            <imageUrl></imageUrl>
+        </images>
+        <criteria id="" gameId="">
+            <minAge></minAge>
+            <maxAge></maxAge>
+            <minTime></minTime>
+            <maxTime></maxTime>
+            <minPlayer></minPlayer>
+            <maxPlayer></maxPlayer>
+        </criteria>
+    </games>
+
+</board-game>

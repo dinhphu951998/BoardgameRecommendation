@@ -1,7 +1,32 @@
 * {
-    color: #265077;
-    color: #022140;
-    color: #494b68;
-    color: #1e4258;
-    color: #2d5f5d;
+    blue: #348fe2;
+    indigo: #8753de;
+    purple: #727cb6;
+    pink: #fb5597;
+    red: #ff5b57;
+    orange: #f59c1a;
+    yellow: #ffd900;
+    green: #32a932;
+    teal: #00acac;
+    cyan: #49b6d6;
+    gray: #6c757d;
+    gray-dark: #343a40;
+    dark-darker: #1a2229;
+    muted: #627884;
+    primary: #00acac;
+    secondary: #6c757d;
+    success: #00acac;
+    info: #49b6d6;
+    warning: #f59c1a;
+    danger: #ff5b57;
+    light: #f2f3f4;
+    dark: #2d353c;
+    inverse: #2d353c;
+    black: #000000;
+    white: #FFFFFF;
+    grey: #b6c2c9;
+    muted: #b6c2c9;
+    silver: #b6c2c9;
+    lime: #90ca4b;
+    aqua: #49b6d6;
 }

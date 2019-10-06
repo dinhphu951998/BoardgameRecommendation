@@ -15,7 +15,7 @@
     <xsl:output method="xml" indent="yes"/>
 
     <xsl:import href="boardgamehub-category.xsl"/>
-    <xsl:import href="tokenizer.xsl"/>
+    <xsl:import href="../xsl/tokenizer.xsl"/>
     
     <xsl:template match="prefix:board-game">
         <xsl:variable name="crawlPages">

@@ -7,18 +7,16 @@ and open the template in the editor.
 
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://xml.netbeans.org/boardgame"
-           xmlns="http://xml.netbeans.org/boardgame"
            elementFormDefault="qualified">
     
     <xs:complexType name="criteria">
         <xs:sequence>
-            <xs:element name="minAge" type="xs:integer"/>
-            <xs:element name="maxAge" type="xs:integer"/>
-            <xs:element name="minTime" type="xs:integer"/>
-            <xs:element name="maxTime" type="xs:integer"/>
-            <xs:element name="minPlayer" type="xs:integer"/>
-            <xs:element name="maxPlayer" type="xs:integer"/>
+            <xs:element name="minAge" type="xs:integer" minOccurs="0"/>
+            <xs:element name="maxAge" type="xs:integer" minOccurs="0"/>
+            <xs:element name="minTime" type="xs:integer" minOccurs="0"/>
+            <xs:element name="maxTime" type="xs:integer" minOccurs="0"/>
+            <xs:element name="minPlayer" type="xs:integer" minOccurs="0"/>
+            <xs:element name="maxPlayer" type="xs:integer" minOccurs="0"/>
         </xs:sequence>
         <xs:attribute name="id" type="xs:integer"/>
         <xs:attribute name="gameId" type="xs:integer"/>

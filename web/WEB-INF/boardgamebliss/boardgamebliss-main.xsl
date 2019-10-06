@@ -12,10 +12,10 @@
                 xmlns:prefix="https://www.boardgamebliss.com/" 
                 xmlns:exsl="http://exslt.org/common"
                 version="1.0">
-    <xsl:output method="xml" indent="yes"/>
+    <xsl:output method="xml" indent="yes" />
 
     <xsl:import href="boardgamebliss-category.xsl"/>
-    <xsl:import href="tokenizer.xsl"/>
+    <xsl:import href="../xsl/tokenizer.xsl"/>
     
     <xsl:template match="prefix:board-game">
         <xsl:variable name="crawlPages">

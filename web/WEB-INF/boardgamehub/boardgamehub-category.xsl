@@ -35,9 +35,9 @@
                     <xsl:value-of select="$link"/>
                 </link>
             
-                <mainImage>
+                <thumbnail>
                     <xsl:value-of select=".//img/@src"/>
-                </mainImage>
+                </thumbnail>
             
                 <xsl:variable name="doc" select="document($link)"/>
                 <xsl:call-template name="CrawlGameDetail">

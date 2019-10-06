@@ -33,9 +33,9 @@
                     <xsl:value-of select="$link"/>
                 </link>
                 
-                <mainImage>
+                <thumbnail>
                     <xsl:value-of select="div[@class='post-image']//img/@src"/>
-                </mainImage>
+                </thumbnail>
                 
                 <category>
                     <xsl:apply-templates select=".//span[@class='cat-links']"/>

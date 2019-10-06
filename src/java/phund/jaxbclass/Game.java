@@ -7,6 +7,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -25,8 +26,8 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="thumbnail" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="link" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="images" type="{http://xml.netbeans.org/boardgame}image" maxOccurs="unbounded"/>
- *         &lt;element name="criteria" type="{http://xml.netbeans.org/boardgame}criteria"/>
+ *         &lt;element name="images" type="{}image" maxOccurs="unbounded"/>
+ *         &lt;element name="criteria" type="{}criteria"/>
  *       &lt;/sequence>
  *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}string" />
  *     &lt;/restriction>
@@ -46,6 +47,7 @@ import javax.xml.bind.annotation.XmlType;
     "images",
     "criteria"
 })
+@XmlRootElement(name = "game")
 public class Game {
 
     @XmlElement(required = true)
