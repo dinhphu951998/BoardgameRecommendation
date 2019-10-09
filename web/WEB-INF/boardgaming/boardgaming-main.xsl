@@ -52,13 +52,13 @@
         
         <xsl:variable name="pagination" select="$page//div[@class='navigation']//div[@class='pagination']"/>
         
-<!--        <xsl:if test="$pagination/span[@class='current']/following-sibling::*[1]">
+        <xsl:if test="$pagination/span[@class='current']/following-sibling::*[1]">
             <xsl:variable name="nextLink" select="$pagination/span[@class='current']/following-sibling::*[1]/@href"/>
             <xsl:call-template name="CrawlTheLink">
                 <xsl:with-param name="link" select="$nextLink"/>
                 <xsl:with-param name="host" select="$host"/>
             </xsl:call-template>
-        </xsl:if>-->
+        </xsl:if>
         
     </xsl:template>
 

@@ -18,6 +18,10 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -30,6 +34,7 @@ import javax.xml.bind.annotation.XmlTransient;
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Game.findAll", query = "SELECT g FROM Game g")
+    , @NamedQuery(name = "Game.findAllGetTitle", query = "SELECT g.id, g.title FROM Game g")
     , @NamedQuery(name = "Game.findById", query = "SELECT g FROM Game g WHERE g.id = :id")
     , @NamedQuery(name = "Game.findByTitle", query = "SELECT g FROM Game g WHERE g.title = :title")
     , @NamedQuery(name = "Game.findByCategory", query = "SELECT g FROM Game g WHERE g.category = :category")
@@ -41,7 +46,10 @@ import javax.xml.bind.annotation.XmlTransient;
     , @NamedQuery(name = "Game.findByMinTime", query = "SELECT g FROM Game g WHERE g.minTime = :minTime")
     , @NamedQuery(name = "Game.findByMaxTime", query = "SELECT g FROM Game g WHERE g.maxTime = :maxTime")
     , @NamedQuery(name = "Game.findByMinPlayer", query = "SELECT g FROM Game g WHERE g.minPlayer = :minPlayer")
-    , @NamedQuery(name = "Game.findByMaxPlayer", query = "SELECT g FROM Game g WHERE g.maxPlayer = :maxPlayer")})
+    , @NamedQuery(name = "Game.findByMaxPlayer", query = "SELECT g FROM Game g WHERE g.maxPlayer = :maxPlayer")
+    , @NamedQuery(name = "Game.findByRatingPoint", query = "SELECT g FROM Game g ORDER BY g.ratingPoint desc")})
+
+@XmlAccessorType(XmlAccessType.NONE)
 public class Game implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -72,14 +80,13 @@ public class Game implements Serializable {
     private Integer minPlayer;
     @Column(name = "MaxPlayer")
     private Integer maxPlayer;
+    @Column(name = "RatingPoint")
+    private Integer ratingPoint;
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "game")
-    private Collection<Vote> voteCollection;
-    @OneToMany(mappedBy = "gameId", cascade = CascadeType.PERSIST)
+    private Collection<Vote> votes;
+    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "gameId")
     private Collection<Image> images;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "game")
-    private Collection<ItemBasedPoint> itemBasedPointCollection;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "game1")
-    private Collection<ItemBasedPoint> itemBasedPointCollection1;
 
     public Game() {
     }
@@ -88,6 +95,7 @@ public class Game implements Serializable {
         this.id = id;
     }
 
+    @XmlAttribute
     public Integer getId() {
         return id;
     }
@@ -96,6 +104,7 @@ public class Game implements Serializable {
         this.id = id;
     }
 
+    @XmlElement
     public String getTitle() {
         return title;
     }
@@ -104,6 +113,7 @@ public class Game implements Serializable {
         this.title = title;
     }
 
+    @XmlElement
     public String getCategory() {
         return category;
     }
@@ -112,6 +122,7 @@ public class Game implements Serializable {
         this.category = category;
     }
 
+    @XmlElement
     public String getThumbnail() {
         return thumbnail;
     }
@@ -120,6 +131,7 @@ public class Game implements Serializable {
         this.thumbnail = thumbnail;
     }
 
+    @XmlElement
     public String getDescription() {
         return description;
     }
@@ -128,6 +140,7 @@ public class Game implements Serializable {
         this.description = description;
     }
 
+    @XmlElement
     public String getLink() {
         return link;
     }
@@ -136,6 +149,7 @@ public class Game implements Serializable {
         this.link = link;
     }
 
+    @XmlElement
     public Integer getMinAge() {
         return minAge;
     }
@@ -144,6 +158,7 @@ public class Game implements Serializable {
         this.minAge = minAge;
     }
 
+    @XmlElement
     public Integer getMaxAge() {
         return maxAge;
     }
@@ -152,6 +167,7 @@ public class Game implements Serializable {
         this.maxAge = maxAge;
     }
 
+    @XmlElement
     public Integer getMinTime() {
         return minTime;
     }
@@ -160,6 +176,7 @@ public class Game implements Serializable {
         this.minTime = minTime;
     }
 
+    @XmlElement
     public Integer getMaxTime() {
         return maxTime;
     }
@@ -168,6 +185,7 @@ public class Game implements Serializable {
         this.maxTime = maxTime;
     }
 
+    @XmlElement
     public Integer getMinPlayer() {
         return minPlayer;
     }
@@ -176,6 +194,7 @@ public class Game implements Serializable {
         this.minPlayer = minPlayer;
     }
 
+    @XmlElement
     public Integer getMaxPlayer() {
         return maxPlayer;
     }
@@ -184,39 +203,31 @@ public class Game implements Serializable {
         this.maxPlayer = maxPlayer;
     }
 
+    @XmlElement
+    public Integer getRatingPoint() {
+        return ratingPoint;
+    }
+
+    public void setRatingPoint(Integer ratingPoint) {
+        this.ratingPoint = ratingPoint;
+    }
+
     @XmlTransient
-    public Collection<Vote> getVoteCollection() {
-        return voteCollection;
+    public Collection<Vote> getVotes() {
+        return votes;
     }
 
-    public void setVoteCollection(Collection<Vote> voteCollection) {
-        this.voteCollection = voteCollection;
+    public void setVotes(Collection<Vote> voteCollection) {
+        this.votes = voteCollection;
     }
 
+    @XmlElement
     public Collection<Image> getImages() {
         return images;
     }
 
     public void setImages(Collection<Image> imageCollection) {
         this.images = imageCollection;
-    }
-
-    @XmlTransient
-    public Collection<ItemBasedPoint> getItemBasedPointCollection() {
-        return itemBasedPointCollection;
-    }
-
-    public void setItemBasedPointCollection(Collection<ItemBasedPoint> itemBasedPointCollection) {
-        this.itemBasedPointCollection = itemBasedPointCollection;
-    }
-
-    @XmlTransient
-    public Collection<ItemBasedPoint> getItemBasedPointCollection1() {
-        return itemBasedPointCollection1;
-    }
-
-    public void setItemBasedPointCollection1(Collection<ItemBasedPoint> itemBasedPointCollection1) {
-        this.itemBasedPointCollection1 = itemBasedPointCollection1;
     }
 
     @Override
@@ -241,7 +252,7 @@ public class Game implements Serializable {
 
     @Override
     public String toString() {
-        return "phund.entity.Game[ id=" + id + ", images  = " + images.size() + "]";
+        return "phund.entity.Game[ id=" + id + " ]";
     }
 
 }

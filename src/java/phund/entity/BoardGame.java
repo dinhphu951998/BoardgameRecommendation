@@ -22,6 +22,11 @@ public class BoardGame implements Serializable {
     public BoardGame() {
     }
 
+    public BoardGame(List<Game> games) {
+        this.games = games;
+    }
+    
+
     @XmlElement
     public List<Game> getGames() {
         return games;

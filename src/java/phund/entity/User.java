@@ -26,12 +26,16 @@ import javax.xml.bind.annotation.XmlTransient;
  * @author PhuNDSE63159
  */
 @Entity
-@Table(name = "User", catalog = "BoardgameRecommendation", schema = "dbo")
+@Table(name = "[User]", catalog = "BoardgameRecommendation", schema = "dbo")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "User.findAll", query = "SELECT u FROM User u")
+    ,@NamedQuery(name = "User.findAllIdNotInList", 
+            query = "SELECT u FROM User u where u.id not in :ids")
     , @NamedQuery(name = "User.findById", query = "SELECT u FROM User u WHERE u.id = :id")
-    , @NamedQuery(name = "User.findByUserToken", query = "SELECT u FROM User u WHERE u.userToken = :userToken")})
+    , @NamedQuery(name = "User.findByUserToken", query = "SELECT u FROM User u WHERE u.userToken = :userToken")
+    , @NamedQuery(name = "User.findByIdAndUserToken",
+            query = "SELECT u FROM User u WHERE u.id = :id and u.userToken = :userToken")})
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -44,10 +48,6 @@ public class User implements Serializable {
     private String userToken;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
     private Collection<Vote> voteCollection;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
-    private Collection<UserBasedPoint> userBasedPointCollection;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user1")
-    private Collection<UserBasedPoint> userBasedPointCollection1;
 
     public User() {
     }
@@ -81,24 +81,6 @@ public class User implements Serializable {
         this.voteCollection = voteCollection;
     }
 
-    @XmlTransient
-    public Collection<UserBasedPoint> getUserBasedPointCollection() {
-        return userBasedPointCollection;
-    }
-
-    public void setUserBasedPointCollection(Collection<UserBasedPoint> userBasedPointCollection) {
-        this.userBasedPointCollection = userBasedPointCollection;
-    }
-
-    @XmlTransient
-    public Collection<UserBasedPoint> getUserBasedPointCollection1() {
-        return userBasedPointCollection1;
-    }
-
-    public void setUserBasedPointCollection1(Collection<UserBasedPoint> userBasedPointCollection1) {
-        this.userBasedPointCollection1 = userBasedPointCollection1;
-    }
-
     @Override
     public int hashCode() {
         int hash = 0;
@@ -123,5 +105,5 @@ public class User implements Serializable {
     public String toString() {
         return "phund.entity.User[ id=" + id + " ]";
     }
-    
+
 }

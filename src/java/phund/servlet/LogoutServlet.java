@@ -6,49 +6,35 @@
 package phund.servlet;
 
 import java.io.IOException;
-import javax.servlet.RequestDispatcher;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import phund.service.AccountServiceImp;
-import phund.service.AccountService;
+import javax.servlet.http.HttpSession;
+import phund.constant.Constant;
 
 /**
  *
  * @author PhuNDSE63159
  */
-public class ProcessServlet extends HttpServlet {
+public class LogoutServlet extends HttpServlet {
 
-    private final String LOGIN_SERVLET = "LoginServlet";
-    private final String CRAWL_SERVLET = "CrawlServlet";
-    private final String LOGIN_PAGE = "index.html";
-
-    private AccountService accountService;
-
-    public ProcessServlet() {
-        accountService = new AccountServiceImp();
-    }
+    private final String TREND_SERVLET = "Trend";
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
 
-        String url = LOGIN_PAGE;
+        String url = TREND_SERVLET;
         try {
-            String btnSubmit = request.getParameter("btnSubmit");
-
-            if (btnSubmit == null) {
-
-            } else if (btnSubmit.equals("Login")) {
-                url = LOGIN_SERVLET;
-            }else if(btnSubmit.equals("Crawl")){
-                url = CRAWL_SERVLET;
+            HttpSession session = request.getSession(false);
+            if (session != null) {
+                session.invalidate();
             }
-
         } finally {
-            RequestDispatcher rd = request.getRequestDispatcher(url);
-            rd.forward(request, response);
+            response.sendRedirect(url);
         }
     }
 

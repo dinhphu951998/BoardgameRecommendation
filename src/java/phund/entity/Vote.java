@@ -14,7 +14,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
@@ -54,6 +56,7 @@ public class Vote implements Serializable {
         this.votePK = new VotePK(userId, gameId);
     }
 
+    @XmlElement
     public VotePK getVotePK() {
         return votePK;
     }
@@ -62,6 +65,7 @@ public class Vote implements Serializable {
         this.votePK = votePK;
     }
 
+    @XmlElement
     public Double getPoint() {
         return point;
     }
@@ -70,6 +74,7 @@ public class Vote implements Serializable {
         this.point = point;
     }
 
+    @XmlTransient
     public Game getGame() {
         return game;
     }
@@ -78,6 +83,7 @@ public class Vote implements Serializable {
         this.game = game;
     }
 
+    @XmlTransient
     public User getUser() {
         return user;
     }
@@ -110,5 +116,5 @@ public class Vote implements Serializable {
     public String toString() {
         return "phund.entity.Vote[ votePK=" + votePK + " ]";
     }
-    
+
 }

@@ -8,7 +8,7 @@
         Purpose of transformation follows.
 -->
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" >
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
     
     <xsl:template name="CrawlGameDetail">
@@ -36,7 +36,13 @@
         </age>
         
         <description>
-            <xsl:apply-templates select="p"/>
+            <xsl:variable name="des" select="text()"/>
+            <xsl:if test="$des">
+                <xsl:value-of select="$des"/>    
+            </xsl:if>
+            <xsl:if test="not($des)">
+                <xsl:apply-templates select="p | ul"/>
+            </xsl:if>
         </description>
     </xsl:template>
 

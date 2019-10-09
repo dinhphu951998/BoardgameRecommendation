@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import phund.constant.Constant;
 import phund.entity.Account;
 import phund.service.AccountServiceImp;
 import phund.service.AccountService;
@@ -22,7 +23,7 @@ import phund.service.AccountService;
 public class LoginServlet extends HttpServlet {
 
     private final String DASHBOARD = "dashboard.jsp";
-    private final String ERROR_PAGE = "error.html";
+    private final String LOGIN_FAIL = "error.html";
 
     private AccountService accountService;
 
@@ -33,15 +34,15 @@ public class LoginServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        String url = ERROR_PAGE;
+        String url = LOGIN_FAIL;
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         try {
             Account account = accountService.login(username, password);
             if (account != null) {
                 HttpSession session = request.getSession();
-                session.setAttribute("USERNAME", username);
-                session.setAttribute("ROLE", account.getRole());
+                session.setAttribute(Constant.USER, account);
+                session.setAttribute(Constant.ROLE, "ADMIN");
                 url = DASHBOARD;
             }
         } finally {

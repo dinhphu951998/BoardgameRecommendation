@@ -18,7 +18,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
@@ -42,7 +44,7 @@ public class Image implements Serializable {
     @Column(name = "ImageUrl", length = 255)
     private String imageUrl;
     @JoinColumn(name = "GameId", referencedColumnName = "Id", nullable = false)
-    @ManyToOne
+    @ManyToOne(optional = false, cascade = CascadeType.PERSIST)
     private Game gameId;
 
     public Image() {
@@ -52,6 +54,7 @@ public class Image implements Serializable {
         this.id = id;
     }
 
+    @XmlAttribute
     public Integer getId() {
         return id;
     }
@@ -68,6 +71,7 @@ public class Image implements Serializable {
         this.imageUrl = imageUrl;
     }
 
+    @XmlTransient
     public Game getGameId() {
         return gameId;
     }

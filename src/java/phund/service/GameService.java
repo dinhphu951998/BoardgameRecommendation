@@ -5,10 +5,15 @@
  */
 package phund.service;
 
+import java.util.List;
+import phund.entity.Game;
+
 /**
  *
  * @author PhuNDSE63159
  */
 public interface GameService {
+    
+    List<Game> getTrendGames(Integer offset, Integer fetchNext);
     
 }

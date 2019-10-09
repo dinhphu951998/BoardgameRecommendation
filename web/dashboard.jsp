@@ -8,6 +8,7 @@
 <%@taglib uri="http://java.sun.com/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Search page</title>
@@ -15,6 +16,7 @@
         <link rel="stylesheet" href="vendors/css/grid.css">
         <link rel="stylesheet" href="resources/css/dashboard.css">
     </head>
+
     <body>
         <header>
             <div class="row menu">
@@ -26,14 +28,18 @@
                     <ul>
                         <li><a href="#" class="active">Statistic</a></li>
                         <li><a href="#">Trending</a></li>
-                        <li><a href="#">Logout</a></li>
+                        <li><a href="logout">Logout</a></li>
                     </ul>
 
                 </div>
             </div>
-            <form action="ProcessServlet">
+            <form action="crawl">
                 <button class="btn" name="btnSubmit" value="Crawl">Crawl</button>
+            </form>
+            <form action="calculate">
+                <button class="btn" name="btnSubmit" value="Crawl">Calculate similarity</button>
             </form>
         </header>
     </body>
+
 </html>

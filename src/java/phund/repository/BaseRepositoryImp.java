@@ -6,7 +6,6 @@
 package phund.repository;
 
 import java.io.Serializable;
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.List;
 import javax.persistence.EntityManager;
@@ -14,9 +13,6 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Query;
 import phund.utils.JPAUtils;
 import java.util.Map;
-import javax.persistence.NoResultException;
-import javax.persistence.Parameter;
-import org.eclipse.persistence.sessions.Session;
 
 /**
  *
@@ -39,10 +35,7 @@ public class BaseRepositoryImp<T, PK extends Serializable>
     }
 
     @Override
-    public Object find(String namedQuery,
-            Map<String, Object> parameters,
-            boolean isCollection) {
-
+    public T find(String namedQuery, Map<String, Object> parameters) {
         if (namedQuery == null) {
             return null;
         }
@@ -57,11 +50,42 @@ public class BaseRepositoryImp<T, PK extends Serializable>
                 }
             }
 
-            if (isCollection) {
-                return query.getResultList();
-            } else {
-                return query.getSingleResult();
+            return (T) query.getSingleResult();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+
+        } finally {
+            closeConnection();
+        }
+        return null;
+    }
+
+    @Override
+    public List<T> findMany(String namedQuery, Map<String, Object> parameters, Integer offset, Integer fetchNext) {
+        if (namedQuery == null) {
+            return null;
+        }
+
+        em = JPAUtils.getEntityManager();
+        try {
+            Query query = em.createNamedQuery(namedQuery);
+
+            if (parameters != null && !parameters.isEmpty()) {
+                for (Map.Entry<String, Object> entry : parameters.entrySet()) {
+                    query.setParameter(entry.getKey(), entry.getValue());
+                }
             }
+
+            if (offset != null) {
+                query.setFirstResult(offset);
+            }
+
+            if (fetchNext != null) {
+                query.setMaxResults(fetchNext);
+            }
+
+            return query.getResultList();
+
         } catch (Exception ex) {
             ex.printStackTrace();
 
@@ -165,6 +189,60 @@ public class BaseRepositoryImp<T, PK extends Serializable>
 
     protected void setNamedQueryMap(Map<String, String> namedQueryMap) {
         this.namedQueryMap = namedQueryMap;
+    }
+
+    @Override
+    public void updateRange(List<T> entities) {
+        em = JPAUtils.getEntityManager();
+        EntityTransaction transaction = em.getTransaction();
+        try {
+            transaction.begin();
+            for (T entity : entities) {
+                em.merge(entity);
+            }
+            transaction.commit();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            transaction.rollback();
+        } finally {
+            closeConnection();
+        }
+
+    }
+
+    @Override
+    public boolean exist(Object Pkey) {
+        em = JPAUtils.getEntityManager();
+        try {
+            if (em.find(type, Pkey) != null) {
+                return true;
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            closeConnection();
+        }
+        return false;
+    }
+
+    @Override
+    public void createOrUpdateRange(List<T> entities) {
+        em = JPAUtils.getEntityManager();
+        EntityTransaction transaction = em.getTransaction();
+        try {
+            transaction.begin();
+            for (T entity : entities) {
+                em.merge(entity);
+            }
+            transaction.commit();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            transaction.rollback();
+        } finally {
+            closeConnection();
+        }
     }
 
 }

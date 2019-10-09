@@ -27,7 +27,7 @@ public class AccountRepositoryImp extends BaseRepositoryImp<Account, String>
         Map<String, Object> params = new HashMap<String, Object>();
         params.put("username", username);
         params.put("password", password);
-        return (Account) find(namedQuery, params, false);
+        return find(namedQuery, params);
     }
 
 }

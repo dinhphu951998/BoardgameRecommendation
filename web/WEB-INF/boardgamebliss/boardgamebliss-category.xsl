@@ -30,7 +30,7 @@
                 <xsl:variable name="link" select="concat($host, $href)"/>
                 
                 <thumbnail>
-                    <xsl:value-of select="a/div/img/@src"/>
+                    <xsl:value-of select="a//noscript/img/@src"/>
                 </thumbnail>
                 <link>
                     <xsl:value-of select="$link"/>

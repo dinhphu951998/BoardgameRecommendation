@@ -25,28 +25,26 @@ import phund.service.CrawlService;
  */
 public class CrawlServlet extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+    private final String DASHBOARD = "dashboard.jsp";
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        String url = DASHBOARD;
         try {
             String baseUrl = getServletContext().getRealPath("/");
             CrawlService service = new CrawlService(baseUrl);
-            service.startCrawler();
-            
+            Thread t = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    CrawlService service = new CrawlService(baseUrl);
+                    service.startCrawler();
+                }
+            });
+            t.start();
 
-        } catch (FileNotFoundException | TransformerException | XMLStreamException | JAXBException | SAXException ex) {
-            Logger.getLogger(CrawlServlet.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
-
+            response.sendRedirect(url);
         }
     }
 

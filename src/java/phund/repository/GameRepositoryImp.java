@@ -36,9 +36,11 @@ public class GameRepositoryImp extends BaseRepositoryImp<Game, Integer> implemen
 
     protected void addImage(Game game) {
 
-        List<Image> images = new ArrayList<>(game.getImages());
-        for (Image image : images) {
-            image.setGameId(game);
+        if (game.getImages() != null) {
+            List<Image> images = new ArrayList<>(game.getImages());
+            for (Image image : images) {
+                image.setGameId(game);
+            }
         }
 
     }

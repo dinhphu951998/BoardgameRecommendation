@@ -26,8 +26,15 @@ public interface BaseRepository<T, PK extends Serializable> {
     
     T update(T entity);
     
-    Object find(String namedQuery, 
-            Map<String, Object> parameters,
-            boolean isCollection);
+    T find(String namedQuery, 
+            Map<String, Object> parameters);
     
+    List<T> findMany(String namedQuery, Map<String, Object> parameters, 
+            Integer offset, Integer fetchNext);
+    
+    void updateRange(List<T> entities);
+    
+    boolean exist(Object Pkey);
+    
+    void createOrUpdateRange(List<T> entities);
 }

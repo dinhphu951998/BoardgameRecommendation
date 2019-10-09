@@ -10,8 +10,6 @@ import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
@@ -37,12 +35,6 @@ public class ItemBasedPoint implements Serializable {
     @Basic(optional = false)
     @Column(name = "Similarity", nullable = false)
     private double similarity;
-    @JoinColumn(name = "ItemId", referencedColumnName = "Id", nullable = false, insertable = false, updatable = false)
-    @ManyToOne(optional = false)
-    private Game game;
-    @JoinColumn(name = "PrefId", referencedColumnName = "Id", nullable = false, insertable = false, updatable = false)
-    @ManyToOne(optional = false)
-    private Game game1;
 
     public ItemBasedPoint() {
     }
@@ -74,22 +66,6 @@ public class ItemBasedPoint implements Serializable {
 
     public void setSimilarity(double similarity) {
         this.similarity = similarity;
-    }
-
-    public Game getGame() {
-        return game;
-    }
-
-    public void setGame(Game game) {
-        this.game = game;
-    }
-
-    public Game getGame1() {
-        return game1;
-    }
-
-    public void setGame1(Game game1) {
-        this.game1 = game1;
     }
 
     @Override

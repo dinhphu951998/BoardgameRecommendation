@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <filter>
+        <filter-name>FilterDispatcher</filter-name>
+        <filter-class>phund.filter.FilterDispatcher</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterDispatcher</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
     <servlet>
         <servlet-name>ProcessServlet</servlet-name>
         <servlet-class>phund.servlet.ProcessServlet</servlet-class>
@@ -11,6 +19,22 @@
     <servlet>
         <servlet-name>CrawlServlet</servlet-name>
         <servlet-class>phund.servlet.CrawlServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TrendServlet</servlet-name>
+        <servlet-class>phund.servlet.TrendServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VoteServlet</servlet-name>
+        <servlet-class>phund.servlet.VoteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SuggestServlet</servlet-name>
+        <servlet-class>phund.servlet.SuggestServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>phund.servlet.LogoutServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ProcessServlet</servlet-name>
@@ -24,14 +48,28 @@
         <servlet-name>CrawlServlet</servlet-name>
         <url-pattern>/CrawlServlet</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TrendServlet</servlet-name>
+        <url-pattern>/TrendServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VoteServlet</servlet-name>
+        <url-pattern>/VoteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SuggestServlet</servlet-name>
+        <url-pattern>/SuggestServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
-    <welcome-file-list>
-        <welcome-file>
-            ProcessServlet
-        </welcome-file>
-    </welcome-file-list>
+    <listener>
+        <listener-class>phund.listener.AppContextListener</listener-class>
+    </listener>
 </web-app>

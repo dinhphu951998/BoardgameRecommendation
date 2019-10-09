@@ -10,8 +10,6 @@ import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
@@ -26,6 +24,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "UserBasedPoint.findAll", query = "SELECT u FROM UserBasedPoint u")
+    , @NamedQuery(name = "UserBasedPoint.findByPK", 
+            query = "SELECT u FROM UserBasedPoint u "
+                    + "WHERE u.userBasedPointPK.userId = :userId "
+                    + "and u.userBasedPointPK.prefId = :prefId "
+                    + "order by u.similarity desc ")
     , @NamedQuery(name = "UserBasedPoint.findByUserId", query = "SELECT u FROM UserBasedPoint u WHERE u.userBasedPointPK.userId = :userId")
     , @NamedQuery(name = "UserBasedPoint.findByPrefId", query = "SELECT u FROM UserBasedPoint u WHERE u.userBasedPointPK.prefId = :prefId")
     , @NamedQuery(name = "UserBasedPoint.findBySimilarity", query = "SELECT u FROM UserBasedPoint u WHERE u.similarity = :similarity")})
@@ -37,12 +40,6 @@ public class UserBasedPoint implements Serializable {
     @Basic(optional = false)
     @Column(name = "Similarity", nullable = false)
     private double similarity;
-    @JoinColumn(name = "UserId", referencedColumnName = "Id", nullable = false, insertable = false, updatable = false)
-    @ManyToOne(optional = false)
-    private User user;
-    @JoinColumn(name = "PrefId", referencedColumnName = "Id", nullable = false, insertable = false, updatable = false)
-    @ManyToOne(optional = false)
-    private User user1;
 
     public UserBasedPoint() {
     }
@@ -74,22 +71,6 @@ public class UserBasedPoint implements Serializable {
 
     public void setSimilarity(double similarity) {
         this.similarity = similarity;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public User getUser1() {
-        return user1;
-    }
-
-    public void setUser1(User user1) {
-        this.user1 = user1;
     }
 
     @Override

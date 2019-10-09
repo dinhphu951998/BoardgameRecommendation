@@ -62,8 +62,8 @@ public class TrAXUtils {
 
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 
-        tf = getTransformerFactory();
-        resolver = new CustomURIResolver();
+        TransformerFactory tf = getTransformerFactory();
+        CustomURIResolver resolver = new CustomURIResolver();
         tf.setURIResolver(resolver);
 //        URI Resolver did not call when using template in transformation
 //        Templates template = factory.newTemplates(new StreamSource(new File(xslPath)));

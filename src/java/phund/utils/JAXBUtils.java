@@ -12,23 +12,20 @@ import com.sun.tools.xjc.api.SchemaCompiler;
 import com.sun.tools.xjc.api.XJC;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.Reader;
+import java.io.StringWriter;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.ValidationEventHandler;
-import javax.xml.parsers.SAXParserFactory;
 import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import org.w3c.dom.Node;
 import org.xml.sax.InputSource;
-import org.xml.sax.XMLReader;
-import org.xml.sax.helpers.XMLReaderFactory;
 
 /**
  *
@@ -47,6 +44,12 @@ public class JAXBUtils {
         Unmarshaller unmarshaller = context.createUnmarshaller();
         return unmarshaller.unmarshal(is);
     }
+    
+    public static Object unmarshal(Reader reader, Class classType) throws JAXBException {
+        JAXBContext context = JAXBContext.newInstance(classType);
+        Unmarshaller unmarshaller = context.createUnmarshaller();
+        return unmarshaller.unmarshal(reader);
+    }
 
     public static Object unmarshalBoardgame(InputStream is,
             ValidationEventHandler handler, Schema schema, Class classType) throws JAXBException {
@@ -57,20 +60,21 @@ public class JAXBUtils {
         return unmarshaller.unmarshal(is);
     }
 
-    public static void marshal(OutputStream os, Object data, Class type) throws JAXBException, FileNotFoundException {
+    public static void marshal(OutputStream os, Object data, Class type) throws JAXBException {
         JAXBContext context = JAXBContext.newInstance(type);
         Marshaller m = context.createMarshaller();
-        m.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
+        m.setProperty("jaxb.encoding", "UTF-8");
         m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
         m.marshal(data, os);
     }
 
-    public static void marshal(Object data, Node result, Class type) throws JAXBException, FileNotFoundException {
+    public static String marshal(Object data, Class type) throws JAXBException, FileNotFoundException {
         JAXBContext context = JAXBContext.newInstance(type);
         Marshaller m = context.createMarshaller();
         m.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
-        m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-        m.marshal(data, result);
+        StringWriter writer = new StringWriter();
+        m.marshal(data, writer);
+        return writer.toString();
     }
 
     public static void generateJavaClass(String output, String packageName, String schemaFilePath) throws IOException {

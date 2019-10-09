@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--link="https://www.boardgamebliss.com/collections/abstract-games/discount_on-sale+number-of-players_4-players+availability_out-of-stock"-->
+
 <board-game xmlns="https://www.boardgamebliss.com/" 
             host="https://www.boardgamebliss.com/"
-            link="https://www.boardgamebliss.com/collections/all/availability_in-stock+category_strategy+product-type_board-games+source_import-games+discount_on-sale+number-of-players_6-players?sort_by=best-selling" 
+            link="https://www.boardgamebliss.com/collections/abstract-games https://www.boardgamebliss.com/collections/all-board-games/availability_in-stock+category_children " 
             delim=" ">
     
 </board-game>

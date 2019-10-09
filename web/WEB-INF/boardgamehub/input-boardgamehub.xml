@@ -2,7 +2,7 @@
 
 <board-game xmlns="https://www.boardgamehub.net/" 
             host="https://www.boardgamehub.net/"
-            link="https://www.boardgamehub.net/board-game-nhap-vai/ https://www.boardgamehub.net/board-game-chien-thuat/" 
+            link="https://www.boardgamehub.net/board-game-nhap-vai/ https://www.boardgamehub.net/board-game-chien-thuat/ https://www.boardgamehub.net/board-game-giai-tri-nhom/ https://www.boardgamehub.net/board-game-cho-gia-dinh/" 
             delim=" ">
     
 </board-game>

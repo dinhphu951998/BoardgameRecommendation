@@ -30,7 +30,7 @@
             
             <xsl:variable name="nodeSet" select="exsl:node-set($crawlPages)"/>
             <xsl:for-each select="$nodeSet/token">
-                <xsl:call-template name="crawlTheLink">
+                <xsl:call-template name="CrawlTheLink">
                     <xsl:with-param name="link" select="."/>
                     <xsl:with-param name="host" select="$host"/>
                 </xsl:call-template>

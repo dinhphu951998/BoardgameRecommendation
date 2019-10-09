@@ -6,13 +6,14 @@
 package xml.parserxslt;
 
 import com.sun.xml.bind.StringInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.XMLEvent;
-import javax.xml.transform.TransformerException;
+import phund.entity.ItemBasedPoint;
+import phund.repository.ItemBasedRepository;
+import phund.repository.ItemBasedRepositoryImp;
 import phund.service.CrawlService;
 import phund.utils.StAXUtils;
 
@@ -23,8 +24,20 @@ import phund.utils.StAXUtils;
 public class TestCrawl {
 
     public static void main(String[] args) throws Exception {
-        testCrawl();
+        testRepository();
 
+    }
+    
+    public static void testRepository(){
+        ItemBasedRepository repository = new ItemBasedRepositoryImp();
+        List<ItemBasedPoint> ibps = repository.findMany("ItemBasedPoint.findAll", null, null, null);
+        System.out.println("");
+    }
+
+    public static void testCrawl() throws Exception {
+        String base = "H:\\FPTU\\8\\XML\\practice\\BoardgameRecommendation\\build\\web\\";
+        CrawlService service = new CrawlService(base);
+        service.startCrawler();
     }
 
     public static void testSingleElement() throws XMLStreamException {
@@ -42,11 +55,4 @@ public class TestCrawl {
 
         }
     }
-
-    public static void testCrawl() throws Exception {
-        String base = "H:\\FPTU\\8\\XML\\practice\\BoardgameRecommendation\\build\\web\\";
-        CrawlService service = new CrawlService(base);
-        service.startCrawler();
-    }
-
 }

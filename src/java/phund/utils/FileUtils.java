@@ -114,14 +114,14 @@ public class FileUtils {
         }
     }
 
-    public static void writeFile(String filename, byte[] b) throws IOException {
+    public static void writeFile(String filename, OutputStream os) throws IOException {
         FileOutputStream fos = null;
         if (!Files.exists(Paths.get(filename))) {
             Files.createFile(Paths.get(filename));
         }
         try {
             fos = new FileOutputStream(new File(filename));
-            fos.write(b);
+            fos.write(((ByteArrayOutputStream) os).toByteArray());
             fos.flush();
         } finally {
             if (fos != null) {

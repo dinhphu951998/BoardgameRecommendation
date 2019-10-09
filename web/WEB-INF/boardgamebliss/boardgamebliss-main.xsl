@@ -55,7 +55,7 @@
         <xsl:if test="$pagination">
             <xsl:variable name="nextLink" select="$pagination/@href"/>
             <xsl:call-template name="CrawlTheLink">
-                <xsl:with-param name="link" select="$nextLink"/>
+                <xsl:with-param name="link" select="concat($host,$nextLink)"/>
                 <xsl:with-param name="host" select="$host"/>
             </xsl:call-template>
         </xsl:if>

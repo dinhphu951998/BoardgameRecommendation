@@ -15,6 +15,12 @@
         <xsl:param name="doc" select="'Default value for page'"/>
         <xsl:param name="host" select="'Default value for host'"/>
         
+        <images>
+            <image>
+                <xsl:value-of select="$doc//div[@id='feature-image']/img/@src"/>
+            </image>
+        </images>
+        
         <xsl:apply-templates  select="$doc//div[@id='detail-icons']"/>
         
         <description>

@@ -22,7 +22,7 @@ public class XmlSyntaxChecker {
     public String check(String src) {
         //refine
 //        src = refineHtml(src);
-        
+
         char[] reader = src.toCharArray();
         StringBuilder writer = new StringBuilder();
 
@@ -291,7 +291,7 @@ public class XmlSyntaxChecker {
     public String refineHtml(String src) {
         src = getBody(src);
         src = removeNeedlessTags(src);
-        src = replaceUncorrectCharacters(src);
+        src = replaceUnicodeCharacter(src);
         return src;
     }
 
@@ -316,7 +316,7 @@ public class XmlSyntaxChecker {
 
         expression = "<!--.*?-->";
         result = result.replaceAll(expression, "");
-        
+
         expression = "<head.*?</head>";
         result = result.replaceAll(expression, "");
 
@@ -325,12 +325,12 @@ public class XmlSyntaxChecker {
 
         return result;
     }
-    
-    private String replaceUncorrectCharacters(String src){
-        src = src.replace("", "");
-        
-        src = src.replace("&#8211;", "-");
-        
+
+    private String replaceUnicodeCharacter(String src) {
+        src = src.replaceAll("\\p{C}", "");
+
+        src = src.replaceAll("&#8211;", "-");
+
         return src;
     }
 

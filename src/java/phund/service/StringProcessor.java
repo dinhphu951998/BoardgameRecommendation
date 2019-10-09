@@ -28,6 +28,11 @@ public class StringProcessor extends Parser {
     private XMLEventReader reader;
     private OutputStream outputStream;
     private StringInputStream sis;
+    private int totalGame;
+
+    public int getTotalGame() {
+        return totalGame;
+    }
 
     private XMLEventFactory eventFactory;
 
@@ -41,11 +46,14 @@ public class StringProcessor extends Parser {
         reader = StAXUtils.getXMLEventReader(inputStream);
         outputStream = new ByteArrayOutputStream();
         writer = StAXUtils.getXMLEventWriter(outputStream);
-
+        XMLEvent event;
         while (reader.hasNext()) {
-            XMLEvent event = reader.nextEvent();
+            event = reader.nextEvent();
             writer.add(event);
             if (event.isStartElement()) {
+                if (event.asStartElement().getName().getLocalPart().equals("game")) {
+                    totalGame++;
+                }
                 switch (event.asStartElement().getName().getLocalPart()) {
                     case "numPlayer":
                         parseNumPlayerElement(event);
@@ -89,8 +97,8 @@ public class StringProcessor extends Parser {
 //                System.out.println(xml);
 
             }//end if not empty numplayer
+            event = reader.nextTag();
         }//end if isChar
-        event = reader.nextTag();
         writer.add(event);
     }
 
@@ -115,8 +123,9 @@ public class StringProcessor extends Parser {
                 }
 
             }//end if not empty time
+            event = reader.nextTag();
         }//end if isChar
-        writer.add(reader.nextTag());
+        writer.add(event);
     }
 
     private void parseAgeElement(XMLEvent event) throws XMLStreamException {
@@ -140,8 +149,9 @@ public class StringProcessor extends Parser {
                 }
 
             }//end if not empty age
+            event = reader.nextTag();
         }//end if isChar
-        writer.add(reader.nextTag());
+        writer.add(event);
     }
 
 }

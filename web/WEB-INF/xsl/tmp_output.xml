@@ -1,0 +1,1222 @@
+<div class="game-list">
+    <div class="row">
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="24" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="24" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="24" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="24" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="24" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="24" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="24" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="24" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="24" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="24" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="24" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic4314491_c7d6cb1e-808f-493c-92ef-0ec54dcd505c_60x.jpg?v=1545067033" alt="Yggdrasil (New Edition) (Import) (Minor Damage)"/>
+            <div class="desc">
+                <span class="game-name">Yggdrasil (New Edition) (Import) (Minor Damage)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="25" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="25" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="25" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="25" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="25" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="25" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="25" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="25" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="25" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="25" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="25" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic2251077_lg_60x.png?v=1415905602" alt="Mangrovia"/>
+            <div class="desc">
+                <span class="game-name">Mangrovia</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="26" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="26" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="26" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="26" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="26" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="26" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="26" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="26" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="26" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="26" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="26" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/Meuterer_60x.jpg?v=1382846832" alt="Meuterer"/>
+            <div class="desc">
+                <span class="game-name">Meuterer</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="27" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="27" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="27" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="27" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="27" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="27" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="27" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="27" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="27" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="27" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="27" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic179923_lg_60x.jpg?v=1412306452" alt="Thurn and Taxis (German Import)"/>
+            <div class="desc">
+                <span class="game-name">Thurn and Taxis (German Import)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="28" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="28" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="28" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="28" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="28" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="28" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="28" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="28" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="28" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="28" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="28" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic4314491_60x.jpg?v=1545066462" alt="Yggdrasil (New Edition) (Import)"/>
+            <div class="desc">
+                <span class="game-name">Yggdrasil (New Edition) (Import)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="29" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="29" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="29" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="29" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="29" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="29" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="29" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="29" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="29" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="29" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="29" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/Rattus_60x.jpg?v=1395527303" alt="Rattus (Import)"/>
+            <div class="desc">
+                <span class="game-name">Rattus (Import)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="30" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="30" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="30" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="30" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="30" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="30" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="30" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="30" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="30" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="30" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="30" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic842146_60x.jpg?v=1391393321" alt="Wizard Extreme (German Import)"/>
+            <div class="desc">
+                <span class="game-name">Wizard Extreme (German Import)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="31" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="31" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="31" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="31" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="31" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="31" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="31" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="31" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="31" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="31" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="31" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/Grog_Island_60x.jpg?v=1415519929" alt="Grog Island"/>
+            <div class="desc">
+                <span class="game-name">Grog Island</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="32" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="32" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="32" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="32" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="32" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="32" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="32" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="32" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="32" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="32" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="32" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic2651468_60x.jpg?v=1474145820" alt="Factory Funner"/>
+            <div class="desc">
+                <span class="game-name">Factory Funner</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="33" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="33" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="33" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="33" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="33" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="33" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="33" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="33" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="33" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="33" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="33" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/Coney_Island_60x.jpg?v=1391372362" alt="Coney Island"/>
+            <div class="desc">
+                <span class="game-name">Coney Island</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="34" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="34" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="34" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="34" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="34" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="34" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="34" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="34" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="34" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="34" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="34" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/Hansa_Teutonica_2ec1e9f2-545d-48e9-b971-e5665cc37fa2_60x.jpg?v=1558114525" alt="Hansa Teutonica (French Edition)"/>
+            <div class="desc">
+                <span class="game-name">Hansa Teutonica (French Edition)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="35" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="35" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="35" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="35" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="35" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="35" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="35" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="35" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="35" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="35" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="35" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic2529078_lg_60x.jpg?v=1452670769" alt="Xanadú"/>
+            <div class="desc">
+                <span class="game-name">Xanadú</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="36" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="36" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="36" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="36" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="36" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="36" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="36" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="36" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="36" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="36" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="36" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic702307_lg_60x.jpg?v=1392494736" alt="Mü &amp; More (German Import)"/>
+            <div class="desc">
+                <span class="game-name">Mü &amp; More (German Import)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="37" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="37" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="37" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="37" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="37" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="37" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="37" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="37" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="37" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="37" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="37" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/Verrater_60x.jpg?v=1391373417" alt="Verräter"/>
+            <div class="desc">
+                <span class="game-name">Verräter</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="38" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="38" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="38" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="38" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="38" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="38" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="38" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="38" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="38" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="38" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="38" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic1058394_lg_60x.jpg?v=1498542301" alt="Morgenland (aka Aladdin's Dragons) (German Import)"/>
+            <div class="desc">
+                <span class="game-name">Morgenland (aka Aladdin's Dragons) (German Import)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="39" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="39" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="39" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="39" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="39" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="39" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="39" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="39" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="39" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="39" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="39" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic3167080_027e1871-d4e4-4fc6-a043-8bccfb53e879_60x.png?v=1489768632" alt="Kepler-3042 (Minor Damage)"/>
+            <div class="desc">
+                <span class="game-name">Kepler-3042 (Minor Damage)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="40" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="40" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="40" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="40" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="40" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="40" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="40" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="40" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="40" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="40" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="40" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic2855602_60x.jpg?v=1474144622" alt="Bonsai (German Import)"/>
+            <div class="desc">
+                <span class="game-name">Bonsai (German Import)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="41" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="41" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="41" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="41" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="41" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="41" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="41" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="41" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="41" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="41" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="41" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic2909347_f06c2824-2e2e-487b-90bd-70ca7b311d09_60x.png?v=1481554450" alt="Tikal (French) (Minor Damage)"/>
+            <div class="desc">
+                <span class="game-name">Tikal (French) (Minor Damage)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="42" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="42" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="42" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="42" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="42" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="42" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="42" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="42" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="42" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="42" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="42" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic2834112_lg_60x.png?v=1474143541" alt="BATTALIA: The Creation (German Import)"/>
+            <div class="desc">
+                <span class="game-name">BATTALIA: The Creation (German Import)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="43" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="43" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="43" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="43" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="43" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="43" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="43" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="43" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="43" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="43" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="43" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/Sumeria_60x.jpg?v=1398060244" alt="Sumeria"/>
+            <div class="desc">
+                <span class="game-name">Sumeria</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="44" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="44" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="44" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="44" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="44" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="44" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="44" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="44" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="44" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="44" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="44" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic1703132_60x.jpg?v=1536695728" alt="Völuspá: Order of the Gods (White Goblin Games New Edition)"/>
+            <div class="desc">
+                <span class="game-name">Völuspá: Order of the Gods (White Goblin Games New Edition)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="45" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="45" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="45" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="45" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="45" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="45" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="45" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="45" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="45" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="45" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="45" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/Shadows_over_the_Empire_60x.jpg?v=1394911320" alt="Shadows over the Empire"/>
+            <div class="desc">
+                <span class="game-name">Shadows over the Empire</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="46" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="46" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="46" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="46" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="46" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="46" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="46" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="46" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="46" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="46" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="46" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic4021507_60x.jpg?v=1520435976" alt="Civilization (Gibsons Edition)"/>
+            <div class="desc">
+                <span class="game-name">Civilization (Gibsons Edition)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="47" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="47" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="47" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="47" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="47" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="47" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="47" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="47" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="47" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="47" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="47" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic3018118_60x.jpg?v=1491446479" alt="Squirrel Rush"/>
+            <div class="desc">
+                <span class="game-name">Squirrel Rush</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="48" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="48" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="48" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="48" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="48" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="48" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="48" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="48" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="48" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="48" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="48" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic2606432_60x.jpg?v=1474145542" alt="KUMO Hogosha"/>
+            <div class="desc">
+                <span class="game-name">KUMO Hogosha</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="49" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="49" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="49" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="49" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="49" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="49" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="49" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="49" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="49" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="49" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="49" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic1522226_60x.jpg?v=1505364984" alt="Santiago de Cuba (Polish Import)"/>
+            <div class="desc">
+                <span class="game-name">Santiago de Cuba (Polish Import)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="50" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="50" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="50" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="50" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="50" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="50" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="50" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="50" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="50" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="50" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="50" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic3120939_60x.jpg?v=1500085521" alt="PaiMiahhh"/>
+            <div class="desc">
+                <span class="game-name">PaiMiahhh</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="51" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="51" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="51" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="51" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="51" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="51" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="51" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="51" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="51" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="51" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="51" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic259380_60x.jpg?v=1522384557" alt="Gipsy King"/>
+            <div class="desc">
+                <span class="game-name">Gipsy King</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="52" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="52" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="52" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="52" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="52" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="52" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="52" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="52" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="52" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="52" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="52" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic57808_60x.jpg?v=1474139182" alt="Oriente (German Import)"/>
+            <div class="desc">
+                <span class="game-name">Oriente (German Import)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="53" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="53" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="53" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="53" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="53" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="53" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="53" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="53" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="53" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="53" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="53" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic243490_md_60x.jpg?v=1431969921" alt="Tyranno Ex"/>
+            <div class="desc">
+                <span class="game-name">Tyranno Ex</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="54" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="54" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="54" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="54" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="54" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="54" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="54" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="54" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="54" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="54" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="54" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/Drum_Roll_077072c7-ff2a-4b0d-815b-e5d37422f768_60x.jpg?v=1428643376" alt="Drum Roll (Minor Damage)"/>
+            <div class="desc">
+                <span class="game-name">Drum Roll (Minor Damage)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="55" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="55" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="55" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="55" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="55" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="55" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="55" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="55" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="55" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="55" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="55" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/Coney_Island_67dd2c53-111c-4454-a80a-416934da56b9_60x.jpg?v=1433821931" alt="Coney Island (Minor Damage)"/>
+            <div class="desc">
+                <span class="game-name">Coney Island (Minor Damage)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="56" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="56" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="56" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="56" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="56" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="56" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="56" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="56" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="56" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="56" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="56" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic953739_lg_1_60x.jpg?v=1431969418" alt="Ohne Furcht und Adel (aka Citadel) (German Edition)"/>
+            <div class="desc">
+                <span class="game-name">Ohne Furcht und Adel (aka Citadel) (German Edition)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="57" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="57" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="57" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="57" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="57" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="57" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="57" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="57" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="57" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="57" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="57" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/pic2730244_60x.jpg?v=1474143053" alt="Achaia"/>
+            <div class="desc">
+                <span class="game-name">Achaia</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="58" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="58" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="58" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="58" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="58" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="58" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="58" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="58" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="58" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="58" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="58" value="0"/>
+            </fieldset>
+            <img src="//cdn.shopify.com/s/files/1/0274/9631/products/Untitled_d12fb908-7c03-4d0e-94e7-e9d2f1c38408_60x.png?v=1455430032" alt="Sukkube"/>
+            <div class="desc">
+                <span class="game-name">Sukkube</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="59" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="59" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="59" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="59" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="59" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="59" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="59" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="59" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="59" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="59" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="59" value="0"/>
+            </fieldset>
+            <img src="https://i2.wp.com/www.boardgamehub.net/wp-content/uploads/2016/01/descent-7.jpg?fit=600%2C600&amp;ssl=1" alt="Descent: Journeys in the Dark (Second Edition)"/>
+            <div class="desc">
+                <span class="game-name">Descent: Journeys in the Dark (Second Edition)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="60" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="60" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="60" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="60" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="60" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="60" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="60" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="60" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="60" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="60" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="60" value="0"/>
+            </fieldset>
+            <img src="https://i1.wp.com/www.boardgamehub.net/wp-content/uploads/2015/12/warofthering-4.jpg?fit=705%2C478&amp;ssl=1" alt="War of the Ring (second edition)"/>
+            <div class="desc">
+                <span class="game-name">War of the Ring (second edition)</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="61" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="61" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="61" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="61" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="61" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="61" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="61" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="61" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="61" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="61" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="61" value="0"/>
+            </fieldset>
+            <img src="https://i1.wp.com/www.boardgamehub.net/wp-content/uploads/2015/08/mansions-of-madness-11.jpg?fit=705%2C705&amp;ssl=1" alt="Mansions of Madness"/>
+            <div class="desc">
+                <span class="game-name">Mansions of Madness</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="62" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="62" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="62" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="62" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="62" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="62" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="62" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="62" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="62" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="62" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="62" value="0"/>
+            </fieldset>
+            <img src="https://i0.wp.com/www.boardgamehub.net/wp-content/uploads/2015/08/mageknightboardgame-2.jpg?fit=705%2C503&amp;ssl=1" alt="Mage Knight Board Game"/>
+            <div class="desc">
+                <span class="game-name">Mage Knight Board Game</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+        <div class="col span-1-of-4 game-item">
+            <fieldset class="rate">
+                <input type="radio" id="rating10" name="63" value="10"/>
+                <label for="rating10" title="5 starts"/>
+                <input type="radio" id="rating9" name="63" value="9"/>
+                <label class="half" for="rating9" title="4.5 starts"/>
+                <input type="radio" id="rating8" name="63" value="8"/>
+                <label for="rating8" title="4 stars"/>
+                <input type="radio" id="rating7" name="63" value="7"/>
+                <label class="half" for="rating7" title="3.5 starts"/>
+                <input type="radio" id="rating6" name="63" value="6"/>
+                <label for="rating6" title="3 stars"/>
+                <input type="radio" id="rating5" name="63" value="5"/>
+                <label class="half" for="rating5" title="2.5 starts"/>
+                <input type="radio" id="rating4" name="63" value="4"/>
+                <label for="rating4" title="2 stars"/>
+                <input type="radio" id="rating3" name="63" value="3"/>
+                <label class="half" for="rating3" title="1.5 starts"/>
+                <input type="radio" id="rating2" name="63" value="2"/>
+                <label for="rating2" title="1 star"/>
+                <input type="radio" id="rating1" name="63" value="1"/>
+                <label class="half" for="rating1" title="0.5start"/>
+                <input type="radio" id="rating0" name="63" value="0"/>
+            </fieldset>
+            <img src="https://i0.wp.com/www.boardgamehub.net/wp-content/uploads/2015/07/merchantsmarauders.jpg?fit=705%2C705&amp;ssl=1" alt="Merchants &amp;#038; Marauders"/>
+            <div class="desc">
+                <span class="game-name">Merchants &amp;#038; Marauders</span>
+                <span class="matched-point"/>
+            </div>
+        </div>
+    </div>
+</div>
