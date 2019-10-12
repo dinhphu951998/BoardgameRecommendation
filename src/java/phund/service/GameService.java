@@ -7,13 +7,22 @@ package phund.service;
 
 import java.util.List;
 import phund.entity.Game;
+import phund.entity.SuggestedGame;
+import phund.entity.TrendGame;
+import phund.entity.VotedGame;
 
 /**
  *
  * @author PhuNDSE63159
  */
 public interface GameService {
-    
-    List<Game> getTrendGames(Integer offset, Integer fetchNext);
-    
+
+    List<TrendGame> getTrendGames(Integer offset, Integer fetchNext);
+
+    List<SuggestedGame> getSuggestedGame(int userId, Integer offset, Integer fetchNext);
+
+    List<VotedGame> getVotedGames(int userId, Integer offset, Integer fetch);
+
+    void computeTrend();
+
 }

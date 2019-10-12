@@ -11,10 +11,19 @@ package phund.constant;
  */
 public class Constant {
 
+    //cookie
     public static final String COOKIE_ID = "Id";
     public static final String COOKIE_USER_TOKEN = "UserToken";
-    public static final String USER = "USER";
-    public static String ROLE = "ROLE";
+    //session
+    public static final String USER = "User";
+    public static final String ROLE = "Role";
+    public static final String SUGGESTED_GAMES = "SuggestedGames";
+    public static final String VOTED_GAMES = "VotedGames";
+
+    //servlet context
+//    public static final String SUGGEST_GAME_RENDER = "SuggestedGamesRender";
+    public static final String GAME_RENDER = "GamesRender";
+    public static final String TREND_GAMES = "TrendGames";
 
     public static final int MAX_AGE = 60 * 60 * 24 * 365 * 10;
 

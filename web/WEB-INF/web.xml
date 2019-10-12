@@ -36,6 +36,22 @@
         <servlet-name>LogoutServlet</servlet-name>
         <servlet-class>phund.servlet.LogoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ComputeServlet</servlet-name>
+        <servlet-class>phund.servlet.ComputeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetVoteServlet</servlet-name>
+        <servlet-class>phund.servlet.GetVoteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ComputeTrendServlet</servlet-name>
+        <servlet-class>phund.servlet.ComputeTrendServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>phund.servlet.SearchServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ProcessServlet</servlet-name>
         <url-pattern>/ProcessServlet</url-pattern>
@@ -63,6 +79,22 @@
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ComputeServlet</servlet-name>
+        <url-pattern>/ComputeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetVoteServlet</servlet-name>
+        <url-pattern>/GetVoteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ComputeTrendServlet</servlet-name>
+        <url-pattern>/ComputeTrendServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchServlet</servlet-name>
+        <url-pattern>/SearchServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

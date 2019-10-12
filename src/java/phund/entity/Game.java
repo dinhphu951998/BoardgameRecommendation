@@ -10,13 +10,19 @@ import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.ColumnResult;
+import javax.persistence.ConstructorResult;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
+import javax.persistence.SqlResultSetMapping;
+import javax.persistence.SqlResultSetMappings;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -47,7 +53,50 @@ import javax.xml.bind.annotation.XmlTransient;
     , @NamedQuery(name = "Game.findByMaxTime", query = "SELECT g FROM Game g WHERE g.maxTime = :maxTime")
     , @NamedQuery(name = "Game.findByMinPlayer", query = "SELECT g FROM Game g WHERE g.minPlayer = :minPlayer")
     , @NamedQuery(name = "Game.findByMaxPlayer", query = "SELECT g FROM Game g WHERE g.maxPlayer = :maxPlayer")
-    , @NamedQuery(name = "Game.findByRatingPoint", query = "SELECT g FROM Game g ORDER BY g.ratingPoint desc")})
+    , @NamedQuery(name = "Game.findByRatingPoint",
+            query = "SELECT g.id, g.title, g.thumbnail, g.ratingPoint FROM Game g ORDER BY g.ratingPoint desc")
+    , @NamedQuery(name = "Game.findGameVoteNotEmpty", query = "SELECT g FROM Game g join g.votes v group by g having count(v.votePK.userId) > 0")
+    , @NamedQuery(name = "Game.findVotedGame",
+            query = "SELECT g.id, g.title, g.thumbnail, v.point FROM Game g join g.votes v where v.votePK.userId = :userId")})
+
+@SqlResultSetMappings({
+    @SqlResultSetMapping(
+            name = "SuggestedGame",
+            classes = {
+                @ConstructorResult(targetClass = SuggestedGame.class,
+                        columns = {
+                            @ColumnResult(name = "similarity", type = Double.class)
+                            ,@ColumnResult(name = "prefPoint", type = Double.class)
+                            ,@ColumnResult(name = "id", type = Integer.class)
+                            ,@ColumnResult(name = "title", type = String.class)
+                            ,@ColumnResult(name = "thumbnail", type = String.class),})
+            }
+    )
+    ,
+    @SqlResultSetMapping(
+            name = "VotedGame",
+            classes = {
+                @ConstructorResult(targetClass = VotedGame.class,
+                        columns = {
+                            @ColumnResult(name = "id", type = Integer.class)
+                            ,@ColumnResult(name = "title", type = String.class)
+                            ,@ColumnResult(name = "thumbnail", type = String.class)
+                            ,@ColumnResult(name = "point", type = Double.class)})
+            }
+    )
+    ,
+    @SqlResultSetMapping(
+            name = "TrendGame",
+            classes = {
+                @ConstructorResult(targetClass = TrendGame.class,
+                        columns = {
+                            @ColumnResult(name = "id", type = Integer.class)
+                            ,@ColumnResult(name = "title", type = String.class)
+                            ,@ColumnResult(name = "thumbnail", type = String.class)
+                            ,@ColumnResult(name = "point", type = Double.class)})
+            }
+    )
+})
 
 @XmlAccessorType(XmlAccessType.NONE)
 public class Game implements Serializable {
@@ -81,9 +130,9 @@ public class Game implements Serializable {
     @Column(name = "MaxPlayer")
     private Integer maxPlayer;
     @Column(name = "RatingPoint")
-    private Integer ratingPoint;
+    private Double ratingPoint;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "game")
+    @OneToMany(mappedBy = "game")
     private Collection<Vote> votes;
     @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "gameId")
     private Collection<Image> images;
@@ -95,7 +144,7 @@ public class Game implements Serializable {
         this.id = id;
     }
 
-    @XmlAttribute
+    @XmlElement
     public Integer getId() {
         return id;
     }
@@ -204,11 +253,11 @@ public class Game implements Serializable {
     }
 
     @XmlElement
-    public Integer getRatingPoint() {
+    public Double getRatingPoint() {
         return ratingPoint;
     }
 
-    public void setRatingPoint(Integer ratingPoint) {
+    public void setRatingPoint(Double ratingPoint) {
         this.ratingPoint = ratingPoint;
     }
 

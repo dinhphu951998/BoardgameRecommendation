@@ -20,24 +20,28 @@ import javax.servlet.http.HttpSession;
 import javax.xml.bind.JAXBException;
 import phund.constant.Constant;
 import phund.entity.BoardGame;
-import phund.entity.SuggestedGame;
+import phund.entity.Game;
 import phund.entity.User;
-import phund.entity.WrapperSuggestedGame;
+import phund.entity.VotedGame;
+import phund.entity.WrapperVotedGame;
 import phund.service.GameService;
 import phund.service.GameServiceImp;
+import phund.service.VoteService;
+import phund.service.VoteServiceImp;
 import phund.utils.JAXBUtils;
 
 /**
  *
  * @author PhuNDSE63159
  */
-public class SuggestServlet extends HttpServlet {
+public class GetVoteServlet extends HttpServlet {
 
-    private final String SUGGEST_PAGE = "suggestpage.jsp";
-
+    private final String VOTE_PAGE = "votePage.jsp";
+    private VoteService voteService;
     private GameService gameService;
 
-    public SuggestServlet() {
+    public GetVoteServlet() {
+        voteService = new VoteServiceImp();
         gameService = new GameServiceImp();
     }
 
@@ -45,30 +49,28 @@ public class SuggestServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
 
+        String url = VOTE_PAGE;
         HttpSession session = request.getSession(false);
         String offsetString = request.getParameter("offset");
         String fetchString = request.getParameter("fetch");
-        String url = SUGGEST_PAGE;
         try {
             if (session != null) {
+                User user = (User) session.getAttribute(Constant.USER);
                 Integer offset = null, fetch = null;
                 try {
                     offset = Integer.parseInt(offsetString);
                     fetch = Integer.parseInt(fetchString);
                 } catch (NumberFormatException e) {
                 }
-
-                User user = (User) session.getAttribute(Constant.USER);
-                List<SuggestedGame> games = gameService.getSuggestedGame(user.getId(), offset, fetch);
-                WrapperSuggestedGame wapper = new WrapperSuggestedGame(games);
-                String result = JAXBUtils.marshal(wapper, WrapperSuggestedGame.class);
-                session.setAttribute(Constant.SUGGESTED_GAMES, result);
-
-            }//end if session != null
+                List<VotedGame> games = gameService.getVotedGames(user.getId(), offset, fetch);
+                WrapperVotedGame wapper = new WrapperVotedGame(games);
+                String result = JAXBUtils.marshal(wapper, WrapperVotedGame.class);
+                session.setAttribute(Constant.VOTED_GAMES, result);
+            }
         } catch (JAXBException ex) {
-            Logger.getLogger(SuggestServlet.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(GetVoteServlet.class.getName()).log(Level.SEVERE, null, ex);
         } catch (FileNotFoundException ex) {
-            Logger.getLogger(SuggestServlet.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(GetVoteServlet.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             RequestDispatcher rd = request.getRequestDispatcher(url);
             rd.forward(request, response);

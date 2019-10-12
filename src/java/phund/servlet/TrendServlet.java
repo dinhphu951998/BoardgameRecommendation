@@ -17,9 +17,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.xml.bind.JAXBException;
+import phund.constant.Constant;
 import phund.constant.FileConstant;
 import phund.entity.BoardGame;
 import phund.entity.Game;
+import phund.entity.TrendGame;
+import phund.entity.WrapperTrendGame;
 import phund.service.GameService;
 import phund.service.GameServiceImp;
 import phund.utils.JAXBUtils;
@@ -47,9 +50,9 @@ public class TrendServlet extends HttpServlet {
         String id = request.getParameter("userId");
         String offsetString = request.getParameter("offset");
         String fetchString = request.getParameter("fetch");
-        List<Game> games = null;
-        BoardGame boardGame = null;
-        String xmlBoardGame = "";
+        List<TrendGame> games = null;
+        WrapperTrendGame wrapperTrendGame = null;
+        String xmlTrendGame = "";
         try {
             Integer offset = null;
             Integer fetch = null;
@@ -60,16 +63,15 @@ public class TrendServlet extends HttpServlet {
             }
             if (offset == null && fetch == null) {
                 ServletContext sc = request.getServletContext();
-                xmlBoardGame = (String) sc.getAttribute("TRENDGAMES");
+                xmlTrendGame = (String) sc.getAttribute(Constant.TREND_GAMES);
             } else {
                 games = gameService.getTrendGames(offset, fetch);
-                boardGame = new BoardGame();
-                boardGame.setGames(games);
+                wrapperTrendGame = new WrapperTrendGame(games);
 
-                xmlBoardGame = JAXBUtils.marshal(boardGame, BoardGame.class);
+                xmlTrendGame = JAXBUtils.marshal(wrapperTrendGame, BoardGame.class);
             }
 
-            request.setAttribute("TRENDGAMES", xmlBoardGame);
+            request.setAttribute(Constant.TREND_GAMES, xmlTrendGame);
         } catch (JAXBException ex) {
             Logger.getLogger(TrendServlet.class.getName()).log(Level.SEVERE, null, ex);
         } finally {

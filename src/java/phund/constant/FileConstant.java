@@ -20,6 +20,8 @@ public class FileConstant {
     public static final String XSL_HOC_VIEN_BOARD_GAME = "WEB-INF/hocvienboardgame/hocvienboardgame-main.xsl";
     public static final String TOKENIZER = "WEB-INF/xsl/tokenizer.xsl";
     public static final String NORMALIZER = "WEB-INF/xsl/normalizer.xsl";
+//    public static final String SUGGEST_GAME_RENDER = "WEB-INF/xsl/SuggestGamesRender.xsl";
+    public static final String GAME_RENDER = "WEB-INF/xsl/GamesRender.xsl";
     
     //schema file
     public static final String BOARDGAME_SCHEMA = "WEB-INF/schema/boardgame.xsd";

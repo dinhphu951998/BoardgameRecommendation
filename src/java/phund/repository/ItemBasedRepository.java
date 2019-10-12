@@ -14,4 +14,10 @@ import phund.entity.ItemBasedPointPK;
  */
 public interface ItemBasedRepository extends BaseRepository<ItemBasedPoint, ItemBasedPointPK>{
     
+    
+    
+    
+    
+    
+    
 }

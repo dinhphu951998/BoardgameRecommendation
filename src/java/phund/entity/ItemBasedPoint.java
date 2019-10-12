@@ -25,6 +25,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 @NamedQueries({
     @NamedQuery(name = "ItemBasedPoint.findAll", query = "SELECT i FROM ItemBasedPoint i")
     , @NamedQuery(name = "ItemBasedPoint.findByItemId", query = "SELECT i FROM ItemBasedPoint i WHERE i.itemBasedPointPK.itemId = :itemId")
+    , @NamedQuery(name = "ItemBasedPoint.findByItemIdInList", 
+            query = "SELECT i FROM ItemBasedPoint i WHERE i.itemBasedPointPK.itemId in :itemIds")
     , @NamedQuery(name = "ItemBasedPoint.findByPrefId", query = "SELECT i FROM ItemBasedPoint i WHERE i.itemBasedPointPK.prefId = :prefId")
     , @NamedQuery(name = "ItemBasedPoint.findBySimilarity", query = "SELECT i FROM ItemBasedPoint i WHERE i.similarity = :similarity")})
 public class ItemBasedPoint implements Serializable {

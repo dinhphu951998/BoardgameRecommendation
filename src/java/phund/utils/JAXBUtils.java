@@ -71,7 +71,9 @@ public class JAXBUtils {
     public static String marshal(Object data, Class type) throws JAXBException, FileNotFoundException {
         JAXBContext context = JAXBContext.newInstance(type);
         Marshaller m = context.createMarshaller();
+        
         m.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
+        m.setProperty(Marshaller.JAXB_FRAGMENT, true);
         StringWriter writer = new StringWriter();
         m.marshal(data, writer);
         return writer.toString();

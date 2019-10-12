@@ -10,5 +10,6 @@ package phund.service;
  * @author PhuNDSE63159
  */
 public interface ItemBasedService {
-    
+
+    void computeAll();
 }

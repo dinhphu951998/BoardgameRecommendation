@@ -6,6 +6,8 @@
 package phund.service;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashMap;
 import java.util.List;
 import javax.servlet.http.HttpSession;
 import phund.constant.Constant;
@@ -14,6 +16,9 @@ import phund.entity.Vote;
 import phund.entity.VotePK;
 import phund.repository.VoteRepository;
 import phund.repository.VoteRepositoryImp;
+import java.util.Map;
+import java.util.stream.Collectors;
+import phund.entity.Game;
 
 /**
  *
@@ -29,17 +34,10 @@ public class VoteServiceImp implements VoteService {
 
     @Override
     public void voteGame(int gameId, int userId, double point) {
-
-        Vote v = voteRepository.findById(new VotePK(userId, gameId));
-        if (v != null) {
-            v.setPoint(point);
-            voteRepository.update(v);
-        } else {
-            v = new Vote(userId, gameId);
-            v.setPoint(point);
-            voteRepository.create(v);
-        }
-
+        Vote v = new Vote(userId, gameId);
+        v.setPoint(point);
+        v.setTime(Calendar.getInstance().getTime());
+        voteRepository.createOrUpdate(v);
     }
 
     @Override
@@ -63,11 +61,23 @@ public class VoteServiceImp implements VoteService {
 //        if (!createVote.isEmpty()) {;
 //            voteRepository.createRange(createVote);
 //        }
-
+        Calendar calendar = Calendar.getInstance();
         for (Vote vote : votes) {
             vote.getVotePK().setUserId(userId);
+            vote.setTime(calendar.getTime());
         }
         voteRepository.createOrUpdateRange(votes);
     }
+
+//    public List<Game> getVotedGame(int userId) {
+//        List<Game> games = null;
+//        Map<String, Object> params = new HashMap();
+//        params.put("userId", userId);
+//        List<Vote> votes = voteRepository.findMany("Vote.findByUserId", params, null, null);
+//        if (votes != null && !votes.isEmpty()) {
+//            games = votes.stream().map(v -> v.getGame()).collect(Collectors.toList());
+//        }
+//        return games;
+//    }
 
 }

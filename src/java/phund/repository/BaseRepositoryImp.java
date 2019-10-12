@@ -13,6 +13,7 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Query;
 import phund.utils.JPAUtils;
 import java.util.Map;
+import javax.persistence.TypedQuery;
 
 /**
  *
@@ -61,7 +62,7 @@ public class BaseRepositoryImp<T, PK extends Serializable>
     }
 
     @Override
-    public List<T> findMany(String namedQuery, Map<String, Object> parameters, Integer offset, Integer fetchNext) {
+    public List findMany(String namedQuery, Map<String, Object> parameters, Integer offset, Integer fetchNext) {
         if (namedQuery == null) {
             return null;
         }
@@ -69,6 +70,41 @@ public class BaseRepositoryImp<T, PK extends Serializable>
         em = JPAUtils.getEntityManager();
         try {
             Query query = em.createNamedQuery(namedQuery);
+
+            if (parameters != null && !parameters.isEmpty()) {
+                for (Map.Entry<String, Object> entry : parameters.entrySet()) {
+                    query.setParameter(entry.getKey(), entry.getValue());
+                }
+            }
+
+            if (offset != null) {
+                query.setFirstResult(offset);
+            }
+
+            if (fetchNext != null) {
+                query.setMaxResults(fetchNext);
+            }
+
+            return query.getResultList();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+
+        } finally {
+            closeConnection();
+        }
+        return null;
+    }
+
+    @Override
+    public List findMany(String namedQuery, Class type, Map<String, Object> parameters, Integer offset, Integer fetchNext) {
+        if (namedQuery == null) {
+            return null;
+        }
+
+        em = JPAUtils.getEntityManager();
+        try {
+            TypedQuery query = em.createNamedQuery(namedQuery, type);
 
             if (parameters != null && !parameters.isEmpty()) {
                 for (Map.Entry<String, Object> entry : parameters.entrySet()) {
@@ -243,6 +279,24 @@ public class BaseRepositoryImp<T, PK extends Serializable>
         } finally {
             closeConnection();
         }
+    }
+
+    @Override
+    public void createOrUpdate(T entity) {
+        em = JPAUtils.getEntityManager();
+        EntityTransaction transaction = em.getTransaction();
+        try {
+            transaction.begin();
+            em.merge(entity);
+            transaction.commit();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            transaction.rollback();
+        } finally {
+            closeConnection();
+        }
+
     }
 
 }

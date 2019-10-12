@@ -5,73 +5,38 @@
  */
 package phund.servlet;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import javax.xml.bind.JAXBException;
-import phund.constant.Constant;
-import phund.entity.BoardGame;
-import phund.entity.SuggestedGame;
-import phund.entity.User;
-import phund.entity.WrapperSuggestedGame;
 import phund.service.GameService;
 import phund.service.GameServiceImp;
-import phund.utils.JAXBUtils;
 
 /**
  *
  * @author PhuNDSE63159
  */
-public class SuggestServlet extends HttpServlet {
+public class ComputeTrendServlet extends HttpServlet {
 
-    private final String SUGGEST_PAGE = "suggestpage.jsp";
+    private final String DASHBOARD = "dashboard.jsp";
 
     private GameService gameService;
 
-    public SuggestServlet() {
+    public ComputeTrendServlet() {
         gameService = new GameServiceImp();
     }
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-
-        HttpSession session = request.getSession(false);
-        String offsetString = request.getParameter("offset");
-        String fetchString = request.getParameter("fetch");
-        String url = SUGGEST_PAGE;
+        String url = DASHBOARD;
         try {
-            if (session != null) {
-                Integer offset = null, fetch = null;
-                try {
-                    offset = Integer.parseInt(offsetString);
-                    fetch = Integer.parseInt(fetchString);
-                } catch (NumberFormatException e) {
-                }
-
-                User user = (User) session.getAttribute(Constant.USER);
-                List<SuggestedGame> games = gameService.getSuggestedGame(user.getId(), offset, fetch);
-                WrapperSuggestedGame wapper = new WrapperSuggestedGame(games);
-                String result = JAXBUtils.marshal(wapper, WrapperSuggestedGame.class);
-                session.setAttribute(Constant.SUGGESTED_GAMES, result);
-
-            }//end if session != null
-        } catch (JAXBException ex) {
-            Logger.getLogger(SuggestServlet.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(SuggestServlet.class.getName()).log(Level.SEVERE, null, ex);
+            gameService.computeTrend();
         } finally {
-            RequestDispatcher rd = request.getRequestDispatcher(url);
-            rd.forward(request, response);
+            response.sendRedirect(url);
         }
     }
 

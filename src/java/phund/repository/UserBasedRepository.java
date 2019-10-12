@@ -5,6 +5,8 @@
  */
 package phund.repository;
 
+import java.util.List;
+import phund.entity.CommonVote;
 import phund.entity.UserBasedPoint;
 import phund.entity.UserBasedPointPK;
 
@@ -12,6 +14,7 @@ import phund.entity.UserBasedPointPK;
  *
  * @author PhuNDSE63159
  */
-public interface UserBasedRepository extends BaseRepository<UserBasedPoint, UserBasedPointPK>{
+public interface UserBasedRepository extends BaseRepository<UserBasedPoint, UserBasedPointPK> {
+
     
 }

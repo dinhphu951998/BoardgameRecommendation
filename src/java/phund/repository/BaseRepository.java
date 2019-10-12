@@ -29,7 +29,10 @@ public interface BaseRepository<T, PK extends Serializable> {
     T find(String namedQuery, 
             Map<String, Object> parameters);
     
-    List<T> findMany(String namedQuery, Map<String, Object> parameters, 
+    List findMany(String namedQuery, Map<String, Object> parameters, 
+            Integer offset, Integer fetchNext);
+    
+    List findMany(String namedQuery, Class type, Map<String, Object> parameters, 
             Integer offset, Integer fetchNext);
     
     void updateRange(List<T> entities);
@@ -37,4 +40,6 @@ public interface BaseRepository<T, PK extends Serializable> {
     boolean exist(Object Pkey);
     
     void createOrUpdateRange(List<T> entities);
+    
+    void createOrUpdate(T entity);
 }

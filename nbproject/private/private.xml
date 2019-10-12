@@ -3,14 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/H:/FPTU/8/XML/practice/BoardgameRecommendation/src/java/phund/entity/Game.java</file>
-            <file>file:/H:/FPTU/8/XML/practice/BoardgameRecommendation/src/java/phund/servlet/ProcessServlet.java</file>
             <file>file:/H:/FPTU/8/XML/practice/BoardgameRecommendation/web/homepage.jsp</file>
-            <file>file:/H:/FPTU/8/XML/practice/BoardgameRecommendation/src/java/phund/entity/Image.java</file>
-            <file>file:/H:/FPTU/8/XML/practice/BoardgameRecommendation/web/WEB-INF/xsl/GameRender.xsl</file>
-            <file>file:/H:/FPTU/8/XML/practice/BoardgameRecommendation/web/WEB-INF/web.xml</file>
+            <file>file:/H:/FPTU/8/XML/practice/BoardgameRecommendation/src/java/phund/filter/FilterDispatcher.java</file>
+            <file>file:/H:/FPTU/8/XML/practice/BoardgameRecommendation/web/WEB-INF/xsl/GamesRender.xsl</file>
+            <file>file:/H:/FPTU/8/XML/practice/BoardgameRecommendation/src/java/phund/service/GameServiceImp.java</file>
+            <file>file:/H:/FPTU/8/XML/practice/BoardgameRecommendation/src/java/phund/listener/AppContextListener.java</file>
             <file>file:/H:/FPTU/8/XML/practice/BoardgameRecommendation/src/java/phund/servlet/TrendServlet.java</file>
-            <file>file:/H:/FPTU/8/XML/practice/BoardgameRecommendation/src/java/phund/repository/BaseRepositoryImp.java</file>
         </group>
     </open-files>
 </project-private>

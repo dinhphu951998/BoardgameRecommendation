@@ -6,14 +6,21 @@
 package phund.entity;
 
 import java.io.Serializable;
+import java.util.Date;
 import javax.persistence.Column;
+import javax.persistence.ColumnResult;
+import javax.persistence.ConstructorResult;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.SqlResultSetMapping;
+import javax.persistence.SqlResultSetMappings;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
@@ -27,9 +34,39 @@ import javax.xml.bind.annotation.XmlTransient;
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Vote.findAll", query = "SELECT v FROM Vote v")
-    , @NamedQuery(name = "Vote.findByUserId", query = "SELECT v FROM Vote v WHERE v.votePK.userId = :userId")
-    , @NamedQuery(name = "Vote.findByGameId", query = "SELECT v FROM Vote v WHERE v.votePK.gameId = :gameId")
+    , @NamedQuery(name = "Vote.findByUserId",
+            query = "SELECT v FROM Vote v WHERE v.votePK.userId = :userId order by v.time desc")
+    , @NamedQuery(name = "Vote.findByGameId",query = "SELECT v FROM Vote v WHERE v.votePK.gameId = :gameId order by v.time desc")
+//    , @NamedQuery(name = "Vote.countByUserId",query = "SELECT count(v) FROM Vote v WHERE v.votePK.userId = :userId")
     , @NamedQuery(name = "Vote.findByPoint", query = "SELECT v FROM Vote v WHERE v.point = :point")})
+
+@SqlResultSetMappings({
+            @SqlResultSetMapping(
+            name = "CommonVote",
+            classes={
+            @ConstructorResult(targetClass=CommonVote.class,
+                columns={
+                    @ColumnResult(name="gameId", type=Integer.class),
+                    @ColumnResult(name="userId", type=Integer.class),
+                    @ColumnResult(name="userPoint", type=Double.class),
+                    @ColumnResult(name="prefId", type=Integer.class),
+                    @ColumnResult(name="prefPoint", type=Double.class)
+                })
+            }),
+            @SqlResultSetMapping(
+            name = "CommonUserVote",
+            classes={
+            @ConstructorResult(targetClass=CommonUserVote.class,
+                columns={
+                    @ColumnResult(name="userId", type=Integer.class),
+                    @ColumnResult(name="gameId", type=Integer.class),
+                    @ColumnResult(name="gamePoint", type=Double.class),
+                    @ColumnResult(name="prefId", type=Integer.class),
+                    @ColumnResult(name="prefPoint", type=Double.class)
+                })
+            })
+        }
+)
 public class Vote implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -44,6 +81,9 @@ public class Vote implements Serializable {
     @JoinColumn(name = "UserId", referencedColumnName = "Id", nullable = false, insertable = false, updatable = false)
     @ManyToOne(optional = false)
     private User user;
+    @Column(name = "Time")
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date time;
 
     public Vote() {
     }
@@ -115,6 +155,15 @@ public class Vote implements Serializable {
     @Override
     public String toString() {
         return "phund.entity.Vote[ votePK=" + votePK + " ]";
+    }
+
+    @XmlElement
+    public Date getTime() {
+        return time;
+    }
+
+    public void setTime(Date time) {
+        this.time = time;
     }
 
 }

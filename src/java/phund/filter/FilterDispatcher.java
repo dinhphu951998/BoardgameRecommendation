@@ -69,11 +69,14 @@ public class FilterDispatcher implements Filter {
 
             commonPages.add("PermissionDeny.html");
             commonPages.add("homepage.jsp");
-            commonPages.add("homepage.js");
+            commonPages.add("HomePage.js");
             commonPages.add("Utils.js");
+            commonPages.add("Vote.js");
 
             adminPages.add("CrawlServlet");
             adminPages.add("LogoutServlet");
+            adminPages.add("ComputeServlet");
+            adminPages.add("ComputeTrendServlet");
             adminPages.add("dashboard.jsp");
             adminPages.addAll(commonPages);
 
@@ -81,7 +84,10 @@ public class FilterDispatcher implements Filter {
             userPages.add("LoginServlet");
             userPages.add("TrendServlet");
             userPages.add("VoteServlet");
+            userPages.add("GetVoteServlet");
             userPages.add("login.html");
+            userPages.add("suggestpage.jsp");
+            userPages.add("yourVote.jsp");
             userPages.addAll(commonPages);
 
             sc.setAttribute("ADMIN_PAGE", adminPages);

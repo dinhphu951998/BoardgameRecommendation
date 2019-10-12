@@ -21,7 +21,7 @@ import phund.utils.FileUtils;
 import phund.utils.JAXBUtils;
 import phund.utils.TrAXUtils;
 import phund.utils.XmlUtils;
-import phund.validation.BoardGameValidationHandler;
+import phund.handler.BoardGameValidationHandler;
 
 /**
  *

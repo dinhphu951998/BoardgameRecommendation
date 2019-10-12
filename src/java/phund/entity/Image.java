@@ -54,7 +54,6 @@ public class Image implements Serializable {
         this.id = id;
     }
 
-    @XmlAttribute
     public Integer getId() {
         return id;
     }
