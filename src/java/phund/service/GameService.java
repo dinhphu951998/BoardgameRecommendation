@@ -25,4 +25,6 @@ public interface GameService {
 
     void computeTrend();
 
+    List<TrendGame> searchGames(String searchValue, Integer offset, Integer fetch);
+
 }

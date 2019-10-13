@@ -3,7 +3,7 @@
     <xsl:output method="html" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
     <xsl:param name="group" select="4"/>
         
-    <xsl:template match="board-game">
+    <xsl:template match="board-game[games]">
         <div class="game-list">
             <xsl:for-each select="games[position() mod $group = 1]">
                 <div class="row">
@@ -18,6 +18,11 @@
         </div>
     </xsl:template>
     
+    <xsl:template match="board-game">
+        <h2 style="text-align: center; color: #00acac">
+            We will update soon!
+        </h2>
+    </xsl:template>
     
     <xsl:template name="callGroup">
         <xsl:param name="sibling" />
@@ -36,10 +41,12 @@
     
     <xsl:template match="games">
         <div class="col span-1-of-4 game-item">
-            <img src="{thumbnail}" alt="{title}" />
+            <div class="image-rate">
+                <xsl:apply-templates select="ratingPoint[text()]"/>
+                <img src="{thumbnail}" alt="{title}" />
+            </div>
             <div class="desc">
                 <span class="rating-point">
-                    
                     <xsl:element name="fieldset">
                         <xsl:attribute name="class">rate</xsl:attribute>
                         <xsl:if test="point">
@@ -75,13 +82,20 @@
                     <xsl:value-of select="title"/>
                 </span>
                 <span class="matched-point">
-                    <xsl:if test="matchingPercent">
-                        <xsl:value-of select="matchingPercent"/>% matched
-                    </xsl:if>
+                    <xsl:apply-templates select="matchingPercent[text()]"/>
+                   
                 </span>
             </div>
 
         </div>
     </xsl:template>
-
+    
+    <xsl:template match="matchingPercent[text()]">
+        <xsl:value-of select="."/>% matched
+    </xsl:template>
+    <xsl:template match="ratingPoint[text()]">
+        <span class="average-point">
+            <xsl:value-of select="."/>/5
+        </span>
+    </xsl:template>
 </xsl:stylesheet>

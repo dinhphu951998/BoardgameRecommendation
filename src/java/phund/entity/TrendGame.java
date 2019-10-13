@@ -6,14 +6,22 @@
 package phund.entity;
 
 import java.io.Serializable;
+import java.text.DecimalFormat;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 /**
  *
  * @author PhuNDSE63159
  */
 @XmlRootElement
+@XmlType(propOrder = {
+    "id",
+    "title",
+    "thumbnail",
+    "ratingPoint"
+})
 public class TrendGame implements Serializable {
 
     private Integer id;
@@ -60,6 +68,9 @@ public class TrendGame implements Serializable {
      */
     @XmlElement
     public Double getRatingPoint() {
+        if (ratingPoint != null) {
+            return Double.parseDouble(String.format("%.1f", ratingPoint));
+        }
         return ratingPoint;
     }
 

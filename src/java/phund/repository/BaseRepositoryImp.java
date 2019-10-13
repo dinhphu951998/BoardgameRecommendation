@@ -299,4 +299,65 @@ public class BaseRepositoryImp<T, PK extends Serializable>
 
     }
 
+    @Override
+    public List findManyAll(String namedQuery, Map<String, Object> parameters) {
+        if (namedQuery == null) {
+            return null;
+        }
+
+        em = JPAUtils.getEntityManager();
+        try {
+            Query query = em.createNamedQuery(namedQuery);
+
+            if (parameters != null && !parameters.isEmpty()) {
+                for (Map.Entry<String, Object> entry : parameters.entrySet()) {
+                    query.setParameter(entry.getKey(), entry.getValue());
+                }
+            }
+
+            return query.getResultList();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+
+        } finally {
+            closeConnection();
+        }
+        return null;
+    }
+
+    @Override
+    public List findMany(String nativeQuery, String className, Map<String, Object> parameters, 
+            Integer offset, Integer fetchNext) {
+        em = JPAUtils.getEntityManager();
+        try {
+            Query query = em.createNativeQuery(nativeQuery, className);
+            
+            if (parameters != null && !parameters.isEmpty()) {
+                for (Map.Entry<String, Object> entry : parameters.entrySet()) {
+                    query.setParameter(entry.getKey(), entry.getValue());
+                }
+            }
+
+            if (offset != null) {
+                query.setFirstResult(offset);
+            }
+
+            if (fetchNext != null) {
+                query.setMaxResults(fetchNext);
+            }
+            
+            query.setFirstResult(offset);
+            query.setMaxResults(fetchNext);
+
+            return query.getResultList();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+
+        } finally {
+            closeConnection();
+        }
+        return null;
+    }
+
 }

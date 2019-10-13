@@ -1,42 +1,49 @@
-var Utils = {
-    convertArrayToXML: function(arr, rootTagName) {
+class Utils {
+    static convertArrayToXML(arr, rootTagName) {
         var xml = "<" + rootTagName + ">";
         for (var i = 0; i < arr.length; i++) {
             xml += Vote.toXML(arr[i]);
         }
         xml += "</" + rootTagName + ">";
         return xml;
-    },
+    }
 
-    applyXPath: function(expression, contextNode, namespaceResolver, resultType, xpathResult, qNameResultNode) {
+    static applyXPath(expression, contextNode, namespaceResolver, resultType, xpathResult, qNameResultNode) {
         var resultSet = document.evaluate(expression, contextNode, namespaceResolver, resultType, xpathResult);
         var resultDom = document.createElement(qNameResultNode);
-        var n;
-        try {
-            for (var i = 0; i < resultSet.snapshotLength; i++) {
-                n = resultSet.snapshotItem(i);
-                resultDom.appendChild(n);
+        if (resultSet.snapshotLength) {
+            try {
+                for (var i = 0; i < resultSet.snapshotLength; i++) {
+                    var n = resultSet.snapshotItem(i);
+                    resultDom.appendChild(n);
+                }
+            } catch (e) {
+                console.log(e);
             }
-        } catch (e) {
-            console.log(e);
+            return resultDom;
+        }
+        return null;
+    }
+
+
+    static applyXsl(xmlDom, xslDom, resultDom) {
+        if (xmlDom && xslDom) {
+            var xsltProcessor = new XSLTProcessor();
+            xsltProcessor.importStylesheet(xslDom);
+            resultDom = xsltProcessor.transformToFragment(xmlDom, resultDom);
         }
         return resultDom;
-    },
+    }
 
-
-    applyXsl: function(xmlDom, xslDom, resultDom) {
-        var xsltProcessor = new XSLTProcessor();
-        xsltProcessor.importStylesheet(xslDom);
-        resultDom = xsltProcessor.transformToFragment(xmlDom, resultDom);
-        return resultDom;
-    },
-
-    parseToXmlDom: function(xmlString) {
-        var doc = new DOMParser().parseFromString(xmlString, "text/xml");
+    static parseToXmlDom(xmlString) {
+        var doc;
+        if (xmlString) {
+            doc = new DOMParser().parseFromString(xmlString, "text/xml");
+        }
         return doc;
-    },
+    }
 
-    getXMLHttpRequest: function() {
+    static getXMLHttpRequest() {
         var xmlHttp = null;
         try {
             xmlHttp = new XMLHttpRequest();
@@ -50,4 +57,23 @@ var Utils = {
         }
         return xmlHttp;
     }
-};
+
+    static callToServer(url, httpMethod, parameters, async, callback) {
+        var xhr = Utils.getXMLHttpRequest();
+        if (xhr == null) {
+            alert("The browser not support XML HTTP");
+            return;
+        }
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                callback();
+            }
+        };
+        xhr.open(httpMethod, url, async);
+        if (httpMethod.toLowerCase() == "post") {
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        }
+        xhr.send(parameters);
+    }
+
+}

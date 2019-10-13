@@ -77,7 +77,6 @@ public class ItemBasedServiceImp implements ItemBasedService {
                 }//end for each pref
             }//end for each game
             offset += fetch;
-            fetch += FETCH_RECORD;
             games = gameRepository.findMany("Game.findAll", null, offset, fetch);
         }//end while games not empty
 

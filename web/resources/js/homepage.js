@@ -3,7 +3,6 @@ var gamesDom;
 var xslDom;
 
 
-
 function initRatePoint(obj) {
     var point = obj.getAttribute("value") * 2;
     var resultRadio = obj.querySelector('input[value="' + point + '"]');
@@ -21,6 +20,7 @@ function onLoad() {
 
     //init games
     gamesDom = Utils.parseToXmlDom(gamesString);
+
     //init stylesheet
     xslDom = Utils.parseToXmlDom(xslString);
 
@@ -39,29 +39,28 @@ function onLoad() {
 
 function onFormSubmit(e) {
     e.preventDefault();
-    console.log(e);
-    var searchValue = document.getElementById("search-input").value;
-    search(searchValue);
+    var searchValue = document.getElementById("search-input").value.trim();
+    if (searchValue && searchValue.length != 0) {
+        var result = search(searchValue);
+        if (!result) {
+            var confirm = window.confirm("Click ok to perform advanced search");
+            if (confirm) {
+                document.getElementById("search-form").submit();
+            }
+            return;
+        }
+        var gameSection = document.getElementsByClassName("game-list")[0];
+        gameSection.replaceWith(result);
+    }
 }
 
 function onBeforeUnload() {
-    console.log("unload");
     if (votes != null && votes.length > 0) {
-        var xhr = Utils.getXMLHttpRequest();
-        if (xhr == null) {
-            alert("The browser not support XML HTTP");
-            return;
-        }
         var url = "vote";
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                localStorage.removeItem("votes");
-            }
-        };
-        xhr.open("POST", url, false);
-        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         var param = "xml=" + Utils.convertArrayToXML(votes, "votes");
-        xhr.send(param);
+        Utils.callToServer(url, "POST", param, false, function() {
+            localStorage.removeItem("votes");
+        });
     }
 }
 
@@ -85,25 +84,15 @@ function onVote(obj) {
 
 
 function search(searchValue) {
-    var exp = "//games[contains(title, '" + searchValue + "')]";
-    var resultDom = Utils.applyXPath(exp, gamesDom, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null, "board-game");
-    console.log(resultDom);
+    searchValue = searchValue.toLowerCase();
+    var exp = "//games[contains(translate(title,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'), '" + searchValue + "')]";
+    var resultDom = Utils.applyXPath(exp, Utils.parseToXmlDom(gamesString), null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null, "board-game");
+
+    if (!resultDom) {
+        return null;
+    }
 
     var resultXsl = new Document();
     resultXsl = Utils.applyXsl(resultDom, xslDom, resultXsl);
-
-    var gameSection = document.getElementsByClassName("game-list")[0];
-    //search có kết quả
-    if (resultDom.childNodes.length == 0) {
-        var notFoundNode = document.createElement("div");
-        notFoundNode.setAttribute("class", "game-list");
-        var h2 = document.createElement("h2");
-        var notFoundText = document.createTextNode("There is no item");
-        h2.appendChild(notFoundText);
-        notFoundNode.appendChild(h2);
-        gameSection.replaceWith(notFoundNode);
-        return;
-    }
-
-    gameSection.replaceWith(resultXsl);
+    return resultXsl;
 }

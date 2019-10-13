@@ -63,12 +63,12 @@ public class JAXBUtils {
     public static void marshal(OutputStream os, Object data, Class type) throws JAXBException {
         JAXBContext context = JAXBContext.newInstance(type);
         Marshaller m = context.createMarshaller();
-        m.setProperty("jaxb.encoding", "UTF-8");
-        m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+        m.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
+//        m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
         m.marshal(data, os);
     }
 
-    public static String marshal(Object data, Class type) throws JAXBException, FileNotFoundException {
+    public static String marshal(Object data, Class type) throws JAXBException {
         JAXBContext context = JAXBContext.newInstance(type);
         Marshaller m = context.createMarshaller();
         

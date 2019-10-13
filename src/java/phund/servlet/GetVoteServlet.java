@@ -7,7 +7,6 @@ package phund.servlet;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,8 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.xml.bind.JAXBException;
 import phund.constant.Constant;
-import phund.entity.BoardGame;
-import phund.entity.Game;
 import phund.entity.User;
 import phund.entity.VotedGame;
 import phund.entity.WrapperVotedGame;
@@ -68,8 +65,6 @@ public class GetVoteServlet extends HttpServlet {
                 session.setAttribute(Constant.VOTED_GAMES, result);
             }
         } catch (JAXBException ex) {
-            Logger.getLogger(GetVoteServlet.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FileNotFoundException ex) {
             Logger.getLogger(GetVoteServlet.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             RequestDispatcher rd = request.getRequestDispatcher(url);

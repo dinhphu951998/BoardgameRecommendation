@@ -96,9 +96,6 @@ public class UserBasedServiceImp implements UserBasedService {
             }//end if for user
 
             offset += fetch;
-            fetch += FETCH_RECORD;
-//            params.put("ids", Arrays.asList(calculatedUserId));
-//            users = userRepository.findMany("User.findAllIdNotInList", params, offset, fetch);
             users = userRepository.findMany("User.findAll", null, offset, fetch);
         }
 

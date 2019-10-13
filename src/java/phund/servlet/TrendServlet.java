@@ -5,7 +5,7 @@
  */
 package phund.servlet;
 
-import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 import java.util.logging.Level;
@@ -18,13 +18,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.xml.bind.JAXBException;
 import phund.constant.Constant;
-import phund.constant.FileConstant;
-import phund.entity.BoardGame;
-import phund.entity.Game;
 import phund.entity.TrendGame;
 import phund.entity.WrapperTrendGame;
 import phund.service.GameService;
 import phund.service.GameServiceImp;
+import phund.utils.DateUtils;
 import phund.utils.JAXBUtils;
 
 /**
@@ -46,16 +44,15 @@ public class TrendServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
 
         String url = HOMEPAGE;
-
-        String id = request.getParameter("userId");
-        String offsetString = request.getParameter("offset");
-        String fetchString = request.getParameter("fetch");
         List<TrendGame> games = null;
         WrapperTrendGame wrapperTrendGame = null;
         String xmlTrendGame = "";
         try {
-            Integer offset = null;
-            Integer fetch = null;
+            String id = request.getParameter("userId");
+            String offsetString = request.getParameter("offset");
+            String fetchString = request.getParameter("fetch");
+
+            Integer offset = null, fetch = null;
             try {
                 offset = Integer.parseInt(offsetString);
                 fetch = Integer.parseInt(fetchString);
@@ -63,21 +60,36 @@ public class TrendServlet extends HttpServlet {
             }
             if (offset == null && fetch == null) {
                 ServletContext sc = request.getServletContext();
-                xmlTrendGame = (String) sc.getAttribute(Constant.TREND_GAMES);
+                checkTrendGames(sc);
             } else {
                 games = gameService.getTrendGames(offset, fetch);
                 wrapperTrendGame = new WrapperTrendGame(games);
-
-                xmlTrendGame = JAXBUtils.marshal(wrapperTrendGame, BoardGame.class);
+                xmlTrendGame = JAXBUtils.marshal(wrapperTrendGame, WrapperTrendGame.class);
+                request.setAttribute(Constant.TREND_GAMES, xmlTrendGame);
             }
-
-            request.setAttribute(Constant.TREND_GAMES, xmlTrendGame);
         } catch (JAXBException ex) {
             Logger.getLogger(TrendServlet.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             RequestDispatcher rd = request.getRequestDispatcher(url);
             rd.forward(request, response);
         }
+    }
+
+    private void checkTrendGames(ServletContext sc) throws JAXBException, FileNotFoundException {
+        long outdatedTime = (long) sc.getAttribute(Constant.OUTDATED_TIME);
+        if (DateUtils.isBeforeNow(outdatedTime)) {
+            String xmlTrendGame = reload();
+            long nextOutdatedTime = DateUtils.getMillisFromNow(Constant.MAX_TIME_TREND_GAME, Constant.TIME_UNIT);
+            sc.setAttribute(Constant.TREND_GAMES, xmlTrendGame);
+            sc.setAttribute(Constant.OUTDATED_TIME, nextOutdatedTime);
+        } 
+    }
+
+    private String reload() throws JAXBException, FileNotFoundException {
+        List<TrendGame> games = gameService.getTrendGames(null, null);
+        WrapperTrendGame wrapperTrendGame = new WrapperTrendGame(games);
+        String xmlTrendGame = JAXBUtils.marshal(wrapperTrendGame, WrapperTrendGame.class);
+        return xmlTrendGame;
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

@@ -67,9 +67,7 @@ public class SuggestServlet extends HttpServlet {
             }//end if session != null
         } catch (JAXBException ex) {
             Logger.getLogger(SuggestServlet.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(SuggestServlet.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
+        }  finally {
             RequestDispatcher rd = request.getRequestDispatcher(url);
             rd.forward(request, response);
         }

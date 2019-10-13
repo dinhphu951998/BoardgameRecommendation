@@ -16,8 +16,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
@@ -26,10 +24,10 @@ import javax.persistence.SqlResultSetMappings;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import javax.xml.bind.annotation.XmlType;
 
 /**
  *
@@ -38,6 +36,22 @@ import javax.xml.bind.annotation.XmlTransient;
 @Entity
 @Table(name = "Game", catalog = "BoardgameRecommendation", schema = "dbo")
 @XmlRootElement
+@XmlType(name = "game", propOrder = {
+    "id",
+    "title",
+    "category",
+    "thumbnail",
+    "description",
+    "link",
+    "images",
+    "minAge",
+    "maxAge",
+    "minTime",
+    "maxTime",
+    "minPlayer",
+    "maxPlayer",
+    "ratingPoint"
+})
 @NamedQueries({
     @NamedQuery(name = "Game.findAll", query = "SELECT g FROM Game g")
     , @NamedQuery(name = "Game.findAllGetTitle", query = "SELECT g.id, g.title FROM Game g")
@@ -93,7 +107,7 @@ import javax.xml.bind.annotation.XmlTransient;
                             @ColumnResult(name = "id", type = Integer.class)
                             ,@ColumnResult(name = "title", type = String.class)
                             ,@ColumnResult(name = "thumbnail", type = String.class)
-                            ,@ColumnResult(name = "point", type = Double.class)})
+                            ,@ColumnResult(name = "ratingPoint", type = Double.class)})
             }
     )
 })
@@ -271,6 +285,7 @@ public class Game implements Serializable {
     }
 
     @XmlElement
+    @XmlTransient
     public Collection<Image> getImages() {
         return images;
     }

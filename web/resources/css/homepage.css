@@ -31,7 +31,7 @@ html {
 header {
     background-image: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url("https://miro.medium.com/max/3840/1*fcOemY1xrwLcWUnX8l8g8Q.jpeg");
     background-position: center;
-    height: 80vh;
+    height: 50vh;
 }
 
 .menu {
@@ -92,8 +92,8 @@ a {
 
 .search-box {
     position: absolute;
-    top: 35%;
-    left: 20%;
+    top: 18%;
+    left: 25%;
     text-align: center;
 }
 
@@ -150,6 +150,21 @@ h3 {
     width: 270px;
     height: 200px;
     border-radius: 10px;
+}
+
+.image-rate {
+    position: relative;
+}
+
+.average-point {
+    display: inline-block;
+    color: white;
+    background-color: #2851A3;
+    position: absolute;
+    border-radius: 3px 8px 3px 6px;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px;
 }
 
 .desc span {

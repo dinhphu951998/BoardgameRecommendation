@@ -24,4 +24,6 @@ public interface GameRepository extends BaseRepository<Game, Integer> {
     List<VotedGame> getVotedGame(int userId, Integer offset, Integer fetch);
     
     List<TrendGame> getTrendGames(Integer offset, Integer fetch);
+    
+    List<TrendGame> searchGames(String searchValue, Integer offset, Integer fetch);
 }

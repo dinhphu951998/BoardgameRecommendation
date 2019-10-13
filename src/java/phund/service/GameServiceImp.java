@@ -47,7 +47,7 @@ public class GameServiceImp implements GameService {
 
     @Override
     public List<TrendGame> getTrendGames(Integer offset, Integer fetchNext) {
-        if (offset == null) {
+        if (offset == null || offset < 0) {
             offset = 0;
         }
         if (fetchNext == null || fetchNext <= DEFAULT_FETCH) {
@@ -58,7 +58,7 @@ public class GameServiceImp implements GameService {
     }
 
     public List<SuggestedGame> getSuggestedGame(int userId, Integer offset, Integer fetchNext) {
-        if (offset == null) {
+        if (offset == null || offset < 0) {
             offset = 0;
         }
         if (fetchNext == null || fetchNext <= DEFAULT_FETCH) {
@@ -130,7 +130,6 @@ public class GameServiceImp implements GameService {
 
             }
             offset += fetch;
-//            fetch += DEFAULT_FETCH;
             games = gameRepository.findMany("Game.findGameVoteNotEmpty", null, offset, fetch);
         }
         gameRepository.updateRange(updatedGame);
@@ -149,4 +148,14 @@ public class GameServiceImp implements GameService {
 //        List<Integer> prefIds = comparedItems.stream().map(p -> p.getItemBasedPointPK().getPrefId())
 //        
 //    }
+    
+    public List<TrendGame> searchGames(String searchValue, Integer offset, Integer fetch){
+        if (offset == null || offset < 0) {
+            offset = 0;
+        }
+        if (fetch == null || fetch < DEFAULT_FETCH) {
+            fetch = DEFAULT_FETCH;
+        }
+        return gameRepository.searchGames(searchValue, offset, fetch);
+    }
 }

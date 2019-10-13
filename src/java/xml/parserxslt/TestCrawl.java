@@ -1,34 +1,73 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package xml.parserxslt;
 
 import com.sun.xml.bind.StringInputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.XMLEvent;
+import phund.constant.FileConstant;
+import phund.entity.Game;
 import phund.entity.ItemBasedPoint;
+import phund.entity.WrapperDuplicatedGame;
 import phund.repository.ItemBasedRepository;
 import phund.repository.ItemBasedRepositoryImp;
 import phund.service.CrawlService;
+import phund.utils.FileUtils;
+import phund.utils.JAXBUtils;
 import phund.utils.StAXUtils;
 
-/**
- *
- * @author PhuNDSE63159
- */
+@XmlRootElement
+class MapWrapper {
+
+    private java.util.Map<Integer, String> map;
+
+    public MapWrapper() {
+    }
+
+    public MapWrapper(Map<Integer, String> map) {
+        this.map = map;
+    }
+
+    public void setMap(Map<Integer, String> map) {
+        this.map = map;
+    }
+
+    public Map<Integer, String> getMap() {
+        return map;
+    }
+
+}
+
 public class TestCrawl {
 
     public static void main(String[] args) throws Exception {
-        testRepository();
+        testMarshallMap();
 
     }
-    
-    public static void testRepository(){
+
+    static void testMarshallMap() throws JAXBException {
+        WrapperDuplicatedGame wrapperDuplicatedGame = new WrapperDuplicatedGame();
+        Game g = new Game();
+        g.setTitle("Nguyễn Đình Phú");
+        g.setThumbnail("Bình Dương");
+        Game duplicate = new Game(1);
+        duplicate.setTitle("Nguyễn Đình Bảo");
+        duplicate.setThumbnail("Thành phố Hồ Chí Minh");
+        wrapperDuplicatedGame.add(g, duplicate);
+        if (wrapperDuplicatedGame == null) {
+            return;
+        }
+        String data = JAXBUtils.marshal(wrapperDuplicatedGame, WrapperDuplicatedGame.class);
+        System.out.println(data);
+    }
+
+    public static void testRepository() {
         ItemBasedRepository repository = new ItemBasedRepositoryImp();
         List<ItemBasedPoint> ibps = repository.findMany("ItemBasedPoint.findAll", null, null, null);
         System.out.println("");

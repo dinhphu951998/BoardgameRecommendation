@@ -23,6 +23,7 @@ public class WrapperTrendGame implements Serializable {
         this.games = games;
     }
 
+    
     public WrapperTrendGame() {
     }
 
@@ -34,5 +35,6 @@ public class WrapperTrendGame implements Serializable {
     public void setGames(List<TrendGame> games) {
         this.games = games;
     }
+
 
 }

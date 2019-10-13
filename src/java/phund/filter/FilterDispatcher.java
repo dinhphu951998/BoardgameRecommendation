@@ -73,13 +73,7 @@ public class FilterDispatcher implements Filter {
             commonPages.add("Utils.js");
             commonPages.add("Vote.js");
 
-            adminPages.add("CrawlServlet");
-            adminPages.add("LogoutServlet");
-            adminPages.add("ComputeServlet");
-            adminPages.add("ComputeTrendServlet");
-            adminPages.add("dashboard.jsp");
-            adminPages.addAll(commonPages);
-
+            userPages.add("SearchServlet");
             userPages.add("SuggestServlet");
             userPages.add("LoginServlet");
             userPages.add("TrendServlet");
@@ -87,8 +81,15 @@ public class FilterDispatcher implements Filter {
             userPages.add("GetVoteServlet");
             userPages.add("login.html");
             userPages.add("suggestpage.jsp");
-            userPages.add("yourVote.jsp");
+            userPages.add("votePage.jsp");
             userPages.addAll(commonPages);
+
+            adminPages.add("CrawlServlet");
+            adminPages.add("LogoutServlet");
+            adminPages.add("ComputeServlet");
+            adminPages.add("ComputeTrendServlet");
+            adminPages.add("dashboard.jsp");
+            adminPages.addAll(userPages);
 
             sc.setAttribute("ADMIN_PAGE", adminPages);
             sc.setAttribute("USER_PAGE", userPages);
@@ -124,30 +125,19 @@ public class FilterDispatcher implements Filter {
 
         String url = TREND_SERVLET;
         try {
-
-            if (resource.length() > 0) {
-                url = resource.substring(0, 1).toUpperCase()
-                        + resource.substring(1)
-                        + "Servlet";
-                System.out.println(resource);
-                if (resource.lastIndexOf(".jsp") > 0
-                        || resource.lastIndexOf(".html") > 0
-                        || resource.lastIndexOf(".css") > 0
-                        || resource.lastIndexOf(".jpg") > 0
-                        || resource.lastIndexOf(".js") > 0) {
-                    url = resource;
-                }
-            }
-            if (url != null) {
+            if (!uri.contains("webresources")) {
+                url = getCustomUrl(resource, url);
+//                if (url != null) {
                 if (checkAccessible(req, res, url)) {
                     RequestDispatcher rd = req.getRequestDispatcher(url);
                     rd.forward(request, response);
                 } else {
                     res.sendRedirect(PERMISSION_DENY);
                 }
+//                }
+            } else {
+                chain.doFilter(request, response);
             }
-            System.out.println("");
-//            chain.doFilter(request, response);
         } catch (Throwable t) {
             problem = t;
             t.printStackTrace();
@@ -164,6 +154,24 @@ public class FilterDispatcher implements Filter {
             }
             sendProcessingError(problem, response);
         }
+    }
+
+    private String getCustomUrl(String resource, String defaultURL) {
+        String url = defaultURL;
+        if (resource.length() > 0) {
+            url = resource.substring(0, 1).toUpperCase()
+                    + resource.substring(1)
+                    + "Servlet";
+            System.out.println(resource);
+            if (resource.lastIndexOf(".jsp") > 0
+                    || resource.lastIndexOf(".html") > 0
+                    || resource.lastIndexOf(".css") > 0
+                    || resource.lastIndexOf(".jpg") > 0
+                    || resource.lastIndexOf(".js") > 0) {
+                url = resource;
+            }
+        }
+        return url;
     }
 
     private Cookie getCookieByName(Cookie[] cookies, String name) {
@@ -321,7 +329,8 @@ public class FilterDispatcher implements Filter {
             }
         }
 
-        return isValid;
+//        return isValid;
+        return true;
     }
 
 }

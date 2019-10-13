@@ -19,6 +19,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.logging.Level;
@@ -90,23 +91,20 @@ public class FileUtils {
         return content;
     }
 
-    public static void writeFile(String filename, String content) {
-        FileWriter fw = null;
-        BufferedWriter bw = null;
+    public static void writeFile(String filename, String content, boolean append) {
+        OutputStream os = null;
         try {
-            fw = new FileWriter(filename);
-            bw = new BufferedWriter(fw);
-            bw.write(content);
-            bw.flush();
-        } catch (Exception ex) {
-            ex.printStackTrace();
+            byte[] buffer = content.getBytes(StandardCharsets.UTF_8);
+            os = new ByteArrayOutputStream();
+            os.write(buffer);
+            os.flush();
+            writeFile(filename, os, append);
+        } catch (IOException ex) {
+            Logger.getLogger(FileUtils.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             try {
-                if (bw != null) {
-                    bw.close();
-                }
-                if (fw != null) {
-                    fw.close();
+                if (os != null) {
+                    os.close();
                 }
             } catch (IOException ex) {
                 Logger.getLogger(FileUtils.class.getName()).log(Level.SEVERE, null, ex);
@@ -114,19 +112,30 @@ public class FileUtils {
         }
     }
 
-    public static void writeFile(String filename, OutputStream os) throws IOException {
+    public static void writeFile(String filename, OutputStream os, boolean append) {
         FileOutputStream fos = null;
-        if (!Files.exists(Paths.get(filename))) {
-            Files.createFile(Paths.get(filename));
-        }
         try {
-            fos = new FileOutputStream(new File(filename));
+            checkFile(filename);
+            fos = new FileOutputStream(new File(filename), append);
             fos.write(((ByteArrayOutputStream) os).toByteArray());
             fos.flush();
+        } catch (IOException ex) {
+            Logger.getLogger(FileUtils.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             if (fos != null) {
-                fos.close();
+                try {
+                    fos.close();
+                } catch (IOException ex) {
+                    Logger.getLogger(FileUtils.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         }
     }
+
+    private static void checkFile(String filename) throws IOException {
+        if (!Files.exists(Paths.get(filename))) {
+            Files.createFile(Paths.get(filename));
+        }
+    }
+
 }

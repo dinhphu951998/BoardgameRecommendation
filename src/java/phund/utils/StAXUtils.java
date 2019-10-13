@@ -63,7 +63,7 @@ public class StAXUtils {
 
     public static XMLEventReader getXMLEventReader(InputStream is) throws XMLStreamException {
         XMLInputFactory factory = XMLInputFactory.newFactory();
-        XMLEventReader reader = factory.createXMLEventReader(is);
+        XMLEventReader reader = factory.createXMLEventReader(is, "UTF-8");
         return reader;
     }
 

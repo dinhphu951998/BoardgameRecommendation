@@ -39,6 +39,10 @@ public class GameRepositoryImp extends BaseRepositoryImp<Game, Integer> implemen
     private final String GET_TREND_GAMES
             = "SELECT g.id, g.title, g.thumbnail, g.ratingPoint FROM Game g ORDER BY g.ratingPoint desc";
 
+    private final String SEARCH_GAMES
+            = "SELECT g.id, g.title, g.thumbnail, g.ratingPoint FROM Game g where g.title like ?searchValue "
+            + "ORDER BY g.ratingPoint desc";
+
     private final int DEFAULT_FETCH = 40;
 
     public GameRepositoryImp() {
@@ -73,7 +77,6 @@ public class GameRepositoryImp extends BaseRepositoryImp<Game, Integer> implemen
     public List<VotedGame> getVotedGame(int userId, Integer offset, Integer fetch) {
         em = JPAUtils.getEntityManager();
         try {
-//            Query query = em.createNamedQuery("Game.findVotedGame", VotedGame.class);
             Query query = em.createNativeQuery(GET_VOTED_GAMES, "VotedGame");
             query.setParameter("userId", userId);
 
@@ -152,6 +155,31 @@ public class GameRepositoryImp extends BaseRepositoryImp<Game, Integer> implemen
         try {
 //            Query query = em.createNamedQuery("Game.findVotedGame", VotedGame.class);
             Query query = em.createNativeQuery(GET_TREND_GAMES, "TrendGame");
+
+            if (offset == null) {
+                offset = 0;
+            }
+            if (fetch == null) {
+                fetch = DEFAULT_FETCH;
+            }
+            query.setFirstResult(offset);
+            query.setMaxResults(fetch);
+
+            return query.getResultList();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+
+        } finally {
+            closeConnection();
+        }
+        return null;
+    }
+
+    public List<TrendGame> searchGames(String searchValue, Integer offset, Integer fetch) {
+        em = JPAUtils.getEntityManager();
+        try {
+            Query query = em.createNativeQuery(SEARCH_GAMES, "TrendGame");
+            query.setParameter("searchValue", "%" + searchValue + "%");
 
             if (offset == null) {
                 offset = 0;

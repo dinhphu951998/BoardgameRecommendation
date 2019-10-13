@@ -7,6 +7,7 @@ package phund.service;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.util.HashMap;
 import java.util.List;
 import javax.xml.bind.JAXBException;
 import javax.xml.transform.Templates;
@@ -14,6 +15,7 @@ import javax.xml.validation.Schema;
 import phund.constant.FileConstant;
 import phund.entity.BoardGame;
 import phund.entity.Game;
+import phund.entity.WrapperDuplicatedGame;
 import phund.repository.GameRepository;
 import phund.repository.GameRepositoryImp;
 import phund.utils.DateUtils;
@@ -30,31 +32,31 @@ import phund.handler.BoardGameValidationHandler;
 public class CrawlService {
 
     final String[] inputUrls = new String[]{
-        FileConstant.INPUT_BOARD_GAME_BLISS,
-//        FileConstant.INPUT_BOARD_GAME_HUB,
-//        FileConstant.INPUT_BOARD_GAMING,
-//        FileConstant.INPUT_HOC_VIEN_BOARD_GAME
+        //        FileConstant.INPUT_BOARD_GAME_BLISS, 
+        //        FileConstant.INPUT_BOARD_GAME_HUB,
+        //            FileConstant.INPUT_BOARD_GAMING,
+        FileConstant.INPUT_HOC_VIEN_BOARD_GAME
     };
 
     final String[] outputUrls = new String[]{
-        FileConstant.OUTPUT_BOARD_GAME_BLISS,
-//        FileConstant.OUTPUT_BOARD_GAME_HUB,
-//        FileConstant.OUTPUT_BOARD_GAMING,
-//        FileConstant.OUTPUT_HOC_VIEN_BOARD_GAME
+        //        FileConstant.OUTPUT_BOARD_GAME_BLISS, 
+        //        FileConstant.OUTPUT_BOARD_GAME_HUB,
+        //            FileConstant.OUTPUT_BOARD_GAMING,
+        FileConstant.OUTPUT_HOC_VIEN_BOARD_GAME
     };
 
     final String[] xslUrls = new String[]{
-        FileConstant.XSL_BOARD_GAME_BLISS,
-//        FileConstant.XSL_BOARD_GAME_HUB,
-//        FileConstant.XSL_BOARD_GAMING,
-//        FileConstant.XSL_HOC_VIEN_BOARD_GAME
+        //        FileConstant.XSL_BOARD_GAME_BLISS, 
+        //        FileConstant.XSL_BOARD_GAME_HUB,
+        //            FileConstant.XSL_BOARD_GAMING,
+        FileConstant.XSL_HOC_VIEN_BOARD_GAME
     };
 
     final String[] webNames = new String[]{
-        "boardgamebliss",
-//        "boardgamehub",
-//        "boardgaming",
-//        "hocvienboardgame"
+        //        "boardgamebliss",
+        //        "boardgamehub",
+        //            "boardgaming",
+        "hocvienboardgame"
     };
 
     private String baseUrl;
@@ -81,6 +83,10 @@ public class CrawlService {
 
         private GameRepository gameRepository;
         private List<Game> savedGames;
+        private WrapperDuplicatedGame wrapperDuplicatedGame;
+
+        private ByteArrayOutputStream os = null;
+        private ByteArrayInputStream is = null;
 
         public ThreadCrawl(String baseUrl, int i) {
             this.baseUrl = baseUrl;
@@ -100,8 +106,6 @@ public class CrawlService {
         void crawl(String baseUrl, int i) {
             try {
                 gameRepository = new GameRepositoryImp();
-                ByteArrayOutputStream os = null;
-                ByteArrayInputStream is = null;
 
                 String inputUrl = baseUrl + inputUrls[i];
                 String outputUrl = baseUrl + outputUrls[i];
@@ -113,21 +117,21 @@ public class CrawlService {
 
                 //crawl from website
                 os = TrAXUtils.transform(inputUrl, xslUrl);
-
-                //save to file
-                FileUtils.writeFile(outputUrl, os);
+                
+                  //--save to file--
+                FileUtils.writeFile(outputUrl, os, false);
                 System.out.println(webNames[i] + " file saved");
 
                 //process string
                 is = new ByteArrayInputStream(os.toByteArray());
                 StringProcessor stringProcessor = new StringProcessor(is);
                 os = (ByteArrayOutputStream) stringProcessor.parse();
-
+               
                 //apply last filter
                 is = new ByteArrayInputStream(os.toByteArray());
                 Templates template = TrAXUtils.getTemplate(baseUrl + FileConstant.NORMALIZER);
                 os = TrAXUtils.transform(is, template);
-
+               
                 //validator
                 Schema schema = XmlUtils.getSchema(baseUrl + FileConstant.BOARDGAME_SCHEMA);
                 BoardGameValidationHandler errorHandler = new BoardGameValidationHandler();
@@ -143,26 +147,19 @@ public class CrawlService {
                             + String.format("%s-error-%s.xml", webNames[i], today);
                     System.out.println(docFile);
                     System.out.println(errorFile);
-                    FileUtils.writeFile(docFile, os);
-                    FileUtils.writeFile(errorFile, errorHandler.getErrorStream());
+                    FileUtils.writeFile(docFile, os, false);
+                    FileUtils.writeFile(errorFile, errorHandler.getErrorStream(), false);
                 }
 
-                int count = 0;
-                int total = 0;
+                saveToDb(boardGame);
+                saveDuplicatedGame();
+
+                int total = boardGame.getGames().size();
                 int duplicated = 0;
-
-                //save to db
-                if (boardGame != null && boardGame.getGames() != null) {
-                    total = boardGame.getGames().size();
-                    for (Game game : boardGame.getGames()) {
-                        if (!checkDuplicate(game.getTitle())) {
-                            gameRepository.create(game);
-                            count++;
-                        } else {
-                            duplicated++;
-                        }
-                    }
+                if (wrapperDuplicatedGame != null) {
+                    duplicated = wrapperDuplicatedGame.size();
                 }
+                int count = total - duplicated;
 
                 System.out.println(webNames[i] + " - total after string process: " + stringProcessor.getTotalGame());
                 System.out.println(webNames[i] + " - total after jaxb: " + total);
@@ -174,18 +171,44 @@ public class CrawlService {
             }
         }
 
+        private void saveToDb(BoardGame boardGame) {
+            //save to db
+            if (boardGame != null && boardGame.getGames() != null) {
+                for (Game game : boardGame.getGames()) {
+                    Game duplicatedGame = checkDuplicate(game.getTitle());
+                    if (duplicatedGame == null) {
+                        gameRepository.create(game);
+                        savedGames.add(game);
+                    } else {
+                        if (this.wrapperDuplicatedGame == null) {
+                            wrapperDuplicatedGame = new WrapperDuplicatedGame();
+                        }
+                        wrapperDuplicatedGame.add(game, duplicatedGame);
+                    }
+                }
+            }
+        }
+
+        private void saveDuplicatedGame() throws JAXBException {
+            if (wrapperDuplicatedGame == null) {
+                return;
+            }
+            String content = JAXBUtils.marshal(wrapperDuplicatedGame, WrapperDuplicatedGame.class);
+            FileUtils.writeFile(baseUrl + FileConstant.DUPLICATED_GAMES_FILE, content, false);
+        }
+
         //check duplicate using LCS
-        private boolean checkDuplicate(String name) throws JAXBException {
+        private Game checkDuplicate(String name) {
             if (savedGames == null) {
-                savedGames = gameRepository.findMany("Game.findAll", null, null, null);
+                savedGames = gameRepository.findManyAll("Game.findAll", null);
             }
             for (Game dbGame : savedGames) {
                 int matchingPoint = XmlUtils.computeMatchingPercent(name, dbGame.getTitle());
                 if (matchingPoint >= 80) {
-                    return true;
+                    return dbGame;
                 }
             }
-            return false;
+            return null;
         }
     }
 
