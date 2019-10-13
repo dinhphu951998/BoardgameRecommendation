@@ -26,6 +26,7 @@
         <script>
             var gamesString = "${SuggestedGames}";
             var xslString = '${GamesRender}';
+            var loadMoreUrl = "webresources/games/suggested";
         </script>
     </head>
 
@@ -52,7 +53,7 @@
         </header>
 
         <section class="game-section">
-            <x:transform doc="${SuggestedGames}" xslt="${GamesRender}" />
+            <%--<x:transform doc="${SuggestedGames}" xslt="${GamesRender}" />--%>
         </section>
 
     </body>

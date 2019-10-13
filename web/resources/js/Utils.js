@@ -66,7 +66,7 @@ class Utils {
         }
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
-                callback();
+                callback(xhr.responseXML);
             }
         };
         xhr.open(httpMethod, url, async);
@@ -76,4 +76,40 @@ class Utils {
         xhr.send(parameters);
     }
 
+    static mergeXMLDom(firstDom, resultDom) {
+        if (!firstDom) {
+            return resultDom;
+        }
+        if (!resultDom) {
+            return null;
+        }
+        var node;
+        while (firstDom.documentElement.hasChildNodes()) {
+            node = firstDom.documentElement.childNodes[0];
+            resultDom.documentElement.appendChild(node);
+        }
+        return resultDom;
+    }
+
 }
+
+// class Request {
+
+//     config;
+//     xhr;
+//     constructor(config) {
+//         this.config = config;
+//     }
+
+//     init = function() {
+//         xhr = Utils.getXMLHttpRequest();
+//         xhr.onreadystatechange = function() {
+//             if (xhr.readyState === 4 && xhr.status === 200) {
+//                 config.onSuccess(xhr.responseXML);
+//             }
+//         }
+//     };
+
+
+
+// }

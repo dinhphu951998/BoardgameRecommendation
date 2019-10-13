@@ -78,7 +78,7 @@ public class BaseRepositoryImp<T, PK extends Serializable>
             }
 
             if (offset != null) {
-                query.setFirstResult(offset);
+                query.setFirstResult(offset * fetchNext);
             }
 
             if (fetchNext != null) {
@@ -113,7 +113,7 @@ public class BaseRepositoryImp<T, PK extends Serializable>
             }
 
             if (offset != null) {
-                query.setFirstResult(offset);
+                query.setFirstResult(offset * fetchNext);
             }
 
             if (fetchNext != null) {
@@ -340,15 +340,15 @@ public class BaseRepositoryImp<T, PK extends Serializable>
             }
 
             if (offset != null) {
-                query.setFirstResult(offset);
+                query.setFirstResult(offset * fetchNext);
             }
 
             if (fetchNext != null) {
                 query.setMaxResults(fetchNext);
             }
             
-            query.setFirstResult(offset);
-            query.setMaxResults(fetchNext);
+//            query.setFirstResult(offset);
+//            query.setMaxResults(fetchNext);
 
             return query.getResultList();
         } catch (Exception ex) {

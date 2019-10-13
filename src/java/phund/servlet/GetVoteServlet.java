@@ -12,6 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -31,6 +32,7 @@ import phund.utils.JAXBUtils;
  *
  * @author PhuNDSE63159
  */
+@WebServlet(name = "GetVoteServlet", urlPatterns = {"/GetVoteServlet"})
 public class GetVoteServlet extends HttpServlet {
 
     private final String VOTE_PAGE = "votePage.jsp";

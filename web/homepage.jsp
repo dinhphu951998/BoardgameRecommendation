@@ -25,6 +25,7 @@
         <script>
             var gamesString = "${TrendGames}";
             var xslString = '${GamesRender}';
+            var loadMoreUrl = "webresources/games/trend";
         </script>
     </head>
 
@@ -68,7 +69,7 @@
                 <h2>What is your favorite game?</h2>
                 <p>Vote the game you played to get suggestion</p>
             </div>
-            <x:transform doc="${TrendGames}" xslt="${GamesRender}" />
+            <%--<x:transform doc="${TrendGames}" xslt="${GamesRender}" />--%>
         </section>
 
         <div style="display: none" id="data">

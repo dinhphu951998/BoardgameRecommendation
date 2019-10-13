@@ -69,9 +69,9 @@ public class FilterDispatcher implements Filter {
 
             commonPages.add("PermissionDeny.html");
             commonPages.add("homepage.jsp");
-            commonPages.add("HomePage.js");
-            commonPages.add("Utils.js");
-            commonPages.add("Vote.js");
+//            commonPages.add("HomePage.js");
+//            commonPages.add("Utils.js");
+//            commonPages.add("Vote.js");
 
             userPages.add("SearchServlet");
             userPages.add("SuggestServlet");
@@ -118,26 +118,32 @@ public class FilterDispatcher implements Filter {
         HttpServletResponse res = (HttpServletResponse) response;
 
         String uri = req.getRequestURI();
-        System.out.println(uri);
         int lastIndex = uri.lastIndexOf("/");
         String resource = uri.substring(lastIndex + 1).trim();
+        System.out.println(uri);
         System.out.println(resource + " " + resource.length());
 
         String url = TREND_SERVLET;
         try {
-            if (!uri.contains("webresources")) {
+            if (uri.contains("webresources")
+                    || resource.lastIndexOf(".gif") > 0
+                    || resource.lastIndexOf(".wadl") > 0
+                    || resource.lastIndexOf(".html") > 0
+                    || resource.lastIndexOf(".css") > 0
+                    || resource.lastIndexOf(".js") > 0
+                    || resource.lastIndexOf(".jpg") > 0) {
+
+                chain.doFilter(req, res);
+            } else {
                 url = getCustomUrl(resource, url);
-//                if (url != null) {
                 if (checkAccessible(req, res, url)) {
                     RequestDispatcher rd = req.getRequestDispatcher(url);
                     rd.forward(request, response);
                 } else {
                     res.sendRedirect(PERMISSION_DENY);
                 }
-//                }
-            } else {
-                chain.doFilter(request, response);
             }
+            System.out.println("");
         } catch (Throwable t) {
             problem = t;
             t.printStackTrace();
@@ -163,11 +169,7 @@ public class FilterDispatcher implements Filter {
                     + resource.substring(1)
                     + "Servlet";
             System.out.println(resource);
-            if (resource.lastIndexOf(".jsp") > 0
-                    || resource.lastIndexOf(".html") > 0
-                    || resource.lastIndexOf(".css") > 0
-                    || resource.lastIndexOf(".jpg") > 0
-                    || resource.lastIndexOf(".js") > 0) {
+            if (resource.lastIndexOf(".jsp") > 0) {
                 url = resource;
             }
         }
@@ -323,14 +325,14 @@ public class FilterDispatcher implements Filter {
                 isValid = true;
             }
 
-            if (url.lastIndexOf(".css") > 0
-                    || url.lastIndexOf(".jpg") > 0) {
-                isValid = true;
-            }
+//            if (url.lastIndexOf(".css") > 0
+//                    || url.lastIndexOf(".jpg") > 0) {
+//                isValid = true;
+//            }
         }
 
-//        return isValid;
-        return true;
+        return isValid;
+//        return true;
     }
 
 }

@@ -86,7 +86,7 @@ public class GameRepositoryImp extends BaseRepositoryImp<Game, Integer> implemen
             if (fetch == null) {
                 fetch = DEFAULT_FETCH;
             }
-            query.setFirstResult(offset);
+            query.setFirstResult(offset * fetch);
             query.setMaxResults(fetch);
 
             return query.getResultList();
@@ -111,7 +111,7 @@ public class GameRepositoryImp extends BaseRepositoryImp<Game, Integer> implemen
             if (fetch == null) {
                 fetch = DEFAULT_FETCH;
             }
-            query.setFirstResult(offset);
+            query.setFirstResult(offset * fetch);
             query.setMaxResults(fetch);
 
             return query.getResultList();
@@ -136,7 +136,7 @@ public class GameRepositoryImp extends BaseRepositoryImp<Game, Integer> implemen
             if (fetch == null) {
                 fetch = DEFAULT_FETCH;
             }
-            query.setFirstResult(offset);
+            query.setFirstResult(offset * fetch);
             query.setMaxResults(fetch);
 
             return query.getResultList();
@@ -162,7 +162,7 @@ public class GameRepositoryImp extends BaseRepositoryImp<Game, Integer> implemen
             if (fetch == null) {
                 fetch = DEFAULT_FETCH;
             }
-            query.setFirstResult(offset);
+            query.setFirstResult(offset * fetch);
             query.setMaxResults(fetch);
 
             return query.getResultList();
@@ -187,7 +187,7 @@ public class GameRepositoryImp extends BaseRepositoryImp<Game, Integer> implemen
             if (fetch == null) {
                 fetch = DEFAULT_FETCH;
             }
-            query.setFirstResult(offset);
+            query.setFirstResult(offset * fetch);
             query.setMaxResults(fetch);
 
             return query.getResultList();

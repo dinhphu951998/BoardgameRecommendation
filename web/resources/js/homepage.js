@@ -1,7 +1,17 @@
 var votes = [];
-var gamesDom;
-var xslDom;
+// var gamesDom;
 
+var xslDom;
+const Constant = {
+    TREND_GAME: "BoardgameRecommendation/webresources/games/trend",
+    VOTED_GAME: "BoardgameRecommendation/webresources/games/voted",
+    SUGGESTED_GAME: "BoardgameRecommendation/webresources/games/suggested"
+};
+var offsetClient = 0;
+var fetchClient = 20;
+var offsetServer = 0;
+var fetchServer = 100;
+var distance = 150; // 100px
 
 function initRatePoint(obj) {
     var point = obj.getAttribute("value") * 2;
@@ -18,11 +28,12 @@ function onLoad() {
         votes = [];
     }
 
-    //init games
-    gamesDom = Utils.parseToXmlDom(gamesString);
-
     //init stylesheet
     xslDom = Utils.parseToXmlDom(xslString);
+
+    //init games
+    // gamesDom = Utils.parseToXmlDom(gamesString);
+    loadGame(offsetClient, fetchClient);
 
     //init rate point
     var rateFieldSet = document.querySelectorAll("fieldset[value]");
@@ -35,6 +46,12 @@ function onLoad() {
     if (searchForm != null) {
         searchForm.addEventListener("submit", onFormSubmit);
     }
+
+    //init scroll
+    var element = document;
+    element.addEventListener("scroll", function() {
+        onScroll(element, distance);
+    });
 }
 
 function onFormSubmit(e) {
@@ -49,8 +66,8 @@ function onFormSubmit(e) {
             }
             return;
         }
-        var gameSection = document.getElementsByClassName("game-list")[0];
-        gameSection.replaceWith(result);
+        var gameList = document.getElementsByClassName("game-list")[0];
+        gameList.replaceWith(result);
     }
 }
 
@@ -63,7 +80,6 @@ function onBeforeUnload() {
         });
     }
 }
-
 
 
 function onVote(obj) {
@@ -95,4 +111,55 @@ function search(searchValue) {
     var resultXsl = new Document();
     resultXsl = Utils.applyXsl(resultDom, xslDom, resultXsl);
     return resultXsl;
+}
+
+function loadGame(offset, fetch) {
+    //get game
+    var exp = "//games[position() >= " + (offset * fetch + 1) + " and position()  <= " + fetch * (offset + 1) + "]";
+    var xmlDom = Utils.parseToXmlDom(gamesString);
+    var resultDom = Utils.applyXPath(exp, xmlDom, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null, "board-game");
+    console.log(resultDom);
+    if (!resultDom.documentElement.childNodes.length) {
+        return;
+    }
+    var resultXsl = new Document();
+    resultXsl = Utils.applyXsl(resultDom, xslDom, resultXsl);
+    xmlDom = Utils.parseToXmlDom(gamesString);
+    if (fetch * (offset + 1) >= xmlDom.documentElement.childNodes.length - 20) {
+        var param = "?offset=" + ++offsetServer + "&fetch=" + fetchServer;
+        Utils.callToServer(loadMoreUrl + param, "GET", null, false, function(responseXML) {
+            //save to list
+            var resultDom = Utils.parseToXmlDom(gamesString);
+            resultDom = Utils.mergeXMLDom(responseXML, resultDom);
+            var serializer = new XMLSerializer();
+            gamesString = serializer.serializeToString(resultDom.documentElement);
+            console.log(resultDom.documentElement.childNodes.length);
+        });
+    }
+
+    //load into game section
+    var gameSection = document.getElementsByClassName("game-section")[0];
+    gameSection.appendChild(resultXsl);
+}
+
+function onScroll(element, distance) {
+    var scrollTop = 0;
+    var clientHeight = 0;
+    var scrollHeight = 0;
+
+    if (typeof(element) == typeof(window)) {
+        scrollTop = window.scrollY;
+        clientHeight = window.innerHeight;
+        scrollHeight = document.body.offsetHeight;
+
+    } else {
+        scrollTop = element.scrollTop;
+        clientHeight = element.clientHeight;
+        scrollHeight = element.scrollHeight;
+    }
+
+    if (scrollTop + clientHeight >= scrollHeight - distance) {
+        offsetClient++;
+        loadGame(offsetClient, fetchClient);
+    }
 }

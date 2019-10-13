@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
     <filter>
         <filter-name>FilterDispatcher</filter-name>
         <filter-class>phund.filter.FilterDispatcher</filter-class>
@@ -8,94 +8,6 @@
         <filter-name>FilterDispatcher</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-    <servlet>
-        <servlet-name>ProcessServlet</servlet-name>
-        <servlet-class>phund.servlet.ProcessServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>phund.servlet.LoginServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CrawlServlet</servlet-name>
-        <servlet-class>phund.servlet.CrawlServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>TrendServlet</servlet-name>
-        <servlet-class>phund.servlet.TrendServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>VoteServlet</servlet-name>
-        <servlet-class>phund.servlet.VoteServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>SuggestServlet</servlet-name>
-        <servlet-class>phund.servlet.SuggestServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>LogoutServlet</servlet-name>
-        <servlet-class>phund.servlet.LogoutServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ComputeServlet</servlet-name>
-        <servlet-class>phund.servlet.ComputeServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>GetVoteServlet</servlet-name>
-        <servlet-class>phund.servlet.GetVoteServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ComputeTrendServlet</servlet-name>
-        <servlet-class>phund.servlet.ComputeTrendServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>SearchServlet</servlet-name>
-        <servlet-class>phund.servlet.SearchServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ProcessServlet</servlet-name>
-        <url-pattern>/ProcessServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>LoginServlet</servlet-name>
-        <url-pattern>/LoginServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>CrawlServlet</servlet-name>
-        <url-pattern>/CrawlServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>TrendServlet</servlet-name>
-        <url-pattern>/TrendServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>VoteServlet</servlet-name>
-        <url-pattern>/VoteServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>SuggestServlet</servlet-name>
-        <url-pattern>/SuggestServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>LogoutServlet</servlet-name>
-        <url-pattern>/LogoutServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ComputeServlet</servlet-name>
-        <url-pattern>/ComputeServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>GetVoteServlet</servlet-name>
-        <url-pattern>/GetVoteServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ComputeTrendServlet</servlet-name>
-        <url-pattern>/ComputeTrendServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>SearchServlet</servlet-name>
-        <url-pattern>/SearchServlet</url-pattern>
-    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
@@ -104,8 +16,8 @@
     <listener>
         <listener-class>phund.listener.AppContextListener</listener-class>
     </listener>
-<persistence-unit-ref>
-<persistence-unit-ref-name>persistence-factory</persistence-unit-ref-name>
-<persistence-unit-name>BoardgameRecommendationPU</persistence-unit-name>
-</persistence-unit-ref>
+    <persistence-unit-ref>
+        <persistence-unit-ref-name>persistence-factory</persistence-unit-ref-name>
+        <persistence-unit-name>BoardgameRecommendationPU</persistence-unit-name>
+    </persistence-unit-ref>
 </web-app>

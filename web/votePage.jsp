@@ -25,6 +25,7 @@
         <script>
             var gamesString = "${VotedGames}";
             var xslString = '${GamesRender}';
+            var loadMoreUrl = "webresources/games/voted";
         </script>
     </head>
 
@@ -52,7 +53,7 @@
 
         <section class="game-section">
 
-            <x:transform doc="${VotedGames}" xslt="${GamesRender}" />
+            <%--<x:transform doc="${VotedGames}" xslt="${GamesRender}" />--%>
 
         </section>
 
