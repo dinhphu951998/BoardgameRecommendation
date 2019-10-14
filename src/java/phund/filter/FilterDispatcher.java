@@ -89,7 +89,7 @@ public class FilterDispatcher implements Filter {
             adminPages.add("ComputeServlet");
             adminPages.add("ComputeTrendServlet");
             adminPages.add("dashboard.jsp");
-            adminPages.addAll(userPages);
+//            adminPages.addAll(userPages);
 
             sc.setAttribute("ADMIN_PAGE", adminPages);
             sc.setAttribute("USER_PAGE", userPages);

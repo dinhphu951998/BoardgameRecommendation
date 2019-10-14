@@ -17,6 +17,7 @@
 
         <link rel="stylesheet" href="vendors/css/grid.css" />
         <link rel="stylesheet" href="resources/css/homepage.css" />
+        <link rel="stylesheet" href="resources/css/gameDetail.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
         <script src="resources/js/Utils.js"></script>
@@ -24,12 +25,18 @@
         <script src="resources/js/Vote.js"></script>
         <script>
             var gamesString = "${TrendGames}";
-            var xslString = '${GamesRender}';
+            var gameRenderXsl = '${GamesRender}';
+            var gameDetailRenderXsl = '${GameDetailRender}';
             var loadMoreUrl = "webresources/games/trend";
+            var baseUrl = "webresources/games";
         </script>
     </head>
 
     <body onload="onLoad()" onbeforeunload="onBeforeUnload()">
+        <div class="game-detail" id="game-detail" style="display: none">
+
+        </div>
+        
         <header>
             <div class="row menu">
                 <div class="col span-1-of-3">

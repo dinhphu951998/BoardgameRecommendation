@@ -35,7 +35,7 @@ import javax.xml.bind.annotation.XmlType;
  */
 @Entity
 @Table(name = "Game", catalog = "BoardgameRecommendation", schema = "dbo")
-@XmlRootElement
+@XmlRootElement(name = "game")
 @XmlType(name = "game", propOrder = {
     "id",
     "title",
@@ -71,7 +71,9 @@ import javax.xml.bind.annotation.XmlType;
             query = "SELECT g.id, g.title, g.thumbnail, g.ratingPoint FROM Game g ORDER BY g.ratingPoint desc")
     , @NamedQuery(name = "Game.findGameVoteNotEmpty", query = "SELECT g FROM Game g join g.votes v group by g having count(v.votePK.userId) > 0")
     , @NamedQuery(name = "Game.findVotedGame",
-            query = "SELECT g.id, g.title, g.thumbnail, v.point FROM Game g join g.votes v where v.votePK.userId = :userId")})
+            query = "SELECT g.id, g.title, g.thumbnail, v.point FROM Game g join g.votes v where v.votePK.userId = :userId")
+    , @NamedQuery(name = "Game.findNotVotedGame",
+            query = "SELECT g FROM Game g where g.id not in (select v.votePK.gameId from g.votes v)")})
 
 @SqlResultSetMappings({
     @SqlResultSetMapping(
@@ -114,6 +116,9 @@ import javax.xml.bind.annotation.XmlType;
 
 @XmlAccessorType(XmlAccessType.NONE)
 public class Game implements Serializable {
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "game")
+    private Collection<Prediction> predictionCollection;
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -285,7 +290,6 @@ public class Game implements Serializable {
     }
 
     @XmlElement
-    @XmlTransient
     public Collection<Image> getImages() {
         return images;
     }
@@ -317,6 +321,15 @@ public class Game implements Serializable {
     @Override
     public String toString() {
         return "phund.entity.Game[ id=" + id + " ]";
+    }
+
+    @XmlTransient
+    public Collection<Prediction> getPredictionCollection() {
+        return predictionCollection;
+    }
+
+    public void setPredictionCollection(Collection<Prediction> predictionCollection) {
+        this.predictionCollection = predictionCollection;
     }
 
 }

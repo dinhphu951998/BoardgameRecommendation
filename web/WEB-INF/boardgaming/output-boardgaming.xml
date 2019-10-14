@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><board-game xmlns:prefix="https://boardgaming.com/" xmlns:exsl="http://exslt.org/common">
+<?xml version="1.0" encoding="UTF-8"?>
+<board-game xmlns:prefix="https://boardgaming.com/" xmlns:exsl="http://exslt.org/common">
     <game>
         <title>Anti-Virus Mutation</title>
         <link>https://boardgaming.com/games/board-games/anti-virus-mutation</link>

@@ -14,6 +14,7 @@ import javax.xml.stream.events.XMLEvent;
 import phund.constant.FileConstant;
 import phund.entity.Game;
 import phund.entity.ItemBasedPoint;
+import phund.entity.ItemBasedPointPK;
 import phund.entity.WrapperDuplicatedGame;
 import phund.repository.ItemBasedRepository;
 import phund.repository.ItemBasedRepositoryImp;
@@ -47,8 +48,13 @@ class MapWrapper {
 public class TestCrawl {
 
     public static void main(String[] args) throws Exception {
-        testMarshallMap();
+        findByPK();
+    }
 
+    public static void findByPK() {
+        ItemBasedRepository repository = new ItemBasedRepositoryImp();
+        ItemBasedPoint item = repository.findById(new ItemBasedPointPK(60, 100));
+        System.out.println(item);
     }
 
     static void testMarshallMap() throws JAXBException {
@@ -94,4 +100,5 @@ public class TestCrawl {
 
         }
     }
+
 }

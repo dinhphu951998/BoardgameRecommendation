@@ -38,6 +38,9 @@ import javax.xml.bind.annotation.XmlTransient;
             query = "SELECT u FROM User u WHERE u.id = :id and u.userToken = :userToken")})
 public class User implements Serializable {
 
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
+    private Collection<Prediction> predictionCollection;
+
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
@@ -104,6 +107,15 @@ public class User implements Serializable {
     @Override
     public String toString() {
         return "phund.entity.User[ id=" + id + " ]";
+    }
+
+    @XmlTransient
+    public Collection<Prediction> getPredictionCollection() {
+        return predictionCollection;
+    }
+
+    public void setPredictionCollection(Collection<Prediction> predictionCollection) {
+        this.predictionCollection = predictionCollection;
     }
 
 }

@@ -54,10 +54,13 @@ public class AppContextListener implements ServletContextListener {
 
     private void initRenderStyleSheet(ServletContext sc) {
         String trendRender = realPath + FileConstant.GAME_RENDER;
+        String gameDetailRender = realPath + FileConstant.GAME_DETAIL_RENDER;
 
         String gameRenderXsl = FileUtils.read(trendRender);
-
+        String gameDetailRenderXsl = FileUtils.read(gameDetailRender);
+        
         sc.setAttribute(Constant.GAME_RENDER, gameRenderXsl.trim());
+        sc.setAttribute(Constant.GAME_DETAIL_RENDER, gameDetailRenderXsl.trim());
     }
 
     private void initTrendGames(ServletContext sc) throws JAXBException, FileNotFoundException {

@@ -17,6 +17,7 @@
 
         <link rel="stylesheet" href="vendors/css/grid.css" />
         <link rel="stylesheet" href="resources/css/vote.css" />
+        <link rel="stylesheet" href="resources/css/gameDetail.css" />
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" />
 
         <script src="resources/js/Utils.js"></script>
@@ -24,8 +25,10 @@
         <script src="resources/js/Vote.js"></script>
         <script>
             var gamesString = "${VotedGames}";
-            var xslString = '${GamesRender}';
+            var gameRenderXsl = '${GamesRender}';
+            var gameDetailRenderXsl = '${GameDetailRender}';
             var loadMoreUrl = "webresources/games/voted";
+            var baseUrl = "webresources/games";
         </script>
     </head>
 

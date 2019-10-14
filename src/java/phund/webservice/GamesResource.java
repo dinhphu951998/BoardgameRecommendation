@@ -19,6 +19,7 @@ import javax.ws.rs.core.MediaType;
 import javax.xml.ws.WebServiceContext;
 import javax.xml.ws.handler.MessageContext;
 import phund.constant.Constant;
+import phund.entity.Game;
 import phund.entity.SuggestedGame;
 import phund.entity.TrendGame;
 import phund.entity.User;
@@ -89,4 +90,15 @@ public class GamesResource {
         }
         return wrapper;
     }
+
+    @GET
+    @Produces(MediaType.APPLICATION_XML)
+    public Game getGameById(@QueryParam("id") Integer id) {
+        Game game = new Game();
+        if (id != null && id > 0) {
+            game = gameService.getGameById(id);
+        }
+        return game;
+    }
+
 }

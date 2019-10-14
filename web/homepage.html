@@ -7,11 +7,57 @@
     <title>Board game recommendation</title>
     <link rel="stylesheet" href="vendors/css/grid.css" />
     <link rel="stylesheet" href="resources/css/homepage.css" />
+    <link rel="stylesheet" href="resources/css/gameDetail.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="resources/js/homepage.js"></script>
+    <style>
+
+    </style>
 </head>
 
 <body onload="onLoad()">
+    <div class="game-detail" id="game-detail" style="display: none">
+        <div class="row">
+            <div class="col span-2-of-6 game-image ">
+                <img src="..." alt=" ">
+            </div>
+            <div class="col span-4-of-6 game-info ">
+                <div class="game-title ">
+                    ...
+                </div>
+                <div class="row game-description ">
+                    ...
+                </div>
+                <div class="category">
+                    <strong>Category: </strong>
+                    <span>...</span>
+                </div>
+                <div class="game-panel">
+                    <div class="time">
+                        <div class="icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <span class="mintime">45</span>' - <span class="maxtime">45</span>'
+                        </div>
+                    </div>
+                    <div class="age">
+                        <div class="icon"><i class="fa fa-child" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <span class="minAge">8</span> +
+                        </div>
+                    </div>
+                    <div class="num-players">
+                        <div class="icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <span class="minPlayers">2</span> - <span class="maxPlayers">4</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="more-info" target="_blank">
+                    <i class="fa fa-external-link" aria-hidden="true"></i> More information
+                </a>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="row menu">
             <div class="col span-1-of-3">
@@ -81,19 +127,16 @@
                                 <input type="radio" id="rating0" name="rating" value="0" />
                             </fieldset>
                         </span>
-                        <span class="game-name">
-                            Marvel
-                        </span>
-
+                        <a href="#" class="reference-link" value="4" onclick="displayGameDetail(this)">
+                            <span class="game-name">
+                                Marvel
+                            </span>
+                        </a>
                     </div>
-
                 </div>
-
-
             </div>
-
-
         </div>
     </section>
+
 
 </body>

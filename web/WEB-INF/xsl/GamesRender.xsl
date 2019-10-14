@@ -78,12 +78,15 @@
                     </xsl:element>
                    
                 </span>
-                <span class="game-name">
-                    <xsl:value-of select="title"/>
-                </span>
+                
+                <a href="#" class="reference-link" value="{id}" onclick="initGameDetail(this)">
+                    <span class="game-name">
+                        <xsl:value-of select="title"/>
+                    </span>
+                </a>
+                
                 <span class="matched-point">
                     <xsl:apply-templates select="matchingPercent[text()]"/>
-                   
                 </span>
             </div>
 

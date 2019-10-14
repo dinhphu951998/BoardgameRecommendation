@@ -71,9 +71,9 @@ public class GameServiceImp implements GameService {
         if (totalVote < BOUND_VOTE) {
             //apply item based
             games = gameRepository.getSuggestedGamesItemBased(userId, offset, fetchNext);
-        } else {
-            //apply user based
-            games = gameRepository.getSuggestedGamesUserBased(userId, offset, fetchNext);
+//        } else {
+//            //apply user based
+//            games = gameRepository.getSuggestedGamesUserBased(userId, offset, fetchNext);
         }
         for (SuggestedGame game : games) {
             double sim = game.getSimilarity();
@@ -148,8 +148,7 @@ public class GameServiceImp implements GameService {
 //        List<Integer> prefIds = comparedItems.stream().map(p -> p.getItemBasedPointPK().getPrefId())
 //        
 //    }
-    
-    public List<TrendGame> searchGames(String searchValue, Integer offset, Integer fetch){
+    public List<TrendGame> searchGames(String searchValue, Integer offset, Integer fetch) {
         if (offset == null || offset < 0) {
             offset = 0;
         }
@@ -157,5 +156,11 @@ public class GameServiceImp implements GameService {
             fetch = DEFAULT_FETCH;
         }
         return gameRepository.searchGames(searchValue, offset, fetch);
+    }
+
+    @Override
+    public Game getGameById(Integer id) {
+        return gameRepository.findById(id);
+
     }
 }

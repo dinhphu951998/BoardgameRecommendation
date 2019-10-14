@@ -41,7 +41,7 @@ public class Image implements Serializable {
     @Column(name = "Id", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name = "ImageUrl", length = 255)
+    @Column(name = "imageUrl", length = 255)
     private String imageUrl;
     @JoinColumn(name = "GameId", referencedColumnName = "Id", nullable = false)
     @ManyToOne(optional = false, cascade = CascadeType.PERSIST)

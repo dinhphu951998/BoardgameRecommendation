@@ -91,25 +91,15 @@ class Utils {
         return resultDom;
     }
 
+    static removeAllNode(xmlDom) {
+        var childs = xmlDom.childNodes;
+        if (!childs) {
+            childs = xmlDom.documentElement.childNodes;
+        }
+        for (var i = 0; i < childs.length; i++) {
+
+            xmlDom.removeChild(childs[i]);
+        }
+    }
+
 }
-
-// class Request {
-
-//     config;
-//     xhr;
-//     constructor(config) {
-//         this.config = config;
-//     }
-
-//     init = function() {
-//         xhr = Utils.getXMLHttpRequest();
-//         xhr.onreadystatechange = function() {
-//             if (xhr.readyState === 4 && xhr.status === 200) {
-//                 config.onSuccess(xhr.responseXML);
-//             }
-//         }
-//     };
-
-
-
-// }

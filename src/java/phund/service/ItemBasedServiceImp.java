@@ -18,10 +18,17 @@ import phund.entity.CommonVote;
 import phund.entity.Game;
 import phund.entity.ItemBasedPoint;
 import phund.entity.ItemBasedPointPK;
+import phund.entity.Prediction;
+import phund.entity.PredictionPK;
+import phund.entity.User;
 import phund.repository.GameRepository;
 import phund.repository.GameRepositoryImp;
 import phund.repository.ItemBasedRepository;
 import phund.repository.ItemBasedRepositoryImp;
+import phund.repository.PredictionRepository;
+import phund.repository.PredictionRepositoryImp;
+import phund.repository.UserRepository;
+import phund.repository.UserRepositoryImp;
 
 /**
  *
@@ -34,6 +41,8 @@ public class ItemBasedServiceImp implements ItemBasedService {
     private VoteRepository voteRepository;
     private ItemBasedRepository itemBasedRepository;
     private GameRepository gameRepository;
+    private UserRepository userRepository;
+    private PredictionRepository predictionRepository;
 
     private Map<Integer, Map<Integer, Double>> itemMap;
     private List<ItemBasedPoint> result;
@@ -42,6 +51,8 @@ public class ItemBasedServiceImp implements ItemBasedService {
         voteRepository = new VoteRepositoryImp();
         itemBasedRepository = new ItemBasedRepositoryImp();
         gameRepository = new GameRepositoryImp();
+        userRepository = new UserRepositoryImp();
+        predictionRepository = new PredictionRepositoryImp();
 
         itemMap = new HashMap<>();
         result = new ArrayList<>();
@@ -83,6 +94,52 @@ public class ItemBasedServiceImp implements ItemBasedService {
         if (!result.isEmpty()) {
             itemBasedRepository.createOrUpdateRange(result);
         }
+        computePrediction();
+    }
+
+    public void computePrediction() {
+        List<Prediction> predictions = new LinkedList<>();
+        Map<String, Object> param = new HashMap<>();
+        List<User> users = userRepository.findManyAll("User.findAll", null);
+        for (User user : users) {
+            param.put("userId", user.getId());
+            List<Vote> votes = voteRepository.findManyAll("Vote.findByUserId", param);
+            if (votes != null && !votes.isEmpty()) {
+                List<Game> notVoteGames = gameRepository.findManyAll("Game.findNotVotedGame", null);
+                for (Game notVoteGame : notVoteGames) {
+                    Double predictRatePoint = predict(user.getId(), notVoteGame.getId(), votes);
+                    if (predictRatePoint != null) {
+                        Prediction prediction = 
+                                new Prediction(new PredictionPK(user.getId(), notVoteGame.getId()), predictRatePoint);
+                        predictions.add(prediction);
+                    }
+                }
+            }
+        }
+        if(!predictions.isEmpty()){
+            predictionRepository.createOrUpdateRange(predictions);
+        }
+    }
+
+    private Double predict(int userId, int gameId, List<Vote> votes) {
+        double predictPoint = 0;
+        double totalRatingPoint = 0;
+        double totalSim = 0;
+        for (Vote vote : votes) {
+            ItemBasedPoint itemBased
+                    = itemBasedRepository.findById(new ItemBasedPointPK(gameId, vote.getVotePK().getGameId()));
+            if (itemBased != null) {
+                double sim = itemBased.getSimilarity();
+                double point = vote.getPoint();
+                totalRatingPoint += sim * point;
+                totalSim += sim;
+            }
+        }
+        if (totalSim == 0) {
+            return null;
+        }
+        predictPoint = totalRatingPoint / totalSim;
+        return predictPoint;
     }
 
     private double computeSimilarityBetweenItems(int gameId, int prefId) {
@@ -100,33 +157,5 @@ public class ItemBasedServiceImp implements ItemBasedService {
 
         return 1 / (1 + sum);
     }
-//    public void compute() {
-//        List<Vote> votes = voteRepository.findMany("Vote.findAll", null, null, 100);
-//        
-//        //init data set
-//        for (Vote vote : votes) {
-//            int gameId = vote.getVotePK().getGameId();
-//            Map<Integer, Double> tmp = itemMap.getOrDefault(gameId, new HashMap<>());
-//            tmp.put(vote.getVotePK().getUserId(), vote.getPoint());
-//            itemMap.put(gameId, tmp);
-//        }
-//
-//        //start compare
-//        for (Map.Entry<Integer, Map<Integer, Double>> itemEntry : itemMap.entrySet()) {
-//            Integer gameId = itemEntry.getKey();
-//
-//            for (Map.Entry<Integer, Map<Integer, Double>> entry : itemMap.entrySet()) {
-//                Integer prefId = entry.getKey();
-//                if(gameId != prefId){
-//                    double sim = computeSimilarity(gameId, prefId);
-//                    ItemBasedPoint itemBasedPoint = new ItemBasedPoint(new ItemBasedPointPK(gameId, prefId), sim);
-//                    result.add(itemBasedPoint);
-//                }
-//            }
-//        }
-//        
-//        itemBasedRepository.createRange(result);
-//
-//    }
 
 }

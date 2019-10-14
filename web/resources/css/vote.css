@@ -67,9 +67,13 @@ ul li a {
     text-transform: uppercase;
 }
 
+header a {
+    color: white;
+}
+
 a {
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
 .active {
