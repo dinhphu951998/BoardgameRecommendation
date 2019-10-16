@@ -8,6 +8,7 @@ package phund.servlet;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Calendar;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -69,6 +70,7 @@ public class SuggestServlet extends HttpServlet {
             }//end if session != null
         } catch (JAXBException ex) {
             Logger.getLogger(SuggestServlet.class.getName()).log(Level.SEVERE, null, ex);
+            log("JAXBException_SuggestServlet " + ex.getMessage() + " " + Calendar.getInstance().getTime());
         }  finally {
             RequestDispatcher rd = request.getRequestDispatcher(url);
             rd.forward(request, response);

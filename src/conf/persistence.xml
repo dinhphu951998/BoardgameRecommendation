@@ -8,8 +8,6 @@
     <class>phund.entity.Vote</class>
     <class>phund.entity.User</class>
     <class>phund.entity.Image</class>
-    <class>phund.entity.UserBasedPoint</class>
-    <class>phund.entity.User_1</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=BoardgameRecommendation"/>

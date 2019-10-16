@@ -8,11 +8,13 @@ package phund.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import phund.constant.Constant;
 import phund.service.GameService;
 import phund.service.GameServiceImp;
 
@@ -37,6 +39,9 @@ public class ComputeTrendServlet extends HttpServlet {
         String url = DASHBOARD;
         try {
             gameService.computeTrend();
+            ServletContext sc = request.getServletContext();
+            long outdated = 0;
+            sc.setAttribute(Constant.OUTDATED_TIME, outdated);
         } finally {
             response.sendRedirect(url);
         }

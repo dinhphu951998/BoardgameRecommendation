@@ -6,7 +6,7 @@
 
     <xsl:template match="game">
         <div class="game-detail" id="game-detail" style="display: block">
-            <div class="row">
+            <div class="row game-modal-content">
                 <div class="col span-2-of-6 game-image ">
                     <img>
                         <xsl:attribute name="src">

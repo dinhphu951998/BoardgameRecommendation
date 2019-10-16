@@ -28,10 +28,18 @@ public class GameRepositoryImp extends BaseRepositoryImp<Game, Integer> implemen
             + "order by u.Similarity desc, v.Point desc, v.Time desc";
 
     private final String GET_SUGGESTED_GAME_ITEM_BASED
-            = "select i.Similarity as 'Similarity', v.Point as 'PrefPoint', g.id, g.title, g.Thumbnail "
-            + "from ItemBasedPoint i join Vote v on i.ItemId = v.GameId join Game g on i.PrefId = g.Id "
-            + "where v.UserId = ?userId and g.id not in (select v.GameId from Vote where UserId = ?userId) "
-            + "order by i.Similarity desc, v.Point desc, v.Time desc ";
+            = "select g.Id, g.Title, g.Thumbnail, X.XPoint as matchingPercent "
+            + "from Game g join (select  i.PrefId, sum(i.Similarity * X.Point) / sum(i.Similarity) * 100 /5 as 'XPoint' "
+            + "				from [ItemBasedPoint] i, (select g.id, v.Point "
+            + "							from Game g, Vote v "
+            + "							where g.id = v.gameId and v.UserId = ?userId) X "
+            + "				where i.ItemId = X.Id "
+            + "                                     and i.PrefId not in (select g.id "
+            + "                                                          from Game g, Vote v "
+            + "                                                          where g.id = v.gameId and v.UserId = ?userId) "
+            + "				group by i.PrefId) X "
+            + "             on g.Id = X.PrefId "
+            + "order by X.XPoint desc";
 
     private final String GET_VOTED_GAMES
             = "select g.Id, g.Title, g.Thumbnail, v.Point from Game g join Vote v on g.id = v.GameId where v.UserId = ?userId";

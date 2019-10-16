@@ -16,76 +16,54 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class SuggestedGame {
 
-    private double similarity;
-    private double prefPoint;
-    private Integer matchingPercent;
+    private Integer id;
     private String title;
     private String thumbnail;
-    private Integer id;
-
-    public SuggestedGame(double similarity, double prefPoint, int id, String title, String thumbnail) {
-        this.similarity = similarity;
-        this.prefPoint = prefPoint;
-        this.matchingPercent = matchingPercent;
-        this.title = title;
-        this.thumbnail = thumbnail;
-        this.id = id;
-    }
+    private Double matchingPercent;
 
     public SuggestedGame() {
     }
 
-    /**
-     * @return the similarity
-     */
-    @XmlElement
-    public double getSimilarity() {
-        return similarity;
-    }
-
-    /**
-     * @param similarity the similarity to set
-     */
-    public void setSimilarity(double similarity) {
-        this.similarity = similarity;
-    }
-
-    /**
-     * @return the prefPoint
-     */
-    @XmlElement
-    public double getPrefPoint() {
-        return prefPoint;
-    }
-
-    /**
-     * @param prefPoint the prefPoint to set
-     */
-    public void setPrefPoint(double prefPoint) {
-        this.prefPoint = prefPoint;
-    }
-
-    /**
-     * @return the matchingPercent
-     */
-    @XmlElement
-    public int getMatchingPercent() {
-        return matchingPercent;
-    }
-
-    /**
-     * @param matchingPercent the matchingPercent to set
-     */
-    public void setMatchingPercent(int matchingPercent) {
+    public SuggestedGame(Integer id, String title, String thumbnail, Double matchingPercent) {
+        this.id = id;
+        this.title = title;
+        this.thumbnail = thumbnail;
         this.matchingPercent = matchingPercent;
+    }
+
+    /**
+     * @return the id
+     */
+    public Integer getId() {
+        return id;
     }
 
     /**
      * @return the title
      */
-    @XmlElement
     public String getTitle() {
         return title;
+    }
+
+    /**
+     * @return the thumbnail
+     */
+    public String getThumbnail() {
+        return thumbnail;
+    }
+
+    /**
+     * @return the matchingPercent
+     */
+    public Double getMatchingPercent() {
+        return Double.valueOf(String.format("%.2f", this.matchingPercent));
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     /**
@@ -96,14 +74,6 @@ public class SuggestedGame {
     }
 
     /**
-     * @return the thumbnail
-     */
-    @XmlElement
-    public String getThumbnail() {
-        return thumbnail;
-    }
-
-    /**
      * @param thumbnail the thumbnail to set
      */
     public void setThumbnail(String thumbnail) {
@@ -111,18 +81,10 @@ public class SuggestedGame {
     }
 
     /**
-     * @return the id
+     * @param matchingPercent the matchingPercent to set
      */
-    @XmlElement
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * @param id the id to set
-     */
-    public void setId(int id) {
-        this.id = id;
+    public void setMatchingPercent(Double matchingPercent) {
+        this.matchingPercent = matchingPercent;
     }
 
     @Override

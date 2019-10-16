@@ -5,9 +5,8 @@
  */
 package phund.servlet;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.util.Calendar;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,11 +18,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.xml.bind.JAXBException;
 import phund.constant.Constant;
-import phund.entity.BoardGame;
 import phund.entity.TrendGame;
-import phund.entity.VotedGame;
 import phund.entity.WrapperTrendGame;
-import phund.entity.WrapperVotedGame;
 import phund.service.GameService;
 import phund.service.GameServiceImp;
 import phund.utils.JAXBUtils;
@@ -35,7 +31,8 @@ import phund.utils.JAXBUtils;
 @WebServlet(name = "SearchServlet", urlPatterns = {"/SearchServlet"})
 public class SearchServlet extends HttpServlet {
 
-    private final String TREND_PAGE = "homepage.jsp";
+    private final String SEARCH_RESULT_PAGE = "searchpage.jsp";
+        private final String TREND_PAGE = "homepage.jsp";
 
     private GameService gameService;
 
@@ -64,13 +61,16 @@ public class SearchServlet extends HttpServlet {
                     fetch = Integer.parseInt(fetchString);
                 } catch (NumberFormatException e) {
                 }
+
                 games = gameService.searchGames(searchValue, offset, fetch);
                 wrapper = new WrapperTrendGame(games);
                 xmlTrendGame = JAXBUtils.marshal(wrapper, WrapperTrendGame.class);
                 request.setAttribute(Constant.TREND_GAMES, xmlTrendGame);
+                
+                url = SEARCH_RESULT_PAGE;
             }
         } catch (JAXBException ex) {
-            Logger.getLogger(SearchServlet.class.getName()).log(Level.SEVERE, null, ex);
+            log("JAXBException_SearchServlet " + ex.getMessage() + " " + Calendar.getInstance().getTime());
         } finally {
             RequestDispatcher rd = request.getRequestDispatcher(url);
             rd.forward(request, response);

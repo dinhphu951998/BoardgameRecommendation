@@ -6,10 +6,6 @@
 package phund.utils;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-import java.util.Map;
 import javax.xml.XMLConstants;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
@@ -43,7 +39,5 @@ public class XmlUtils {
         }
         return (int) dp[n][m] * 100 / Math.min(m, m);
     }
-
-
 
 }

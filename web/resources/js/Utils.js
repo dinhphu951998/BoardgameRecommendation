@@ -91,14 +91,13 @@ class Utils {
         return resultDom;
     }
 
-    static removeAllNode(xmlDom) {
+    static removeAllChildNodes(xmlDom) {
         var childs = xmlDom.childNodes;
         if (!childs) {
             childs = xmlDom.documentElement.childNodes;
         }
-        for (var i = 0; i < childs.length; i++) {
-
-            xmlDom.removeChild(childs[i]);
+        while (childs.length > 0) {
+            xmlDom.removeChild(childs[0]);
         }
     }
 

@@ -5,19 +5,12 @@
  */
 package phund.servlet;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.xml.bind.JAXBException;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.transform.TransformerException;
-import org.xml.sax.SAXException;
 import phund.service.CrawlService;
 
 /**
@@ -35,7 +28,6 @@ public class CrawlServlet extends HttpServlet {
         String url = DASHBOARD;
         try {
             String baseUrl = getServletContext().getRealPath("/");
-            CrawlService service = new CrawlService(baseUrl);
             Thread t = new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -44,7 +36,6 @@ public class CrawlServlet extends HttpServlet {
                 }
             });
             t.start();
-
         } finally {
             response.sendRedirect(url);
         }

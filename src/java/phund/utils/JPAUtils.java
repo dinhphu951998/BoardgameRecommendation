@@ -8,6 +8,7 @@ package phund.utils;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import phund.constant.Constant;
 
 /**
  *
@@ -19,7 +20,7 @@ public class JPAUtils {
 
     public static EntityManager getEntityManager() {
         if (emf == null) {
-            emf = Persistence.createEntityManagerFactory("BoardgameRecommendationPU");
+            emf = Persistence.createEntityManagerFactory(Constant.PERSISTENCE_UNIT);
         }
         return emf.createEntityManager();
     }

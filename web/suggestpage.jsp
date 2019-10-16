@@ -28,7 +28,7 @@
             var gamesString = "${SuggestedGames}";
             var gameRenderXsl = '${GamesRender}';
             var gameDetailRenderXsl = '${GameDetailRender}';
-            var loadMoreUrl = "webresources/games/suggested";
+            var loadMoreUrl = "webresources/games/suggested?offset=offsetValue&fetch=fetchValue";
             var baseUrl = "webresources/games";
         </script>
     </head>

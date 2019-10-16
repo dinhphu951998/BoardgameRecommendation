@@ -7,6 +7,7 @@ package phund.servlet;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Calendar;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -50,7 +51,6 @@ public class TrendServlet extends HttpServlet {
         WrapperTrendGame wrapperTrendGame = null;
         String xmlTrendGame = "";
         try {
-            String id = request.getParameter("userId");
             String offsetString = request.getParameter("offset");
             String fetchString = request.getParameter("fetch");
 
@@ -60,6 +60,7 @@ public class TrendServlet extends HttpServlet {
                 fetch = Integer.parseInt(fetchString);
             } catch (NumberFormatException ex) {
             }
+            
             if (offset == null && fetch == null) {
                 ServletContext sc = request.getServletContext();
                 checkTrendGames(sc);
@@ -70,7 +71,7 @@ public class TrendServlet extends HttpServlet {
                 request.setAttribute(Constant.TREND_GAMES, xmlTrendGame);
             }
         } catch (JAXBException ex) {
-            Logger.getLogger(TrendServlet.class.getName()).log(Level.SEVERE, null, ex);
+            log("JAXBException_TrendServlet: " + ex.getMessage() + " " + Calendar.getInstance().getTime());
         } finally {
             RequestDispatcher rd = request.getRequestDispatcher(url);
             rd.forward(request, response);

@@ -34,4 +34,7 @@ public class Constant {
 
     public static final int MAX_TIME_TREND_GAME = 1;
     public static final ChronoUnit TIME_UNIT = ChronoUnit.HOURS;
+    
+    //persistence unit
+    public static String PERSISTENCE_UNIT = "BoardgameRecommendationPU";
 }

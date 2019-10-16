@@ -7,6 +7,8 @@ package phund.servlet;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -36,6 +38,7 @@ import phund.utils.JAXBUtils;
 public class GetVoteServlet extends HttpServlet {
 
     private final String VOTE_PAGE = "votePage.jsp";
+
     private VoteService voteService;
     private GameService gameService;
 
@@ -56,18 +59,20 @@ public class GetVoteServlet extends HttpServlet {
             if (session != null) {
                 User user = (User) session.getAttribute(Constant.USER);
                 Integer offset = null, fetch = null;
+
                 try {
                     offset = Integer.parseInt(offsetString);
                     fetch = Integer.parseInt(fetchString);
                 } catch (NumberFormatException e) {
                 }
+
                 List<VotedGame> games = gameService.getVotedGames(user.getId(), offset, fetch);
                 WrapperVotedGame wapper = new WrapperVotedGame(games);
                 String result = JAXBUtils.marshal(wapper, WrapperVotedGame.class);
                 session.setAttribute(Constant.VOTED_GAMES, result);
             }
         } catch (JAXBException ex) {
-            Logger.getLogger(GetVoteServlet.class.getName()).log(Level.SEVERE, null, ex);
+            log("JAXBException_GetVoteServlet: " + ex.getMessage() + " " + Calendar.getInstance().getTime());
         } finally {
             RequestDispatcher rd = request.getRequestDispatcher(url);
             rd.forward(request, response);

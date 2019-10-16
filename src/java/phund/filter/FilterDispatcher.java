@@ -11,6 +11,7 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -86,10 +87,10 @@ public class FilterDispatcher implements Filter {
 
             adminPages.add("CrawlServlet");
             adminPages.add("LogoutServlet");
-            adminPages.add("ComputeServlet");
+            adminPages.add("ComputeSimilarityServlet");
             adminPages.add("ComputeTrendServlet");
             adminPages.add("dashboard.jsp");
-//            adminPages.addAll(userPages);
+            adminPages.addAll(commonPages);
 
             sc.setAttribute("ADMIN_PAGE", adminPages);
             sc.setAttribute("USER_PAGE", userPages);
@@ -147,6 +148,7 @@ public class FilterDispatcher implements Filter {
         } catch (Throwable t) {
             problem = t;
             t.printStackTrace();
+            log("Throwable_FilterDispatcher: " + t.getMessage() + " " + Calendar.getInstance().getTime());
         }
 
         doAfterProcessing(request, response);
@@ -301,16 +303,17 @@ public class FilterDispatcher implements Filter {
                 res.addCookie(cookieUserToken);
 
             } catch (NoSuchAlgorithmException ex) {
-                Logger.getLogger(FilterDispatcher.class.getName()).log(Level.SEVERE, null, ex);
+                log("NoSuchAlgorithmException_FilterDispatcher: " + ex.getMessage() + " " + Calendar.getInstance().getTime());
             }
         }//end if user == null
+
         HttpSession session = req.getSession();
         session.setAttribute(Constant.USER, user);
         session.setAttribute(Constant.ROLE, "USER");
     }
 
     private boolean checkAccessible(HttpServletRequest req, HttpServletResponse res, String url) throws IOException {
-        boolean isValid = false;
+        boolean valid = false;
         HttpSession session = req.getSession(false);
         if (session == null) {
             addAnonymousUser(req, res);
@@ -318,21 +321,13 @@ public class FilterDispatcher implements Filter {
         }
         String role = (String) session.getAttribute(Constant.ROLE);
         if (role != null) {
-
             if (role.equals("ADMIN") && adminPages.contains(url)) {
-                isValid = true;
+                valid = true;
             } else if (role.equals("USER") && userPages.contains(url)) {
-                isValid = true;
+                valid = true;
             }
-
-//            if (url.lastIndexOf(".css") > 0
-//                    || url.lastIndexOf(".jpg") > 0) {
-//                isValid = true;
-//            }
-        }
-
-        return isValid;
-//        return true;
+        }//end if role not null
+        return valid;
     }
 
 }

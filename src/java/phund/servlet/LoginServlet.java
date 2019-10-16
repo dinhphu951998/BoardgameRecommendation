@@ -40,13 +40,19 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         try {
-            Account account = accountService.login(username, password);
-            if (account != null) {
-                HttpSession session = request.getSession();
-                session.setAttribute(Constant.USER, account);
-                session.setAttribute(Constant.ROLE, "ADMIN");
-                url = DASHBOARD;
-            }
+            if (username != null && !"".equals(username.trim())
+                    && password != null && !"".equals(password.trim())) {
+
+                Account account = accountService.login(username, password);
+                if (account != null) {
+                    HttpSession session = request.getSession();
+                    session.setAttribute(Constant.USER, account);
+                    session.setAttribute(Constant.ROLE, "ADMIN");
+                    url = DASHBOARD;
+                    
+                }// end if account not null
+
+            }//end if username password not empty
         } finally {
             response.sendRedirect(url);
         }

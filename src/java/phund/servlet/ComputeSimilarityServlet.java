@@ -6,7 +6,6 @@
 package phund.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,22 +13,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import phund.service.ItemBasedService;
 import phund.service.ItemBasedServiceImp;
-import phund.service.UserBasedService;
-import phund.service.UserBasedServiceImp;
 
 /**
  *
  * @author PhuNDSE63159
  */
-@WebServlet(name = "ComputeServlet", urlPatterns = {"/ComputeServlet"})
-public class ComputeServlet extends HttpServlet {
+@WebServlet(name = "ComputeSimilarityServlet", urlPatterns = {"/ComputeSimilarityServlet"})
+public class ComputeSimilarityServlet extends HttpServlet {
 
     private final String DASHBOARD = "dashboard.jsp";
-    private UserBasedService userBasedService;
     private ItemBasedService itemBasedService;
 
-    public ComputeServlet() {
-        userBasedService = new UserBasedServiceImp();
+    public ComputeSimilarityServlet() {
         itemBasedService = new ItemBasedServiceImp();
     }
 
@@ -38,7 +33,6 @@ public class ComputeServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         String url = DASHBOARD;
         try {
-            userBasedService.computeAll();
             itemBasedService.computeAll();
 
         } finally {

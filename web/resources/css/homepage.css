@@ -95,9 +95,10 @@ a {
 }
 
 .search-box {
-    position: absolute;
+    /* position: absolute;
     top: 18%;
-    left: 25%;
+    left: 25%; */
+    margin: 5% auto;
     text-align: center;
 }
 

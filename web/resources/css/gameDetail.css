@@ -13,16 +13,33 @@ html {
 
 .game-detail {
     color: black;
-    padding: 50px 100px;
-    background-color: white;
-    border-radius: 10px;
+    display: none;
+    /* Hidden by default */
     position: fixed;
-    top: 5vh;
-    left: 5%;
-    width: 90%;
-    height: auto;
-    z-index: 10;
-    border: 1px solid #ccc;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black w/ opacity */
+    overflow: auto;
+    /* Enable scroll if needed */
+}
+
+.game-modal-content {
+    background-color: #fefefe;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
 }
 
 .game-image img {

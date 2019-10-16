@@ -32,30 +32,30 @@ import phund.handler.BoardGameValidationHandler;
 public class CrawlService {
 
     final String[] inputUrls = new String[]{
-        //        FileConstant.INPUT_BOARD_GAME_BLISS, 
-        //        FileConstant.INPUT_BOARD_GAME_HUB,
-        //            FileConstant.INPUT_BOARD_GAMING,
+        FileConstant.INPUT_BOARD_GAME_BLISS,
+        FileConstant.INPUT_BOARD_GAME_HUB,
+        FileConstant.INPUT_BOARD_GAMING,
         FileConstant.INPUT_HOC_VIEN_BOARD_GAME
     };
 
     final String[] outputUrls = new String[]{
-        //        FileConstant.OUTPUT_BOARD_GAME_BLISS, 
-        //        FileConstant.OUTPUT_BOARD_GAME_HUB,
-        //            FileConstant.OUTPUT_BOARD_GAMING,
+        FileConstant.OUTPUT_BOARD_GAME_BLISS,
+        FileConstant.OUTPUT_BOARD_GAME_HUB,
+        FileConstant.OUTPUT_BOARD_GAMING,
         FileConstant.OUTPUT_HOC_VIEN_BOARD_GAME
     };
 
     final String[] xslUrls = new String[]{
-        //        FileConstant.XSL_BOARD_GAME_BLISS, 
-        //        FileConstant.XSL_BOARD_GAME_HUB,
-        //            FileConstant.XSL_BOARD_GAMING,
+        FileConstant.XSL_BOARD_GAME_BLISS,
+        FileConstant.XSL_BOARD_GAME_HUB,
+        FileConstant.XSL_BOARD_GAMING,
         FileConstant.XSL_HOC_VIEN_BOARD_GAME
     };
 
     final String[] webNames = new String[]{
-        //        "boardgamebliss",
-        //        "boardgamehub",
-        //            "boardgaming",
+        "boardgamebliss",
+        "boardgamehub",
+        "boardgaming",
         "hocvienboardgame"
     };
 
@@ -117,8 +117,8 @@ public class CrawlService {
 
                 //crawl from website
                 os = TrAXUtils.transform(inputUrl, xslUrl);
-                
-                  //--save to file--
+
+                //--save to file--
                 FileUtils.writeFile(outputUrl, os, false);
                 System.out.println(webNames[i] + " file saved");
 
@@ -126,12 +126,12 @@ public class CrawlService {
                 is = new ByteArrayInputStream(os.toByteArray());
                 StringProcessor stringProcessor = new StringProcessor(is);
                 os = (ByteArrayOutputStream) stringProcessor.parse();
-               
+
                 //apply last filter
                 is = new ByteArrayInputStream(os.toByteArray());
                 Templates template = TrAXUtils.getTemplate(baseUrl + FileConstant.NORMALIZER);
                 os = TrAXUtils.transform(is, template);
-               
+
                 //validator
                 Schema schema = XmlUtils.getSchema(baseUrl + FileConstant.BOARDGAME_SCHEMA);
                 BoardGameValidationHandler errorHandler = new BoardGameValidationHandler();

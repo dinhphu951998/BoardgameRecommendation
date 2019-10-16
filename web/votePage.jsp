@@ -27,7 +27,7 @@
             var gamesString = "${VotedGames}";
             var gameRenderXsl = '${GamesRender}';
             var gameDetailRenderXsl = '${GameDetailRender}';
-            var loadMoreUrl = "webresources/games/voted";
+            var loadMoreUrl = "webresources/games/voted?offset=offsetValue&fetch=fetchValue";
             var baseUrl = "webresources/games";
         </script>
     </head>

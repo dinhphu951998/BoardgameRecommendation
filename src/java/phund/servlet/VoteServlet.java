@@ -7,6 +7,7 @@ package phund.servlet;
 
 import java.io.IOException;
 import java.io.StringReader;
+import java.util.Calendar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -57,6 +58,7 @@ public class VoteServlet extends HttpServlet {
         }//end if xml != null
         catch (JAXBException ex) {
             Logger.getLogger(VoteServlet.class.getName()).log(Level.SEVERE, null, ex);
+            log("JAXBException_VoteServlet: " + ex.getMessage() + " " + Calendar.getInstance().getTime());
         } finally {
             if (isError) {
                 response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);

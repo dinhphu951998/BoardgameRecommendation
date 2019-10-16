@@ -81,11 +81,10 @@ import javax.xml.bind.annotation.XmlType;
             classes = {
                 @ConstructorResult(targetClass = SuggestedGame.class,
                         columns = {
-                            @ColumnResult(name = "similarity", type = Double.class)
-                            ,@ColumnResult(name = "prefPoint", type = Double.class)
-                            ,@ColumnResult(name = "id", type = Integer.class)
+                            @ColumnResult(name = "id", type = Integer.class)
                             ,@ColumnResult(name = "title", type = String.class)
-                            ,@ColumnResult(name = "thumbnail", type = String.class),})
+                            ,@ColumnResult(name = "thumbnail", type = String.class)
+                            ,@ColumnResult(name = "matchingPercent", type = Double.class)})
             }
     )
     ,
@@ -116,9 +115,6 @@ import javax.xml.bind.annotation.XmlType;
 
 @XmlAccessorType(XmlAccessType.NONE)
 public class Game implements Serializable {
-
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "game")
-    private Collection<Prediction> predictionCollection;
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -321,15 +317,6 @@ public class Game implements Serializable {
     @Override
     public String toString() {
         return "phund.entity.Game[ id=" + id + " ]";
-    }
-
-    @XmlTransient
-    public Collection<Prediction> getPredictionCollection() {
-        return predictionCollection;
-    }
-
-    public void setPredictionCollection(Collection<Prediction> predictionCollection) {
-        this.predictionCollection = predictionCollection;
     }
 
 }

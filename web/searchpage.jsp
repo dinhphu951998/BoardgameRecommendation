@@ -18,17 +18,17 @@
         <link rel="stylesheet" href="vendors/css/grid.css" />
         <link rel="stylesheet" href="resources/css/homepage.css" />
         <link rel="stylesheet" href="resources/css/gameDetail.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
         <script src="resources/js/Utils.js"></script>
         <script src="resources/js/HomePage.js"></script>
         <script src="resources/js/Vote.js"></script>
         <script>
-                        var gamesString = "${TrendGames}";
-                        var gameRenderXsl = '${GamesRender}';
-                        var gameDetailRenderXsl = '${GameDetailRender}';
-                        var loadMoreUrl = "webresources/games/trend?offset=offsetValue&fetch=fetchValue";
-                        var baseUrl = "webresources/games";
+            var gamesString = "${TrendGames}";
+            var gameRenderXsl = '${GamesRender}';
+            var gameDetailRenderXsl = '${GameDetailRender}';
+            var loadMoreUrl = "webresources/games/search?searchValue=${param.searchValue}&offset=offsetValue&fetch=fetchValue";
+            var baseUrl = "webresources/games";
         </script>
     </head>
 
@@ -56,7 +56,8 @@
                     <h2>Which game will you play next?</h2>
                     <form action="search" id="search-form">
 
-                        <input type="text" id="search-input" class="input-box" name="searchValue" placeholder="Find the game. Press enter to fast search" value="${param.searchValue}" />
+                        <input type="text" id="search-input" 
+                               class="input-box" name="searchValue" placeholder="Find the game. Press enter to fast search" value="${param.searchValue}"/>
                         <button class="submit-btn input-box" id="search-div" name="button" value=""
                                 onclick="setButtonSubmitSearchForm(this)">
                             <span class="fa fa-search"></span> Tìm kiếm

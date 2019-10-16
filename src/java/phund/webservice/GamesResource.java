@@ -101,4 +101,16 @@ public class GamesResource {
         return game;
     }
 
+    @GET
+    @Produces(MediaType.APPLICATION_XML)
+    @Path("/search")
+    public WrapperTrendGame searchGames(@QueryParam("searchValue") String searchValue, 
+            @QueryParam("offset") Integer offset, 
+            @QueryParam("fetch") Integer fetch) {
+        
+        List<TrendGame> games = gameService.searchGames(searchValue, offset, fetch);
+        WrapperTrendGame wrapper = new WrapperTrendGame(games);
+        return wrapper;
+    }
+
 }

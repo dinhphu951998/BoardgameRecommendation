@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-            <!--link="https://hocvienboardgame.vn/boardgame/tong-hop-game-abstract-chien-thuat-truu-tuong/ https://hocvienboardgame.vn/boardgame/tong-hop-game-card-the-bai/ https://hocvienboardgame.vn/boardgame/tong-hop-board-game-co-op-dong-doi/ https://hocvienboardgame.vn/boardgame/tong-hop-game-dice-xuc-xac/ https://hocvienboardgame.vn/boardgame/tong-hop-game-dexterity-nhanh-nhen/ https://hocvienboardgame.vn/boardgame/tong-hop-game-economic-kinh-te/ https://hocvienboardgame.vn/boardgame/tong-hop-game-hidden-role-an-vai/ https://hocvienboardgame.vn/boardgame/tong-hop-game-rpg-nhap-vai/ https://hocvienboardgame.vn/boardgame/tong-hop-game-tile-laying-dat-the/"--> 
+<!--link="https://hocvienboardgame.vn/boardgame/tong-hop-game-abstract-chien-thuat-truu-tuong/"-->
 <board-game xmlns="https://hocvienboardgame.vn/" 
             host="https://hocvienboardgame.vn/"
-            link="https://hocvienboardgame.vn/boardgame/tong-hop-game-abstract-chien-thuat-truu-tuong/"
+            link="https://hocvienboardgame.vn/boardgame/tong-hop-game-abstract-chien-thuat-truu-tuong/ https://hocvienboardgame.vn/boardgame/tong-hop-game-card-the-bai/ https://hocvienboardgame.vn/boardgame/tong-hop-board-game-co-op-dong-doi/ https://hocvienboardgame.vn/boardgame/tong-hop-game-dice-xuc-xac/ https://hocvienboardgame.vn/boardgame/tong-hop-game-dexterity-nhanh-nhen/ https://hocvienboardgame.vn/boardgame/tong-hop-game-economic-kinh-te/ https://hocvienboardgame.vn/boardgame/tong-hop-game-hidden-role-an-vai/ https://hocvienboardgame.vn/boardgame/tong-hop-game-rpg-nhap-vai/ https://hocvienboardgame.vn/boardgame/tong-hop-game-tile-laying-dat-the/" 
             delim=" ">
     
 </board-game>

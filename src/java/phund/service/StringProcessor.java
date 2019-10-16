@@ -48,28 +48,31 @@ public class StringProcessor extends Parser {
         writer = StAXUtils.getXMLEventWriter(outputStream);
         XMLEvent event;
         while (reader.hasNext()) {
-            event = reader.nextEvent();
-            writer.add(event);
-            if (event.isStartElement()) {
-                if (event.asStartElement().getName().getLocalPart().equals("game")) {
-                    totalGame++;
-                }
-                switch (event.asStartElement().getName().getLocalPart()) {
-                    case "numPlayer":
-                        parseNumPlayerElement(event);
-                        break;
-                    case "time":
-                        parseTimeElement(event);
-                        break;
-                    case "age":
-                        parseAgeElement(event);
-                        break;
-                    default:
-                        break;
+            try {
+                event = reader.nextEvent();
+                writer.add(event);
+                if (event.isStartElement()) {
+                    if (event.asStartElement().getName().getLocalPart().equals("game")) {
+                        totalGame++;
+                    }
+                    switch (event.asStartElement().getName().getLocalPart()) {
+                        case "numPlayer":
+                            parseNumPlayerElement(event);
+                            break;
+                        case "time":
+                            parseTimeElement(event);
+                            break;
+                        case "age":
+                            parseAgeElement(event);
+                            break;
+                        default:
+                            break;
 
-                } // end switch case
-
-            } //end if start element
+                    } // end switch case
+                } //end if start element
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
 
         }//end while reader has next
         writer.flush();
@@ -103,7 +106,6 @@ public class StringProcessor extends Parser {
     }
 
     private void parseTimeElement(XMLEvent event) throws XMLStreamException {
-
         event = reader.nextEvent();
         if (event.isCharacters()) {
             Characters chars = event.asCharacters();
@@ -126,11 +128,12 @@ public class StringProcessor extends Parser {
             event = reader.nextTag();
         }//end if isChar
         writer.add(event);
+
     }
 
     private void parseAgeElement(XMLEvent event) throws XMLStreamException {
         event = reader.nextEvent();
-        if (event.isCharacters()) {
+        while (event.isCharacters()) {
             Characters chars = event.asCharacters();
             String age = chars.getData();
             age = age.replaceAll("[^0-9]", " ").trim();

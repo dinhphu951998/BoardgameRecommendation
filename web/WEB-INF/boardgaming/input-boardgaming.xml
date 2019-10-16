@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
+<!--link="https://boardgaming.com/category/games/strategy-games https://boardgaming.com/category/games/party-games https://boardgaming.com/category/games/digital-board-games https://boardgaming.com/category/games/miniatures"--> 
 <board-game xmlns="https://boardgaming.com/" 
             host="https://boardgaming.com/"
-            link="https://boardgaming.com/category/games/strategy-games https://boardgaming.com/category/games/party-games https://boardgaming.com/category/games/digital-board-games https://boardgaming.com/category/games/miniatures" 
+            link="https://boardgaming.com/category/games/trading-card-games https://boardgaming.com/category/games/digital-board-games https://boardgaming.com/category/games/role-playing-games"
             delim=" ">
     
 </board-game>

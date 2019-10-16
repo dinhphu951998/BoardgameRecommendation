@@ -36,8 +36,8 @@
             <form action="crawl">
                 <button class="btn" name="btnSubmit" value="Crawl">Crawl</button>
             </form>
-            <form action="compute">
-                <button class="btn" name="btnSubmit" value="Compute">Compute similarity</button>
+            <form action="computeSimilarity">
+                <button class="btn" name="btnSubmit" value="ComputeSimilarity">Compute similarity</button>
             </form>
             <form action="computeTrend">
                 <button class="btn" name="btnSubmit" value="Compute">Compute Trend</button>
