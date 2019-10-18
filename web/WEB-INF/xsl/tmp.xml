@@ -1,16 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><game>
-    <id>60</id>
-    <title>War of the Ring (second edition)</title>
-    <category>Game nhập vai</category>
-    <thumbnail>https://i1.wp.com/www.boardgamehub.net/wp-content/uploads/2015/12/warofthering-4.jpg?fit=705%2C478&amp;ssl=1</thumbnail>
-    <description>TrongWar of the Ring, một người chơi điều khiển liên minh tự do (Free People), người chơi khác nắm giữ quân đoàn bóng tối (Shadow Armies). Tuy nhiên, các nước trong liên minh tự do không quá mặn mà với việc gây hấn với Sauron. Chỉ khi bị tấn công hoặc thuyết phục bởi Gandalf hoặc các thành viên trong đoàn hộ nhẫn thì những nước này mới sẵn sàng chiến đấu.Người chơi có thể dành chiến thắng game thông qua điểm quân sự, khi Sauron chiếm đóng được một số lượng các thành trì của liên minh tự do và ngược lại. Niềm hy vọng lớn nhất của liên minh tự do đặt ở đoàn hộ nhẫn. Trong khi những chận chiến nảy lửa xảy ra tại khắp trung địa, đoàn hộ nhẫn bí mật mang chiến nhẫn thần đến Mount Doom để thiêu hủy. Tuy nhiên, Sauron biết được điều này và sẽ liên tục tìm kiếm cũng như gây ra muôn vàn khó khăn cho người chơi. Game sử dụng cơ chế the Hunt để minh họa cho những sự kiện này.Bắt đầu mỗi vòng đấu, 2 người chơi đổ xúc xắc để xác định những hành động thực hiên bao gồm (di chuyển quân đội, anh hùng, chiêu mộ lính, tăng cường ảnh hưởng. Ngoài ra,War of the Ringcòn sử dụng các action card như một yếu tố bất ngờ. Những thẻ bài này mô phỏng một sự kiện có thật trong truyện và có thể xoay chuyển cục diện chiến trường ngay lập tức. Một wargame lấy bối cảnh fantasy của Lord of the Ring thay vì chiến tranh thế giới đã thổi một làn gió mới vào danh sách có phần hơi khô khan của wargame cổ điển.</description>
-    <link>https://www.boardgamehub.net/war-of-the-ring-second-edition/</link>
-    <images>
-        <id>58</id>
-        <imageUrl>https://i0.wp.com/www.boardgamehub.net/wp-content/uploads/2015/12/warofthering-2.jpg?resize=495%2C400&amp;ssl=1</imageUrl>
-    </images>
-    <minAge>13</minAge>
-    <minTime>150</minTime>
-    <minPlayer>2</minPlayer>
-    <ratingPoint>5.0</ratingPoint>
-</game>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<board-game>
+    <games>
+        <title>Descent: Journeys in the Dark (Second Edition)</title>
+        <category>Game nhập vai</category>
+        <thumbnail>https://i0.wp.com/www.boardgamehub.net/wp-content/uploads/2016/01/descent-7.jpg?fit=600%2C600&amp;ssl=1</thumbnail>
+        <description>TrongDescent: Journeys in the Dark (Second Edition)người chơi sẽ vào vai bốn anh hùng dũng cảm đương đầu với một người làm overlord. Mỗi game sẽ là một cuộc phiêu lưu đến những hang động bí ẩn, dấu tích cổ xưa, cánh rừng bị nguyền rủa để chiến đấu với các loại quái vật để nhận được phần thưởng và ngăn chặn overlord thực hiện mưu đồ bá chủ của hắn.Khi mà nguy hiểm ở khắp mọi nơi, chiến đấu là điều không thể tránh.Descent: Journeys in the Dark (Second Edition)sử dụng cơ chế đổ xúc xắc riêng biệt. Người chơi sử dụng những xúc xắc này theo khả năng của nhân vật, vũ khí sử dụng và chúng đều có những hiệu ứng khác nhau. Tận dụng mọi lợi thế có được là con đường ngắn nhất dẫn đến chiến thắng.Bao gồm những board 2 mặt để thể hiện bản đồ, nhiều anh hùng với những kỹ năng khác nhau và một cốt truyện tương đối hoành tráng,Descent: Journeys in the Dark (Second Edition)sẽ đưa bạn vào thế giới fantasy đầy mê hoặc để hợp sức chiến thắng cái ác.</description>
+        <link>https://www.boardgamehub.net/descent-journeys-in-the-dark-second-edition/</link>
+        <images>
+            <imageUrl>https://i2.wp.com/www.boardgamehub.net/wp-content/uploads/2016/01/descent-7.jpg?resize=495%2C400&amp;ssl=1</imageUrl>
+            <imageUrl>https://i2.wp.com/www.boardgamehub.net/wp-content/uploads/2016/01/descent-6.jpg?resize=495%2C400&amp;ssl=1</imageUrl>
+            <imageUrl>https://i2.wp.com/www.boardgamehub.net/wp-content/uploads/2016/01/descent-2.jpg?resize=495%2C400&amp;ssl=1</imageUrl>
+            <imageUrl>https://i2.wp.com/www.boardgamehub.net/wp-content/uploads/2016/01/descent-3.jpg?resize=495%2C400&amp;ssl=1</imageUrl>
+            <imageUrl>https://i0.wp.com/www.boardgamehub.net/wp-content/uploads/2016/01/descent-5.jpg?resize=495%2C400&amp;ssl=1</imageUrl>
+            <imageUrl>https://i1.wp.com/www.boardgamehub.net/wp-content/uploads/2016/01/descent-1.png?resize=495%2C400&amp;ssl=1</imageUrl>
+            <imageUrl>https://i0.wp.com/www.boardgamehub.net/wp-content/uploads/2016/01/descent-1.jpg?resize=495%2C400&amp;ssl=1</imageUrl>
+        </images>
+        <minAge>14</minAge>
+        <minTime>120</minTime>
+        <minPlayer>2</minPlayer>
+    </games>
+</board-game>

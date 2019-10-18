@@ -40,20 +40,50 @@ where v.GameId = 165 and v1.GameId = 166
 -- ITEM BASED: chọn game (vote cao của user đó) -> lấy game (sim cao so với game đó)
 select i.Similarity as 'Similarity', v.Point as 'PrefPoint', g.id, g.title, g.Thumbnail
 from ItemBasedPoint i join Vote v on i.ItemId = v.GameId join Game g on i.PrefId = g.Id
-where v.UserId = 1 and g.id not in (select v.GameId from Vote where UserId = 1)
+where v.UserId = 1 
 order by i.Similarity desc, v.Point desc, v.Time desc
 
-select i.Similarity as 'Similarity', v.Point as 'PrefPoint', g.id, g.title, g.Thumbnail 
+select *
 from ItemBasedPoint i join Vote v on i.ItemId = v.GameId join Game g on i.PrefId = g.Id 
-where v.UserId = 3 and g.id not in (select v.GameId from Vote where UserId = 3) 
+where v.UserId = 3 and i.PrefId not in (select GameId from Vote where UserId = 3) 
 order by i.Similarity desc, v.Point desc, v.Time desc 
 
 
 
+select i.PrefId
+from Vote v join ItemBasedPoint i on v.GameId = i.ItemId
+where v.UserId  = 3 and i.PrefId not in (select GameId from Vote where UserId = 3)
+group by i.PrefId
+
+
+select top 3 *
+from ItemBasedPoint 
+group by itemId
+order by Similarity desc
+
+
+select *
+from  (select * from Vote v where v.userId = 3) vv 
+				join ItemBasedPoint ii 
+				on vv.GameId = ii.ItemId
+order by vv.time desc, vv.point desc, ii.Similarity desc
 
 
 
+select * 
+from ItemBasedPoint i 
+order by i.Similarity desc
 
 
+select * from Game 
+where id  =87
 
+select g.id
+from Game g join Vote v on g.id = v.gameid
+
+having count(v.UserId) > 0
+
+select g.Id, g.Title, g.Thumbnail, v.Point from Game g join Vote v on g.id = v.GameId where v.UserId = 3
+
+select * from Game where id in (193,178)
 

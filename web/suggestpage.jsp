@@ -22,7 +22,10 @@
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" />
 
         <script src="resources/js/Utils.js"></script>
-        <script src="resources/js/HomePage.js"></script>
+        <script src="resources/js/HomePage.js"></script> 
+        <script src="resources/js/octopus.js"></script>    
+        <script src="resources/js/model.js"></script>      
+        <script src="resources/js/view.js"></script>
         <script src="resources/js/Vote.js"></script>
         <script>
             var gamesString = "${SuggestedGames}";
@@ -33,11 +36,11 @@
         </script>
     </head>
 
-    <body onload="onLoad()" onbeforeunload="onBeforeUnload()">
+    <body onload="onload()">
         <header>
             <div class="row menu">
                 <div class="col span-1-of-3">
-                    <h2><a href="">Board game</a></h2>
+                    <h2><a href="trend">Board game</a></h2>
                 </div>
 
                 <div class="col span-2-of-3">

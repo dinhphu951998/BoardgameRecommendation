@@ -101,4 +101,9 @@ class Utils {
         }
     }
 
+    static serializeToString(rootElement) {
+        var serializer = new XMLSerializer();
+        return serializer.serializeToString(rootElement);
+    }
+
 }

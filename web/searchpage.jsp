@@ -21,7 +21,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
         <script src="resources/js/Utils.js"></script>
-        <script src="resources/js/HomePage.js"></script>
+        <script src="resources/js/HomePage.js"></script>        
+        <script src="resources/js/octopus.js"></script>      
+        <script src="resources/js/model.js"></script>       
+        <script src="resources/js/view.js"></script>
         <script src="resources/js/Vote.js"></script>
         <script>
             var gamesString = "${TrendGames}";
@@ -32,7 +35,7 @@
         </script>
     </head>
 
-    <body onload="onLoad()" onbeforeunload="onBeforeUnload()">
+    <body onload="onload()">
         <div class="game-detail" id="game-detail" style="display: none">
 
         </div>
